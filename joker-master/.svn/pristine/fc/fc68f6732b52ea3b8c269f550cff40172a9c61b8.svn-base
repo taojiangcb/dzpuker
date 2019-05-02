@@ -1,0 +1,18 @@
+module joker {
+	export class JokerDBProxy extends app.mvc.AbsractProxy {
+		static NAME:string = "__JOKDER_DB_PROXY__"
+		
+		/**
+		 * 桌子信息
+		 */
+		tableInfo:appvos.PMTableVO;
+
+		public constructor(name?:string,data?:any) {
+			super(JokerDBProxy.NAME,data);
+		}
+
+		dispose():void {
+			super.dispose();
+		}
+	}
+}

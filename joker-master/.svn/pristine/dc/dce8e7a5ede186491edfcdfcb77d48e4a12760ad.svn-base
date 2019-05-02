@@ -1,0 +1,2175 @@
+{
+	"groups": [
+		{
+			"keys": "GameCfg_js,GameError_js,GameMsg_js,puker_loading_json,puker_loading_png,MessageVO_proto,guichu_logo_png",
+			"name": "preload"
+		},
+		{
+			"keys": "icon_zunshi_png,icon_caoma_png,icon_vip_png,s9_progress_bar_bg2_png,s9_progress_bar_png,s9_progress_bar_bg1_png,icon_touxian_mask_png,s9_bg_erji_fengexiang_png,s9_bg_erjianniuqipao_png,s9_bg_erjiditubeijing_png,s9_bg_erjijiemiangditu_png,s9_bg_fangxinditu_png,s9_bg_shurukuangditu_png,s9_bg_yijijiemiangditu_png,s9_progress_bar1_png,icon_gouxuan1_png,icon_gouxuan2_png,s9_bg_ditujiangjiao_png,btn_back_png,s9_bg_erji_xinxiditu_png,s9_bg_erji_fenggexiang_png,btn_tab_center_2_png,s9_bg_kaiguangditu_png,s9_bg_kaiguangditu_1_png,s9_bg_kaiguangditu_quyu_png,sg_bg_shezhi_ditu_png,btn_shop_close_png,btn_chongzhi_png,icon_putongyoubbiaocao_png,btn_play_yellow_png,btn_play_blue_png,btn_play_purple_png,s9_bg_info_fangxinditu_png,img_play_tscg_png,img_play_tssp_png,s9_bg_play_fjzjdt_png,btn_room_renshuxuanzhe2_png,btn_renshuxuanze_png,img_word_more_set_jpg,btn_more_set_png,btn_play_hong_png,img_word_shop_lingqu_png,s9_bg_head_2_png,s9_bg_head_1_png,bg_bank_type2_png,icon_ganlanzhi_left_png,btn_bank_zise_png,btn_bank_zise1_png,sg_bg_shezhi_sld_png,icon_mail_tshd_png,s9_reward_bg_png,btn_drop_down_png,btn_play_shezhi_png,icon_main_zx_png,icon_main_lx_png,icon_caoma1_png,icon_play_likai_png,s9_bg_play_zhujiemian_png,btn_play_caidan1_png,btn_mainui_huodong2_png,btn_mainui_huodong1_png,img_bg_title3_png,btn_sign_lan_png,s9_bg_money_bg_png,icon_happy_hj_dt_png,icon_sng_type_bg_png,btn_room_you_png,s9_bg_info_sl_png,s9_bg_info_bqxh_png,btn_reduce_png,btn_plus_png,icon_play_gouxuan_1_png,icon_play_gouxuan_2_png,btn_play_caidan_png,img_line_ver_png,icon_free_chouma_png,icon_jinbichang_png,icon_duihuan_huobi_png,s9_guide_word_bg_jbc_png,roundthumb_png,img_bg_jpg,img_word_jiangjin_png,img_word_cansairenshu_png,img_word_bisaimincheng_png,iw_jinru_mtt_png,btn_jinru_mtt_png,img_word_alert_qudapai_png,icon_room_renshu_png,btn_analysis_close_png,btn_happy_cmfg_png,s9_bg_time_win_png,bg_info_header_png,btn_tab_center_1_png,bg_info_content_png,img_word_info_tishi_png,img_word_guan_png,img_word_kai_png,btn_tab_right_2_png,btn_tab_left_1_png,btn_tab_left_2_png,btn_tab_right_1_png,icon_play_word_bg_png,icon_paly_fengexian_png,icon_info_header_png,btn_play_srmm_png,img_word_info_queding_png,btn_response_close_png",
+			"name": "uiTextureAtlas"
+		},
+		{
+			"keys": "card-1-0_png,card-1-1_png,card-1-10_png,card-1-11_png,card-1-12_png,card-1-13_png,card-1-14_png,card-1-15_png,card-1-16_png,card-1-17_png,card-1-18_png,card-1-19_png,card-1-2_png,card-1-20_png,card-1-21_png,card-1-22_png,card-1-23_png,card-1-24_png,card-1-25_png,card-1-26_png,card-1-27_png,card-1-28_png,card-1-29_png,card-1-3_png,card-1-30_png,card-1-31_png,card-1-32_png,card-1-33_png,card-1-34_png,card-1-35_png,card-1-36_png,card-1-37_png,card-1-38_png,card-1-39_png,card-1-4_png,card-1-40_png,card-1-41_png,card-1-42_png,card-1-43_png,card-1-44_png,card-1-45_png,card-1-46_png,card-1-47_png,card-1-48_png,card-1-49_png,card-1-5_png,card-1-50_png,card-1-51_png,card-1-52_png,card-1-6_png,card-1-7_png,card-1-8_png,card-1-9_png,img_word_gameUI_play9_png,img_word_poker_type_9_png,img_word_poker_type_10_png,img_word_gameUI_play10_png,img_word_gameUI_play1_png,img_word_gameUI_play2_png,img_word_gameUI_play3_png,img_word_gameUI_play4_png,img_word_gameUI_play5_png,img_word_gameUI_play6_png,img_word_gameUI_play7_png,img_word_gameUI_play8_png,img_word_poker_type_1_png,img_word_poker_type_2_png,img_word_poker_type_3_png,img_word_poker_type_4_png,img_word_poker_type_5_png,img_word_poker_type_6_png,img_word_poker_type_7_png,img_word_poker_type_8_png,img_word_gameUI_happy10_png,img_word_gameUI_happy1_png,img_word_gameUI_happy2_png,img_word_gameUI_happy3_png,img_word_gameUI_happy4_png,img_word_gameUI_happy5_png,img_word_gameUI_happy6_png,img_word_gameUI_happy7_png,img_word_gameUI_happy8_png,img_word_gameUI_happy9_png,img_word_gameUI_happy_h_10_png,img_word_gameUI_happy_h_1_png,img_word_gameUI_happy_h_2_png,img_word_gameUI_happy_h_3_png,img_word_gameUI_happy_h_4_png,img_word_gameUI_happy_h_5_png,img_word_gameUI_happy_h_6_png,img_word_gameUI_happy_h_7_png,img_word_gameUI_happy_h_8_png,img_word_gameUI_happy_h_9_png",
+			"name": "card"
+		},
+		{
+			"keys": "chip_send_01_mp3,chip_skake_01_mp3,chip_send_02_mp3,disk_up_01_mp3,disk_down_01_mp3,time_out_01_mp3,chip_all_01_mp3,chip_out_01_mp3,chip_out_02_mp3,game_bgm_mp3,win_02_mp3,win_01_mp3,detain_bet_mp3,disk_stop_mp3,notice_kaijiang_mp3,notice_xiazhu_mp3,disk_start_mp3,disk_one_mp3,count_down_mp3",
+			"name": "playSoundmp3"
+		},
+		{
+			"keys": "game_bgm_mp3,game_bg_paijiang_mp3,game_bg_xiazhu_mp3",
+			"name": "bgSoundmp3"
+		},
+		{
+			"keys": "img_word_bank_chunkuan2_png,img_word_bank_cunkuan_png,img_word_bank_qukuan1_png,img_word_bank_qukuan2_png,img_word_bank_qz_png,img_word_bank_sl_png,img_word_bank_sr_png,img_word_bank_tk_png,bg_bank_type1_png,icon_bank_jiantou_png,icon_bank_xialai_png,img_word_bank_chongzhi_png,img_word_bank_chunkuan1_png,img_word_bank_qinkong_png,img_word_bank_djcz_png,img_word_bank_xzqkyx_png,img_bank_game_417_png,icon_bank_game_25_png,icon_bank_game_28_png,icon_bank_game_378_png,icon_bank_game_417_png,img_bank_game_25_png,img_bank_game_28_png,img_bank_game_378_png,img_bank_game_427_png,icon_bank_game_427_png",
+			"name": "bank"
+		},
+		{
+			"keys": "game_bgm_ogg,game_bg_xiazhu_ogg,game_bg_paijiang_ogg",
+			"name": "bgSoundogg"
+		},
+		{
+			"keys": "chip_send_02_ogg,disk_down_01_ogg,disk_up_01_ogg,time_out_01_ogg,win_01_ogg,win_02_ogg,chip_all_01_ogg,chip_out_01_ogg,chip_out_02_ogg,chip_skake_01_ogg,chip_send_01_ogg,award_pop_ogg,award_gold_small_ogg,count_down_ogg,detain_bet_ogg,disk_one_ogg,disk_start_ogg,disk_stop_ogg,game_bgm_ogg,notice_xiazhu_ogg,notice_kaijiang_ogg,award_gold_big_ogg",
+			"name": "playSoundogg"
+		},
+		{
+			"keys": "guichu_bg_djs_png,guichu_bg_kjjl_png,guichu_bg_kjjl_qs_png,guichu_bg_title_fgx_png,guichu_bg_tzq_png,guichu_bg_kjjl_ss_png,guichu_bg_tzq_mb_png,guichu_botton_cfxz_check_png,guichu_bg_wj_png,guichu_botton_cfxz_normal_png,guichu_botton_gz_png,guichu_botton_shezhi_png,guichu_botton_sq_png,guichu_icon_chouma_1_png,guichu_icon_chouma_2_png,guichu_icon_chouma_3_png,guichu_icon_chouma_4_png,guichu_icon_chouma_5_png,guichu_icon_hs_1_png,guichu_icon_hs_2_png,guichu_icon_hs_3_png,guichu_icon_hs_4_png,guichu_icon_rs_wxz_png,guichu_icon_rs_yxz_png,guichu_wheel_title_png,guichu_wheel_wk_png,guichu_wheel_xzq_1_png,guichu_wheel_xzq_2_png,guichu_word_kjjl_png,guichu_wheel_center_png,guichu_word_wj_png,guichu_word_zj100jjl_png,guichu_word_xzds_png,guichu_yxjt_cmdt_png,guichu_yxjt_wk_png,guichu_front_1_fnt,guichu_front_2_fnt,guichu_front_3_fnt,guichu_word_gz_png,guichu_word_jsxyzl_png,guichu_word_wzdl_png,guichu_botton_qz_png,guichu_table_item_ani_png,guichu_table_item_yxz_png,guichu_wheel_light_ani_png,guichu_yxjt_cmdt_ani_png,guichu_icon_chouma_ani_png,guichu_bg_tzq_xz_png,guichu_icon_hs_b_3_png,guichu_icon_hs_b_4_png,guichu_icon_hs_b_6_png,guichu_icon_hs_b_7_png,guichu_icon_hs_b_5_png,guichu_icon_hs_s_1_png,guichu_icon_hs_s_2_png,guichu_icon_hs_s_3_png,guichu_icon_hs_s_4_png,guichu_icon_hs_s_5_png,guichu_icon_hs_s_7_png,guichu_icon_hs_s_6_png,guichu_bg_zjc_png,guichu_icon_hs_b_1_png,guichu_icon_hs_b_2_png,guichu_front_4_fnt,guichu_front_5_fnt,guichu_bg_states_png,guichu_word_zzkj_png,guichu_word_zzpj_png,guichu_word_zzxz_png,number_big_fnt,GoldPartice_png,GoldPartice_json,guichu_wheel_db_dbmv,guichu_wheel_db_tex_png,guichu_wheel_db_tex_json,guichu_win_ti_png,guichu_win_ti_json,guichu_wheel_wz_png,GoldPartice2_json,guichu_word_zj10jjl_png,guichu_icon_gold_png,guichu_wheel_blur_png,guichu_wheel_blur_item_png,guichu_word_yxkg_png,guichu_word_yykg_png,guichu_set_bg_png,guichu_set_button_off_png,guichu_set_button_on_png,guichu_set_item_png,guichu_ziti_db_tex_png,guichu_ziti_db_dbmv,guichu_ziti_db_tex_json,xinxing_tex_png,xinxing_tex_json,xinxing_tex_dbmv,award_1_png,award_2_png,award_3_png,award_4_png,award_5_png,award_6_png,award_7_png,wing_ske_dbmv,wing_tex_png,wing_tex_json,guichu_main_title_light_ske_dbmv,guichu_main_title_light_tex_png,guichu_main_title_light_tex_json,guichu_wheel_neon_tex_png,guichu_wheel_neon_ske_dbmv,guichu_wheel_neon_tex_json,award_light_ske_dbmv,award_light_tex_png,award_light_tex_json,guichu_word_notice_1_png,guichu_bg_notice_0_png,guichu_bg_notice_1_png,guichu_word_notice_0_png,guichubg_2_jpg,guichu_word_mcdl_png,guichu_word_lq_png,guichu_word_xnfl_png,guichu_word_ddxjks_png,guichu_award_bg_png,guichu_yanhuo1_tex_png,guichu_yanhuo1_ske_dbmv,guichu_yanhuo1_tex_json",
+			"name": "guichu_wheel"
+		},
+		{
+			"keys": "",
+			"name": "joker"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/ui/loading/puker_loading.png",
+			"type": "image",
+			"name": "puker_loading_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_zunshi.png",
+			"type": "image",
+			"name": "icon_zunshi_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_caoma.png",
+			"type": "image",
+			"name": "icon_caoma_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_tab_right_2.png",
+			"type": "image",
+			"name": "btn_tab_right_2_png",
+			"scale9grid": "98,30,2,2"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_tab_left_1.png",
+			"type": "image",
+			"name": "btn_tab_left_1_png",
+			"scale9grid": "76,29,2,2"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_tab_left_2.png",
+			"type": "image",
+			"name": "btn_tab_left_2_png",
+			"scale9grid": "81,29,2,3"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_tab_right_1.png",
+			"type": "image",
+			"name": "btn_tab_right_1_png",
+			"scale9grid": "81,29,1,2"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_vip.png",
+			"type": "image",
+			"name": "icon_vip_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_progress_bar_bg2.png",
+			"type": "image",
+			"name": "s9_progress_bar_bg2_png",
+			"scale9grid": "8,8,2,3"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_progress_bar.png",
+			"type": "image",
+			"name": "s9_progress_bar_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_progress_bar_bg1.png",
+			"type": "image",
+			"name": "s9_progress_bar_bg1_png",
+			"scale9grid": "5,6,4,2"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_touxian_mask.png",
+			"type": "image",
+			"name": "icon_touxian_mask_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_erji_fengexiang.png",
+			"type": "image",
+			"name": "s9_bg_erji_fengexiang_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_erjianniuqipao.png",
+			"type": "image",
+			"name": "s9_bg_erjianniuqipao_png",
+			"scale9grid": "46,36,100,15"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_erjiditubeijing.png",
+			"type": "image",
+			"name": "s9_bg_erjiditubeijing_png",
+			"scale9grid": "21,17,11,16"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_erjijiemiangditu.png",
+			"type": "image",
+			"name": "s9_bg_erjijiemiangditu_png",
+			"scale9grid": "121,72,1,3"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_fangxinditu.png",
+			"type": "image",
+			"name": "s9_bg_fangxinditu_png",
+			"scale9grid": "15,16,14,18"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_shurukuangditu.png",
+			"type": "image",
+			"name": "s9_bg_shurukuangditu_png",
+			"scale9grid": "16,15,11,6"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_yijijiemiangditu.png",
+			"type": "image",
+			"name": "s9_bg_yijijiemiangditu_png",
+			"scale9grid": "134,78,2,4"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_progress_bar1.png",
+			"type": "image",
+			"name": "s9_progress_bar1_png",
+			"scale9grid": "1,5,1,4"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_gouxuan1.png",
+			"type": "image",
+			"name": "icon_gouxuan1_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_gouxuan2.png",
+			"type": "image",
+			"name": "icon_gouxuan2_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_ditujiangjiao.png",
+			"type": "image",
+			"name": "s9_bg_ditujiangjiao_png",
+			"scale9grid": "16,0,4,58"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/img_bg.jpg",
+			"type": "image",
+			"name": "img_bg_jpg"
+		},
+		{
+			"url": "assets/fnt/white.fnt",
+			"type": "font",
+			"name": "white_fnt"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_back.png",
+			"type": "image",
+			"name": "btn_back_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/img_word_cansairenshu.png",
+			"type": "image",
+			"name": "img_word_cansairenshu_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/img_word_jiangjin.png",
+			"type": "image",
+			"name": "img_word_jiangjin_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/img_word_bisaimincheng.png",
+			"type": "image",
+			"name": "img_word_bisaimincheng_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_erji_xinxiditu.png",
+			"type": "image",
+			"name": "s9_bg_erji_xinxiditu_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_erji_fenggexiang.png",
+			"type": "image",
+			"name": "s9_bg_erji_fenggexiang_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_tab_center_2.png",
+			"type": "image",
+			"name": "btn_tab_center_2_png",
+			"scale9grid": "70,23,14,14"
+		},
+		{
+			"url": "assets/ui/card/card-1-0.png",
+			"type": "image",
+			"name": "card-1-0_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-1.png",
+			"type": "image",
+			"name": "card-1-1_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-10.png",
+			"type": "image",
+			"name": "card-1-10_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-11.png",
+			"type": "image",
+			"name": "card-1-11_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-12.png",
+			"type": "image",
+			"name": "card-1-12_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-13.png",
+			"type": "image",
+			"name": "card-1-13_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-14.png",
+			"type": "image",
+			"name": "card-1-14_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-15.png",
+			"type": "image",
+			"name": "card-1-15_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-16.png",
+			"type": "image",
+			"name": "card-1-16_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-17.png",
+			"type": "image",
+			"name": "card-1-17_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-18.png",
+			"type": "image",
+			"name": "card-1-18_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-19.png",
+			"type": "image",
+			"name": "card-1-19_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-2.png",
+			"type": "image",
+			"name": "card-1-2_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-20.png",
+			"type": "image",
+			"name": "card-1-20_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-21.png",
+			"type": "image",
+			"name": "card-1-21_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-22.png",
+			"type": "image",
+			"name": "card-1-22_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-23.png",
+			"type": "image",
+			"name": "card-1-23_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-24.png",
+			"type": "image",
+			"name": "card-1-24_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-25.png",
+			"type": "image",
+			"name": "card-1-25_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-26.png",
+			"type": "image",
+			"name": "card-1-26_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-27.png",
+			"type": "image",
+			"name": "card-1-27_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-28.png",
+			"type": "image",
+			"name": "card-1-28_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-29.png",
+			"type": "image",
+			"name": "card-1-29_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-3.png",
+			"type": "image",
+			"name": "card-1-3_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-30.png",
+			"type": "image",
+			"name": "card-1-30_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-31.png",
+			"type": "image",
+			"name": "card-1-31_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-32.png",
+			"type": "image",
+			"name": "card-1-32_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-33.png",
+			"type": "image",
+			"name": "card-1-33_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-34.png",
+			"type": "image",
+			"name": "card-1-34_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-35.png",
+			"type": "image",
+			"name": "card-1-35_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-36.png",
+			"type": "image",
+			"name": "card-1-36_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-37.png",
+			"type": "image",
+			"name": "card-1-37_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-38.png",
+			"type": "image",
+			"name": "card-1-38_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-39.png",
+			"type": "image",
+			"name": "card-1-39_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-4.png",
+			"type": "image",
+			"name": "card-1-4_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-40.png",
+			"type": "image",
+			"name": "card-1-40_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-41.png",
+			"type": "image",
+			"name": "card-1-41_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-42.png",
+			"type": "image",
+			"name": "card-1-42_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-43.png",
+			"type": "image",
+			"name": "card-1-43_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-44.png",
+			"type": "image",
+			"name": "card-1-44_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-45.png",
+			"type": "image",
+			"name": "card-1-45_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-46.png",
+			"type": "image",
+			"name": "card-1-46_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-47.png",
+			"type": "image",
+			"name": "card-1-47_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-48.png",
+			"type": "image",
+			"name": "card-1-48_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-49.png",
+			"type": "image",
+			"name": "card-1-49_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-5.png",
+			"type": "image",
+			"name": "card-1-5_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-50.png",
+			"type": "image",
+			"name": "card-1-50_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-51.png",
+			"type": "image",
+			"name": "card-1-51_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-52.png",
+			"type": "image",
+			"name": "card-1-52_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-6.png",
+			"type": "image",
+			"name": "card-1-6_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-7.png",
+			"type": "image",
+			"name": "card-1-7_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-8.png",
+			"type": "image",
+			"name": "card-1-8_png"
+		},
+		{
+			"url": "assets/ui/card/card-1-9.png",
+			"type": "image",
+			"name": "card-1-9_png"
+		},
+		{
+			"url": "assets/protobuf/MessageVO.proto",
+			"type": "text",
+			"name": "MessageVO_proto"
+		},
+		{
+			"url": "assets/fnt/fnt03.fnt",
+			"type": "font",
+			"name": "fnt03_fnt"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_kaiguangditu.png",
+			"type": "image",
+			"name": "s9_bg_kaiguangditu_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_kaiguangditu_1.png",
+			"type": "image",
+			"name": "s9_bg_kaiguangditu_1_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_kaiguangditu_quyu.png",
+			"type": "image",
+			"name": "s9_bg_kaiguangditu_quyu_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/sg_bg_shezhi_ditu.png",
+			"type": "image",
+			"name": "sg_bg_shezhi_ditu_png",
+			"scale9grid": "16,16,5,4"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_shop_close.png",
+			"type": "image",
+			"name": "btn_shop_close_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_chongzhi.png",
+			"type": "image",
+			"name": "btn_chongzhi_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_putongyoubbiaocao.png",
+			"type": "image",
+			"name": "icon_putongyoubbiaocao_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_play_yellow.png",
+			"type": "image",
+			"name": "btn_play_yellow_png",
+			"scale9grid": "85,28,2,3"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_play_blue.png",
+			"type": "image",
+			"name": "btn_play_blue_png",
+			"scale9grid": "66,26,2,2"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_play_purple.png",
+			"type": "image",
+			"name": "btn_play_purple_png",
+			"scale9grid": "84,29,2,2"
+		},
+		{
+			"url": "assets/ui/loading/puker_loading.json",
+			"type": "json",
+			"name": "puker_loading_json"
+		},
+		{
+			"url": "assets/ui/bank/img_word_bank_chunkuan2.png",
+			"type": "image",
+			"name": "img_word_bank_chunkuan2_png"
+		},
+		{
+			"url": "assets/ui/bank/img_word_bank_cunkuan.png",
+			"type": "image",
+			"name": "img_word_bank_cunkuan_png"
+		},
+		{
+			"url": "assets/ui/bank/img_word_bank_qukuan1.png",
+			"type": "image",
+			"name": "img_word_bank_qukuan1_png"
+		},
+		{
+			"url": "assets/ui/bank/img_word_bank_qukuan2.png",
+			"type": "image",
+			"name": "img_word_bank_qukuan2_png"
+		},
+		{
+			"url": "assets/ui/bank/img_word_bank_qz.png",
+			"type": "image",
+			"name": "img_word_bank_qz_png"
+		},
+		{
+			"url": "assets/ui/bank/img_word_bank_sl.png",
+			"type": "image",
+			"name": "img_word_bank_sl_png"
+		},
+		{
+			"url": "assets/ui/bank/img_word_bank_sr.png",
+			"type": "image",
+			"name": "img_word_bank_sr_png"
+		},
+		{
+			"url": "assets/ui/bank/img_word_bank_tk.png",
+			"type": "image",
+			"name": "img_word_bank_tk_png"
+		},
+		{
+			"url": "assets/ui/bank/bg_bank_type1.png",
+			"type": "image",
+			"name": "bg_bank_type1_png"
+		},
+		{
+			"url": "assets/ui/bank/icon_bank_jiantou.png",
+			"type": "image",
+			"name": "icon_bank_jiantou_png"
+		},
+		{
+			"url": "assets/ui/bank/icon_bank_xialai.png",
+			"type": "image",
+			"name": "icon_bank_xialai_png"
+		},
+		{
+			"url": "assets/ui/bank/img_word_bank_chongzhi.png",
+			"type": "image",
+			"name": "img_word_bank_chongzhi_png"
+		},
+		{
+			"url": "assets/ui/bank/img_word_bank_chunkuan1.png",
+			"type": "image",
+			"name": "img_word_bank_chunkuan1_png"
+		},
+		{
+			"url": "assets/fnt/fnt05.fnt",
+			"type": "font",
+			"name": "fnt05_fnt"
+		},
+		{
+			"url": "assets/ui/bank/img_word_bank_qinkong.png",
+			"type": "image",
+			"name": "img_word_bank_qinkong_png"
+		},
+		{
+			"url": "assets/ui/bank/img_word_bank_djcz.png",
+			"type": "image",
+			"name": "img_word_bank_djcz_png"
+		},
+		{
+			"url": "wordfiles/GameCfg.ini",
+			"type": "text",
+			"name": "GameCfg_js"
+		},
+		{
+			"url": "wordfiles/GameError.ini",
+			"type": "text",
+			"name": "GameError_js"
+		},
+		{
+			"url": "wordfiles/GameMsg.ini",
+			"type": "text",
+			"name": "GameMsg_js"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_info_fangxinditu.png",
+			"type": "image",
+			"name": "s9_bg_info_fangxinditu_png",
+			"scale9grid": "7,29,2,17"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/img_play_tscg.png",
+			"type": "image",
+			"name": "img_play_tscg_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/img_play_tssp.png",
+			"type": "image",
+			"name": "img_play_tssp_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_play_fjzjdt.png",
+			"type": "image",
+			"name": "s9_bg_play_fjzjdt_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_room_renshuxuanzhe2.png",
+			"type": "image",
+			"name": "btn_room_renshuxuanzhe2_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_renshuxuanze.png",
+			"type": "image",
+			"name": "btn_renshuxuanze_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/img_word_more_set.jpg",
+			"type": "image",
+			"name": "img_word_more_set_jpg"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_more_set.png",
+			"type": "image",
+			"name": "btn_more_set_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_play_hong.png",
+			"type": "image",
+			"name": "btn_play_hong_png",
+			"scale9grid": "83,29,3,2"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/img_word_shop_lingqu.png",
+			"type": "image",
+			"name": "img_word_shop_lingqu_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_head_2.png",
+			"type": "image",
+			"name": "s9_bg_head_2_png",
+			"scale9grid": "4,3,2,4"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_head_1.png",
+			"type": "image",
+			"name": "s9_bg_head_1_png",
+			"scale9grid": "4,4,2,2"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/bg_bank_type2.png",
+			"type": "image",
+			"name": "bg_bank_type2_png",
+			"scale9grid": "110,54,25,15"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_ganlanzhi_left.png",
+			"type": "image",
+			"name": "icon_ganlanzhi_left_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_bank_zise.png",
+			"type": "image",
+			"name": "btn_bank_zise_png"
+		},
+		{
+			"url": "assets/fnt/fnt07.fnt",
+			"type": "font",
+			"name": "fnt07_fnt"
+		},
+		{
+			"url": "assets/fnt/fnt08.fnt",
+			"type": "font",
+			"name": "fnt08_fnt"
+		},
+		{
+			"url": "assets/fnt/fnt06.fnt",
+			"type": "font",
+			"name": "fnt06_fnt"
+		},
+		{
+			"url": "assets/fnt/fnt09.fnt",
+			"type": "font",
+			"name": "fnt09_fnt"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_bank_zise1.png",
+			"type": "image",
+			"name": "btn_bank_zise1_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_mail_tshd.png",
+			"type": "image",
+			"name": "icon_mail_tshd_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/sg_bg_shezhi_sld.png",
+			"type": "image",
+			"name": "sg_bg_shezhi_sld_png",
+			"scale9grid": "17,12,10,3"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_reward_bg.png",
+			"type": "image",
+			"name": "s9_reward_bg_png",
+			"scale9grid": "88,53,19,1"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_drop_down.png",
+			"type": "image",
+			"name": "btn_drop_down_png"
+		},
+		{
+			"url": "assets/ui/bank/img_word_bank_xzqkyx.png",
+			"type": "image",
+			"name": "img_word_bank_xzqkyx_png"
+		},
+		{
+			"url": "assets/ui/bank/img_bank_game_417.png",
+			"type": "image",
+			"name": "img_bank_game_417_png"
+		},
+		{
+			"url": "assets/ui/bank/icon_bank_game_25.png",
+			"type": "image",
+			"name": "icon_bank_game_25_png"
+		},
+		{
+			"url": "assets/ui/bank/icon_bank_game_28.png",
+			"type": "image",
+			"name": "icon_bank_game_28_png"
+		},
+		{
+			"url": "assets/ui/bank/icon_bank_game_378.png",
+			"type": "image",
+			"name": "icon_bank_game_378_png"
+		},
+		{
+			"url": "assets/ui/bank/icon_bank_game_417.png",
+			"type": "image",
+			"name": "icon_bank_game_417_png"
+		},
+		{
+			"url": "assets/ui/bank/img_bank_game_25.png",
+			"type": "image",
+			"name": "img_bank_game_25_png"
+		},
+		{
+			"url": "assets/ui/bank/img_bank_game_28.png",
+			"type": "image",
+			"name": "img_bank_game_28_png"
+		},
+		{
+			"url": "assets/ui/bank/img_bank_game_378.png",
+			"type": "image",
+			"name": "img_bank_game_378_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_play_shezhi.png",
+			"type": "image",
+			"name": "btn_play_shezhi_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_main_zx.png",
+			"type": "image",
+			"name": "icon_main_zx_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_main_lx.png",
+			"type": "image",
+			"name": "icon_main_lx_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_caoma1.png",
+			"type": "image",
+			"name": "icon_caoma1_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_play_likai.png",
+			"type": "image",
+			"name": "icon_play_likai_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_play_zhujiemian.png",
+			"type": "image",
+			"name": "s9_bg_play_zhujiemian_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_play9.png",
+			"type": "image",
+			"name": "img_word_gameUI_play9_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_poker_type_9.png",
+			"type": "image",
+			"name": "img_word_poker_type_9_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_poker_type_10.png",
+			"type": "image",
+			"name": "img_word_poker_type_10_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_play10.png",
+			"type": "image",
+			"name": "img_word_gameUI_play10_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_play1.png",
+			"type": "image",
+			"name": "img_word_gameUI_play1_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_play2.png",
+			"type": "image",
+			"name": "img_word_gameUI_play2_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_play3.png",
+			"type": "image",
+			"name": "img_word_gameUI_play3_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_play4.png",
+			"type": "image",
+			"name": "img_word_gameUI_play4_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_play5.png",
+			"type": "image",
+			"name": "img_word_gameUI_play5_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_play6.png",
+			"type": "image",
+			"name": "img_word_gameUI_play6_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_play7.png",
+			"type": "image",
+			"name": "img_word_gameUI_play7_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_play8.png",
+			"type": "image",
+			"name": "img_word_gameUI_play8_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_poker_type_1.png",
+			"type": "image",
+			"name": "img_word_poker_type_1_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_poker_type_2.png",
+			"type": "image",
+			"name": "img_word_poker_type_2_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_poker_type_3.png",
+			"type": "image",
+			"name": "img_word_poker_type_3_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_poker_type_4.png",
+			"type": "image",
+			"name": "img_word_poker_type_4_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_poker_type_5.png",
+			"type": "image",
+			"name": "img_word_poker_type_5_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_poker_type_6.png",
+			"type": "image",
+			"name": "img_word_poker_type_6_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_poker_type_7.png",
+			"type": "image",
+			"name": "img_word_poker_type_7_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_poker_type_8.png",
+			"type": "image",
+			"name": "img_word_poker_type_8_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_play_caidan1.png",
+			"type": "image",
+			"name": "btn_play_caidan1_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_happy10.png",
+			"type": "image",
+			"name": "img_word_gameUI_happy10_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_happy1.png",
+			"type": "image",
+			"name": "img_word_gameUI_happy1_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_happy2.png",
+			"type": "image",
+			"name": "img_word_gameUI_happy2_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_happy3.png",
+			"type": "image",
+			"name": "img_word_gameUI_happy3_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_happy4.png",
+			"type": "image",
+			"name": "img_word_gameUI_happy4_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_happy5.png",
+			"type": "image",
+			"name": "img_word_gameUI_happy5_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_happy6.png",
+			"type": "image",
+			"name": "img_word_gameUI_happy6_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_happy7.png",
+			"type": "image",
+			"name": "img_word_gameUI_happy7_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_happy8.png",
+			"type": "image",
+			"name": "img_word_gameUI_happy8_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_happy9.png",
+			"type": "image",
+			"name": "img_word_gameUI_happy9_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_happy_h_10.png",
+			"type": "image",
+			"name": "img_word_gameUI_happy_h_10_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_happy_h_1.png",
+			"type": "image",
+			"name": "img_word_gameUI_happy_h_1_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_happy_h_2.png",
+			"type": "image",
+			"name": "img_word_gameUI_happy_h_2_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_happy_h_3.png",
+			"type": "image",
+			"name": "img_word_gameUI_happy_h_3_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_happy_h_4.png",
+			"type": "image",
+			"name": "img_word_gameUI_happy_h_4_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_happy_h_5.png",
+			"type": "image",
+			"name": "img_word_gameUI_happy_h_5_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_happy_h_6.png",
+			"type": "image",
+			"name": "img_word_gameUI_happy_h_6_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_happy_h_7.png",
+			"type": "image",
+			"name": "img_word_gameUI_happy_h_7_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_happy_h_8.png",
+			"type": "image",
+			"name": "img_word_gameUI_happy_h_8_png"
+		},
+		{
+			"url": "assets/ui/card/img_word_gameUI_happy_h_9.png",
+			"type": "image",
+			"name": "img_word_gameUI_happy_h_9_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_mainui_huodong2.png",
+			"type": "image",
+			"name": "btn_mainui_huodong2_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_mainui_huodong1.png",
+			"type": "image",
+			"name": "btn_mainui_huodong1_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/img_bg_title3.png",
+			"type": "image",
+			"name": "img_bg_title3_png",
+			"scale9grid": "87,40,25,10"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_sign_lan.png",
+			"type": "image",
+			"name": "btn_sign_lan_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_money_bg.png",
+			"type": "image",
+			"name": "s9_bg_money_bg_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_happy_hj_dt.png",
+			"type": "image",
+			"name": "icon_happy_hj_dt_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_sng_type_bg.png",
+			"type": "image",
+			"name": "icon_sng_type_bg_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_room_you.png",
+			"type": "image",
+			"name": "btn_room_you_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_info_sl.png",
+			"type": "image",
+			"name": "s9_bg_info_sl_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_info_bqxh.png",
+			"type": "image",
+			"name": "s9_bg_info_bqxh_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_reduce.png",
+			"type": "image",
+			"name": "btn_reduce_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_plus.png",
+			"type": "image",
+			"name": "btn_plus_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_play_gouxuan_1.png",
+			"type": "image",
+			"name": "icon_play_gouxuan_1_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_play_gouxuan_2.png",
+			"type": "image",
+			"name": "icon_play_gouxuan_2_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_play_caidan.png",
+			"type": "image",
+			"name": "btn_play_caidan_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/iw_jinru_mtt.png",
+			"type": "image",
+			"name": "iw_jinru_mtt_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_jinru_mtt.png",
+			"type": "image",
+			"name": "btn_jinru_mtt_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/img_line_ver.png",
+			"type": "image",
+			"name": "img_line_ver_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_free_chouma.png",
+			"type": "image",
+			"name": "icon_free_chouma_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_jinbichang.png",
+			"type": "image",
+			"name": "icon_jinbichang_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_duihuan_huobi.png",
+			"type": "image",
+			"name": "icon_duihuan_huobi_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_guide_word_bg_jbc.png",
+			"type": "image",
+			"name": "s9_guide_word_bg_jbc_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/img_word_alert_qudapai.png",
+			"type": "image",
+			"name": "img_word_alert_qudapai_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_room_renshu.png",
+			"type": "image",
+			"name": "icon_room_renshu_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_analysis_close.png",
+			"type": "image",
+			"name": "btn_analysis_close_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_happy_cmfg.png",
+			"type": "image",
+			"name": "btn_happy_cmfg_png",
+			"scale9grid": "53,55,1,2"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/s9_bg_time_win.png",
+			"type": "image",
+			"name": "s9_bg_time_win_png",
+			"scale9grid": "21,24,1,1"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/bg_info_content.png",
+			"type": "image",
+			"name": "bg_info_content_png",
+			"scale9grid": "7,16,1,7"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/bg_info_header.png",
+			"type": "image",
+			"name": "bg_info_header_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_tab_center_1.png",
+			"type": "image",
+			"name": "btn_tab_center_1_png",
+			"scale9grid": "78,30,1,2"
+		},
+		{
+			"url": "assets/fnt/fnt10.fnt",
+			"type": "font",
+			"name": "fnt10_fnt"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/img_word_info_tishi.png",
+			"type": "image",
+			"name": "img_word_info_tishi_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/img_word_guan.png",
+			"type": "image",
+			"name": "img_word_guan_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/img_word_kai.png",
+			"type": "image",
+			"name": "img_word_kai_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_play_word_bg.png",
+			"type": "image",
+			"name": "icon_play_word_bg_png",
+			"scale9grid": "6,13,1,2"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_paly_fengexian.png",
+			"type": "image",
+			"name": "icon_paly_fengexian_png",
+			"scale9grid": "120,0,3,2"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/icon_info_header.png",
+			"type": "image",
+			"name": "icon_info_header_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_play_srmm.png",
+			"type": "image",
+			"name": "btn_play_srmm_png",
+			"scale9grid": "20,23,1,1"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_bg.jpg",
+			"type": "image",
+			"name": "guichu_bg_jpg"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_bg_djs.png",
+			"type": "image",
+			"name": "guichu_bg_djs_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_bg_kjjl.png",
+			"type": "image",
+			"name": "guichu_bg_kjjl_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_bg_kjjl_qs.png",
+			"type": "image",
+			"name": "guichu_bg_kjjl_qs_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_bg_title_fgx.png",
+			"type": "image",
+			"name": "guichu_bg_title_fgx_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_bg_tzq.png",
+			"type": "image",
+			"name": "guichu_bg_tzq_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_bg_kjjl_ss.png",
+			"type": "image",
+			"name": "guichu_bg_kjjl_ss_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_bg_tzq_mb.png",
+			"type": "image",
+			"name": "guichu_bg_tzq_mb_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_botton_cfxz_check.png",
+			"type": "image",
+			"name": "guichu_botton_cfxz_check_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_bg_wj.png",
+			"type": "image",
+			"name": "guichu_bg_wj_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_botton_cfxz_normal.png",
+			"type": "image",
+			"name": "guichu_botton_cfxz_normal_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_botton_gz.png",
+			"type": "image",
+			"name": "guichu_botton_gz_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_botton_shezhi.png",
+			"type": "image",
+			"name": "guichu_botton_shezhi_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_botton_sq.png",
+			"type": "image",
+			"name": "guichu_botton_sq_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_chouma_1.png",
+			"type": "image",
+			"name": "guichu_icon_chouma_1_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_chouma_2.png",
+			"type": "image",
+			"name": "guichu_icon_chouma_2_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_chouma_3.png",
+			"type": "image",
+			"name": "guichu_icon_chouma_3_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_chouma_4.png",
+			"type": "image",
+			"name": "guichu_icon_chouma_4_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_chouma_5.png",
+			"type": "image",
+			"name": "guichu_icon_chouma_5_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_hs_1.png",
+			"type": "image",
+			"name": "guichu_icon_hs_1_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_hs_2.png",
+			"type": "image",
+			"name": "guichu_icon_hs_2_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_hs_3.png",
+			"type": "image",
+			"name": "guichu_icon_hs_3_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_hs_4.png",
+			"type": "image",
+			"name": "guichu_icon_hs_4_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_rs_wxz.png",
+			"type": "image",
+			"name": "guichu_icon_rs_wxz_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_rs_yxz.png",
+			"type": "image",
+			"name": "guichu_icon_rs_yxz_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_wheel_title.png",
+			"type": "image",
+			"name": "guichu_wheel_title_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_wheel_wk.png",
+			"type": "image",
+			"name": "guichu_wheel_wk_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_wheel_xzq_1.png",
+			"type": "image",
+			"name": "guichu_wheel_xzq_1_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_wheel_xzq_2.png",
+			"type": "image",
+			"name": "guichu_wheel_xzq_2_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_word_kjjl.png",
+			"type": "image",
+			"name": "guichu_word_kjjl_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_wheel_center.png",
+			"type": "image",
+			"name": "guichu_wheel_center_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_word_wj.png",
+			"type": "image",
+			"name": "guichu_word_wj_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_word_zj100jjl.png",
+			"type": "image",
+			"name": "guichu_word_zj100jjl_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_word_xzds.png",
+			"type": "image",
+			"name": "guichu_word_xzds_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_yxjt_cmdt.png",
+			"type": "image",
+			"name": "guichu_yxjt_cmdt_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_yxjt_wk.png",
+			"type": "image",
+			"name": "guichu_yxjt_wk_png"
+		},
+		{
+			"url": "assets/fnt/guichu_front_1.fnt",
+			"type": "font",
+			"name": "guichu_front_1_fnt"
+		},
+		{
+			"url": "assets/fnt/guichu_front_2.fnt",
+			"type": "font",
+			"name": "guichu_front_2_fnt"
+		},
+		{
+			"url": "assets/fnt/guichu_front_3.fnt",
+			"type": "font",
+			"name": "guichu_front_3_fnt"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_word_gz.png",
+			"type": "image",
+			"name": "guichu_word_gz_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_word_jsxyzl.png",
+			"type": "image",
+			"name": "guichu_word_jsxyzl_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_word_wzdl.png",
+			"type": "image",
+			"name": "guichu_word_wzdl_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_botton_qz.png",
+			"type": "image",
+			"name": "guichu_botton_qz_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_table_item_ani.png",
+			"type": "image",
+			"name": "guichu_table_item_ani_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_table_item_yxz.png",
+			"type": "image",
+			"name": "guichu_table_item_yxz_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_wheel_light_ani.png",
+			"type": "image",
+			"name": "guichu_wheel_light_ani_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_yxjt_cmdt_ani.png",
+			"type": "image",
+			"name": "guichu_yxjt_cmdt_ani_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_chouma_ani.png",
+			"type": "image",
+			"name": "guichu_icon_chouma_ani_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_bg_tzq_xz.png",
+			"type": "image",
+			"name": "guichu_bg_tzq_xz_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_hs_b_3.png",
+			"type": "image",
+			"name": "guichu_icon_hs_b_3_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_hs_b_4.png",
+			"type": "image",
+			"name": "guichu_icon_hs_b_4_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_hs_b_6.png",
+			"type": "image",
+			"name": "guichu_icon_hs_b_6_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_hs_b_7.png",
+			"type": "image",
+			"name": "guichu_icon_hs_b_7_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_hs_b_5.png",
+			"type": "image",
+			"name": "guichu_icon_hs_b_5_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_hs_s_1.png",
+			"type": "image",
+			"name": "guichu_icon_hs_s_1_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_hs_s_2.png",
+			"type": "image",
+			"name": "guichu_icon_hs_s_2_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_hs_s_3.png",
+			"type": "image",
+			"name": "guichu_icon_hs_s_3_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_hs_s_4.png",
+			"type": "image",
+			"name": "guichu_icon_hs_s_4_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_hs_s_5.png",
+			"type": "image",
+			"name": "guichu_icon_hs_s_5_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_hs_s_7.png",
+			"type": "image",
+			"name": "guichu_icon_hs_s_7_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_hs_s_6.png",
+			"type": "image",
+			"name": "guichu_icon_hs_s_6_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_bg_zjc.png",
+			"type": "image",
+			"name": "guichu_bg_zjc_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_hs_b_1.png",
+			"type": "image",
+			"name": "guichu_icon_hs_b_1_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_hs_b_2.png",
+			"type": "image",
+			"name": "guichu_icon_hs_b_2_png"
+		},
+		{
+			"url": "assets/fnt/guichu_front_4.fnt",
+			"type": "font",
+			"name": "guichu_front_4_fnt"
+		},
+		{
+			"url": "assets/fnt/guichu_front_5.fnt",
+			"type": "font",
+			"name": "guichu_front_5_fnt"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_bg_states.png",
+			"type": "image",
+			"name": "guichu_bg_states_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_word_zzkj.png",
+			"type": "image",
+			"name": "guichu_word_zzkj_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_word_zzpj.png",
+			"type": "image",
+			"name": "guichu_word_zzpj_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_word_zzxz.png",
+			"type": "image",
+			"name": "guichu_word_zzxz_png"
+		},
+		{
+			"url": "assets/ui/guichu/number_big.fnt",
+			"type": "font",
+			"name": "number_big_fnt"
+		},
+		{
+			"url": "assets/ui/guichu/GoldPartice.png",
+			"type": "image",
+			"name": "GoldPartice_png"
+		},
+		{
+			"url": "assets/ui/guichu/GoldPartice.json",
+			"type": "json",
+			"name": "GoldPartice_json"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_wheel_db.dbmv",
+			"type": "bin",
+			"name": "guichu_wheel_db_dbmv"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_wheel_db_tex.png",
+			"type": "image",
+			"name": "guichu_wheel_db_tex_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_wheel_db_tex.json",
+			"type": "json",
+			"name": "guichu_wheel_db_tex_json"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_win_ti.png",
+			"type": "image",
+			"name": "guichu_win_ti_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_win_ti.json",
+			"type": "json",
+			"name": "guichu_win_ti_json"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_wheel_wz.png",
+			"type": "image",
+			"name": "guichu_wheel_wz_png"
+		},
+		{
+			"url": "assets/ui/guichu/GoldPartice2.json",
+			"type": "json",
+			"name": "GoldPartice2_json"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/game_bgm.mp3",
+			"type": "sound",
+			"name": "game_bgm_mp3"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/chip_send_01.mp3",
+			"type": "sound",
+			"name": "chip_send_01_mp3"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/chip_skake_01.mp3",
+			"type": "sound",
+			"name": "chip_skake_01_mp3"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/chip_send_02.mp3",
+			"type": "sound",
+			"name": "chip_send_02_mp3"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/disk_up_01.mp3",
+			"type": "sound",
+			"name": "disk_up_01_mp3"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/disk_down_01.mp3",
+			"type": "sound",
+			"name": "disk_down_01_mp3"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/time_out_01.mp3",
+			"type": "sound",
+			"name": "time_out_01_mp3"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/win_01.mp3",
+			"type": "sound",
+			"name": "win_01_mp3"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/win_02.mp3",
+			"type": "sound",
+			"name": "win_02_mp3"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/chip_all_01.mp3",
+			"type": "sound",
+			"name": "chip_all_01_mp3"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/chip_out_01.mp3",
+			"type": "sound",
+			"name": "chip_out_01_mp3"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/chip_out_02.mp3",
+			"type": "sound",
+			"name": "chip_out_02_mp3"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/game_bgm.ogg",
+			"type": "sound",
+			"name": "game_bgm_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/chip_send_02.ogg",
+			"type": "sound",
+			"name": "chip_send_02_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/disk_down_01.ogg",
+			"type": "sound",
+			"name": "disk_down_01_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/disk_up_01.ogg",
+			"type": "sound",
+			"name": "disk_up_01_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/time_out_01.ogg",
+			"type": "sound",
+			"name": "time_out_01_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/win_01.ogg",
+			"type": "sound",
+			"name": "win_01_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/win_02.ogg",
+			"type": "sound",
+			"name": "win_02_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/chip_all_01.ogg",
+			"type": "sound",
+			"name": "chip_all_01_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/chip_out_01.ogg",
+			"type": "sound",
+			"name": "chip_out_01_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/chip_out_02.ogg",
+			"type": "sound",
+			"name": "chip_out_02_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/chip_skake_01.ogg",
+			"type": "sound",
+			"name": "chip_skake_01_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/chip_send_01.ogg",
+			"type": "sound",
+			"name": "chip_send_01_ogg"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_word_zj10jjl.png",
+			"type": "image",
+			"name": "guichu_word_zj10jjl_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_icon_gold.png",
+			"type": "image",
+			"name": "guichu_icon_gold_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_wheel_blur.png",
+			"type": "image",
+			"name": "guichu_wheel_blur_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_wheel_blur_item.png",
+			"type": "image",
+			"name": "guichu_wheel_blur_item_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_word_yxkg.png",
+			"type": "image",
+			"name": "guichu_word_yxkg_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_word_yykg.png",
+			"type": "image",
+			"name": "guichu_word_yykg_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_set_bg.png",
+			"type": "image",
+			"name": "guichu_set_bg_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_set_button_off.png",
+			"type": "image",
+			"name": "guichu_set_button_off_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_set_button_on.png",
+			"type": "image",
+			"name": "guichu_set_button_on_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_set_item.png",
+			"type": "image",
+			"name": "guichu_set_item_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_ziti_db_tex.png",
+			"type": "image",
+			"name": "guichu_ziti_db_tex_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_ziti_db.dbmv",
+			"type": "bin",
+			"name": "guichu_ziti_db_dbmv"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_ziti_db_tex.json",
+			"type": "json",
+			"name": "guichu_ziti_db_tex_json"
+		},
+		{
+			"url": "assets/ui/guichu/xinxing_tex.dbmv",
+			"type": "bin",
+			"name": "xinxing_tex_dbmv"
+		},
+		{
+			"url": "assets/ui/guichu/xinxing_tex.png",
+			"type": "image",
+			"name": "xinxing_tex_png"
+		},
+		{
+			"url": "assets/ui/guichu/xinxing_tex.json",
+			"type": "json",
+			"name": "xinxing_tex_json"
+		},
+		{
+			"url": "assets/ui/guichu/award_1.png",
+			"type": "image",
+			"name": "award_1_png"
+		},
+		{
+			"url": "assets/ui/guichu/award_2.png",
+			"type": "image",
+			"name": "award_2_png"
+		},
+		{
+			"url": "assets/ui/guichu/award_3.png",
+			"type": "image",
+			"name": "award_3_png"
+		},
+		{
+			"url": "assets/ui/guichu/award_4.png",
+			"type": "image",
+			"name": "award_4_png"
+		},
+		{
+			"url": "assets/ui/guichu/award_5.png",
+			"type": "image",
+			"name": "award_5_png"
+		},
+		{
+			"url": "assets/ui/guichu/award_6.png",
+			"type": "image",
+			"name": "award_6_png"
+		},
+		{
+			"url": "assets/ui/guichu/award_7.png",
+			"type": "image",
+			"name": "award_7_png"
+		},
+		{
+			"url": "assets/ui/guichu/wing_ske.dbmv",
+			"type": "bin",
+			"name": "wing_ske_dbmv"
+		},
+		{
+			"url": "assets/ui/guichu/wing_tex.png",
+			"type": "image",
+			"name": "wing_tex_png"
+		},
+		{
+			"url": "assets/ui/guichu/wing_tex.json",
+			"type": "json",
+			"name": "wing_tex_json"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_logo.png",
+			"type": "image",
+			"name": "guichu_logo_png"
+		},
+		{
+			"url": "assets/ui/bank/img_bank_game_427.png",
+			"type": "image",
+			"name": "img_bank_game_427_png"
+		},
+		{
+			"url": "assets/ui/bank/icon_bank_game_427.png",
+			"type": "image",
+			"name": "icon_bank_game_427_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_main_title_light_ske.dbmv",
+			"type": "bin",
+			"name": "guichu_main_title_light_ske_dbmv"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_main_title_light_tex.png",
+			"type": "image",
+			"name": "guichu_main_title_light_tex_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_main_title_light_tex.json",
+			"type": "json",
+			"name": "guichu_main_title_light_tex_json"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_wheel_neon_tex.png",
+			"type": "image",
+			"name": "guichu_wheel_neon_tex_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_wheel_neon_ske.dbmv",
+			"type": "bin",
+			"name": "guichu_wheel_neon_ske_dbmv"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_wheel_neon_tex.json",
+			"type": "json",
+			"name": "guichu_wheel_neon_tex_json"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/detain_bet.mp3",
+			"type": "sound",
+			"name": "detain_bet_mp3"
+		},
+		{
+			"url": "assets/ui/guichu/award_light_ske.dbmv",
+			"type": "bin",
+			"name": "award_light_ske_dbmv"
+		},
+		{
+			"url": "assets/ui/guichu/award_light_tex.png",
+			"type": "image",
+			"name": "award_light_tex_png"
+		},
+		{
+			"url": "assets/ui/guichu/award_light_tex.json",
+			"type": "json",
+			"name": "award_light_tex_json"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_word_notice_1.png",
+			"type": "image",
+			"name": "guichu_word_notice_1_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_bg_notice_0.png",
+			"type": "image",
+			"name": "guichu_bg_notice_0_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_bg_notice_1.png",
+			"type": "image",
+			"name": "guichu_bg_notice_1_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_word_notice_0.png",
+			"type": "image",
+			"name": "guichu_word_notice_0_png"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/disk_stop.mp3",
+			"type": "sound",
+			"name": "disk_stop_mp3"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/notice_kaijiang.mp3",
+			"type": "sound",
+			"name": "notice_kaijiang_mp3"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/notice_xiazhu.mp3",
+			"type": "sound",
+			"name": "notice_xiazhu_mp3"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/disk_start.mp3",
+			"type": "sound",
+			"name": "disk_start_mp3"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/award_gold_big.mp3",
+			"type": "sound",
+			"name": "award_gold_big_mp3"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/award_gold_small.mp3",
+			"type": "sound",
+			"name": "award_gold_small_mp3"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/award_pop.mp3",
+			"type": "sound",
+			"name": "award_pop_mp3"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/game_bg_paijiang.mp3",
+			"type": "sound",
+			"name": "game_bg_paijiang_mp3"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/game_bg_xiazhu.mp3",
+			"type": "sound",
+			"name": "game_bg_xiazhu_mp3"
+		},
+		{
+			"url": "assets/ui/guichu/guichubg_2.jpg",
+			"type": "image",
+			"name": "guichubg_2_jpg"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/disk_one.mp3",
+			"type": "sound",
+			"name": "disk_one_mp3"
+		},
+		{
+			"url": "assets/sound/guichu_mp3/count_down.mp3",
+			"type": "sound",
+			"name": "count_down_mp3"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_word_mcdl.png",
+			"type": "image",
+			"name": "guichu_word_mcdl_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_word_lq.png",
+			"type": "image",
+			"name": "guichu_word_lq_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_word_xnfl.png",
+			"type": "image",
+			"name": "guichu_word_xnfl_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_word_ddxjks.png",
+			"type": "image",
+			"name": "guichu_word_ddxjks_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_award_bg.png",
+			"type": "image",
+			"name": "guichu_award_bg_png"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/award_pop.ogg",
+			"type": "sound",
+			"name": "award_pop_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/award_gold_small.ogg",
+			"type": "sound",
+			"name": "award_gold_small_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/count_down.ogg",
+			"type": "sound",
+			"name": "count_down_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/detain_bet.ogg",
+			"type": "sound",
+			"name": "detain_bet_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/disk_one.ogg",
+			"type": "sound",
+			"name": "disk_one_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/disk_start.ogg",
+			"type": "sound",
+			"name": "disk_start_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/disk_stop.ogg",
+			"type": "sound",
+			"name": "disk_stop_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/game_bg_paijiang.ogg",
+			"type": "sound",
+			"name": "game_bg_paijiang_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/game_bg_xiazhu.ogg",
+			"type": "sound",
+			"name": "game_bg_xiazhu_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/notice_xiazhu.ogg",
+			"type": "sound",
+			"name": "notice_xiazhu_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/notice_kaijiang.ogg",
+			"type": "sound",
+			"name": "notice_kaijiang_ogg"
+		},
+		{
+			"url": "assets/sound/guichu_ogg/award_gold_big.ogg",
+			"type": "sound",
+			"name": "award_gold_big_ogg"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_response_close.png",
+			"type": "image",
+			"name": "btn_response_close_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/btn_back_room.png",
+			"type": "image",
+			"name": "btn_back_room_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/iw_quxiao_bx.png",
+			"type": "image",
+			"name": "iw_quxiao_bx_png"
+		},
+		{
+			"url": "assets/ui/uitextureatlas/img_word_info_queding.png",
+			"type": "image",
+			"name": "img_word_info_queding_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_yanhuo1_tex.png",
+			"type": "image",
+			"name": "guichu_yanhuo1_tex_png"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_yanhuo1_ske.dbmv",
+			"type": "bin",
+			"name": "guichu_yanhuo1_ske_dbmv"
+		},
+		{
+			"url": "assets/ui/guichu/guichu_yanhuo1_tex.json",
+			"type": "json",
+			"name": "guichu_yanhuo1_tex_json"
+		}
+	]
+}

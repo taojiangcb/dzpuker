@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MoreTagMoudleSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="backImage" width="100%" height="100%" alpha="0"/>
+	<e:Group id="viewGroup" width="240" height="241">
+		<e:Group id="tagGroup" width="240" height="241">
+			<e:Image source="sg_bg_shezhi_ditu_png" scale9Grid="16,16,5,4" width="100%" height="100%"/>
+			<e:Group x="5" y="8">
+			<e:Group id="btnItem" width="230" height="75" x="93" y="75">
+				<e:Image source="btn_play_shezhi_png" left="0" top="0" bottom="0" right="0"/>
+				<e:Image verticalCenter="0" left="17" source="icon_mainui_wddj_png"/>
+				<e:Image verticalCenter="0" left="88" source="img_word_wddj_png"/>
+			</e:Group>
+			<!--<e:Group id="friendButton" width="230" height="75" x="93" y="75">
+				<e:Image source="btn_play_shezhi_png" left="0" top="0" bottom="0" right="0"/>
+				<e:Image verticalCenter="0" left="17" source="icon_mainui_friend_png"/>
+				<e:Image verticalCenter="0" left="88" source="img_word_yxhy_png"/>
+			</e:Group>-->
+			<e:Group id="_btn_notice" width="230" height="75" x="93" y="75"  >
+					<e:Image source="btn_play_shezhi_png" left="0" top="0" bottom="0" right="0"/>
+					<e:Image verticalCenter="0" left="17" source="icon_mainui_gonggao_png"/>
+					<e:Image verticalCenter="0" left="88" source="iw_youxigonggao_png"/>
+			</e:Group>
+			<e:Group id="setButton" width="230" height="75" x="93" y="75">
+				<e:Image source="btn_play_shezhi_png" left="0" top="0" bottom="0" right="0"/>
+				<e:Image source="btn_more_set_png" verticalCenter="0" left="17"/>
+				<e:Image source="img_word_more_set_jpg" verticalCenter="0" left="88"/>
+			</e:Group>
+			<e:layout>
+				<e:VerticalLayout gap="0"/>
+			</e:layout>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,12 @@
+{"file":"guichu_front_1.png","frames":{
+"0":{"x":1,"y":61,"w":24,"h":28,"offX":0,"offY":0,"sourceW":24,"sourceH":28},
+"1":{"x":27,"y":91,"w":16,"h":28,"offX":8,"offY":0,"sourceW":24,"sourceH":28},
+"2":{"x":27,"y":61,"w":24,"h":28,"offX":0,"offY":0,"sourceW":24,"sourceH":28},
+"3":{"x":53,"y":31,"w":24,"h":28,"offX":0,"offY":0,"sourceW":24,"sourceH":28},
+"4":{"x":1,"y":91,"w":24,"h":28,"offX":0,"offY":0,"sourceW":24,"sourceH":28},
+"5":{"x":79,"y":1,"w":24,"h":28,"offX":0,"offY":0,"sourceW":24,"sourceH":28},
+"6":{"x":27,"y":1,"w":24,"h":28,"offX":0,"offY":0,"sourceW":24,"sourceH":28},
+"7":{"x":27,"y":31,"w":24,"h":28,"offX":0,"offY":0,"sourceW":24,"sourceH":28},
+"8":{"x":1,"y":1,"w":24,"h":28,"offX":0,"offY":0,"sourceW":24,"sourceH":28},
+"9":{"x":1,"y":31,"w":24,"h":28,"offX":0,"offY":0,"sourceW":24,"sourceH":28},
+"x":{"x":53,"y":1,"w":24,"h":28,"offX":0,"offY":0,"sourceW":24,"sourceH":28}}}

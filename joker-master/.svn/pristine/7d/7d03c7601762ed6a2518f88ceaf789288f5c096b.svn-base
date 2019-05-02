@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="loadingCircleSkin" width="800" height="600" xmlns:e="http://ns.egret.com/eui">
+	<e:Rect height="100%" width="100%" fillColor="0" fillAlpha="0.3" alpha="0"/>
+	<!--<e:Image id="loadingimg"  source="img_loading_png"  anchorOffsetX="30" anchorOffsetY="31.5" x="400" y="300"/>-->
+</e:Skin>

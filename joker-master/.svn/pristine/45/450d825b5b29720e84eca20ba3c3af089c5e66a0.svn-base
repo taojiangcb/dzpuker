@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SceneSkin" width="768" height="1136" xmlns:e="http://ns.egret.com/eui">
+	<e:Image x="0" y="0" width="100%" height="100%" source="s9_bg_yijijiemiangditu_png" scale9Grid="113,57,65,8"/>
+	<e:Button id="backButton"  right="8" y="2">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_shop_close_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label id="titleLabel" y="23" horizontalCenter="0" fontFamily="黑体" textColor="0xE4C21C" textAlign="center"/>
+	
+</e:Skin>

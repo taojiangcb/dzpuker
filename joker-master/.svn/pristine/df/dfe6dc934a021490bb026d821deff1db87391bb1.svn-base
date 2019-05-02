@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DebugLoginSkin" width="1136" height="768" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect width="100%" height="100%" fillColor="0x7a7979" locked="true"/>
+	<e:Label text="DebugLogin" textColor="0x000000" horizontalCenter="0" top="150" locked="true"/>
+	<e:Group horizontalCenter="0" top="250">
+		<e:Group x="80" y="100" scaleX="1" scaleY="1">
+			<e:Label text="账号：" verticalCenter="0" textColor="0x000000" left="0"/>
+			<e:EditableText id="account"  width="300" height="40" text="dzMan101" border="true" textColor="0x000000" scaleX="1" scaleY="1" verticalCenter="0" left="120" verticalAlign="middle" textAlign="center"/>
+		</e:Group>
+		<e:Group x="90" y="110" scaleX="1" scaleY="1">
+			<e:Label text="密码：" verticalCenter="0" textColor="0x000000" left="0"/>
+			<e:EditableText id="password" width="300" height="40" text="123456" border="true" textColor="0x000000" scaleX="1" scaleY="1" verticalCenter="0" left="120" verticalAlign="middle" textAlign="center"/>
+		</e:Group>
+		<e:layout>
+			<e:VerticalLayout gap="50"/>
+		</e:layout>
+	</e:Group>
+	<e:Button id="login" label="Login" horizontalCenter="0" top="500" skinName="skins.ButtonSkin"/>
+	<e:Label id="iptext" text="" x="100" textColor="0x000000" height="30" top="120"/>
+	<e:List id="serverlist" x="100" anchorOffsetX="0" anchorOffsetY="0" top="150"/>
+	<w:Config id="1592517aff1"/>
+</e:Skin>

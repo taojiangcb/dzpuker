@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BankTransferCompSkin" width="630" height="395" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group horizontalCenter="0" width="100%" y="-2">
+		<e:Image source="s9_bg_fangxinditu_png" y="0" scale9Grid="15,16,14,18" width="100%" height="155" x="0"/>
+		<e:Image id="jtImage" source="icon_bank_jiantou_png" scaleX="0.8" scaleY="0.8" y="74" x="273"/>
+		<e:Image id="jtImage1"  alpha="0" source="icon_bank_jiantou_png" scaleX="0.8" scaleY="0.8" x="273" y="74"/>
+		
+		<e:Component id="infoComp1" y="37" x="20" skinName="BankSingleCompSkin"/>
+		<e:Component id="infoComp2" y="37" x="354" skinName="BankSingleCompSkin"/>
+		
+	</e:Group>
+	
+	<e:Group horizontalCenter="0" width="100%" top="159" height="144">
+		<e:Image source="s9_bg_fangxinditu_png" scale9Grid="15,16,14,18" width="100%" height="100%" x="0" y="0"/>
+		<e:Label y="120" textColor="0xCAB1D7" text="(注：重复点击累加)" bold="true" size="18" x="237"/>
+		
+		<e:Group y="-2" width="600" left="20">
+			<e:Image source="s9_bg_shurukuangditu_png" scale9Grid="16,17,10,5" width="410" height="55" x="52" y="4"/>
+			<e:Image source="img_word_bank_sl_png" x="0" y="19"/>
+			<e:EditableText id="numTxt" restrict="0-9" width="380" height="50" text="0" x="66" textAlign="right" verticalAlign="middle" y="7"/>
+			<e:Button id="btnClear" x="464" y="5">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_play_blue_png" source.down="btn_play_blue_png"/>
+						<e:Image source="img_word_bank_qinkong_png" verticalCenter="0" horizontalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			
+		</e:Group>
+		
+		<e:Group y="65" width="600" left="20">
+			<e:Image x="0" y="6" source="img_word_bank_sr_png"/>
+			<e:Button id="btn1" x="50" y="-3">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_bank_zise_png" source.down="btn_bank_zise_png"/>
+						<e:BitmapLabel font="fnt03_fnt" text="10万" textAlign="right" verticalCenter="0" horizontalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			
+			<e:Button id="btn2" label="按钮" x="187" y="-3">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_bank_zise_png" source.down="btn_bank_zise_png"/>
+						<e:BitmapLabel font="fnt03_fnt" text="50万" textAlign="right" verticalCenter="0" horizontalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			
+			<e:Button id="btn3" label="按钮" x="322" y="-3">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_bank_zise_png" source.down="btn_bank_zise_png"/>
+						<e:BitmapLabel font="fnt03_fnt" text="100万" textAlign="right" verticalCenter="0" horizontalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			
+			<e:Button id="btn4" label="按钮" x="453" y="-3">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_bank_zise_png" source.down="btn_bank_zise_png"/>
+						<e:BitmapLabel font="fnt03_fnt" text="1000万" textAlign="right" verticalCenter="0" horizontalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			
+		</e:Group>
+	</e:Group>
+	
+	
+	<e:Button id="btnOK1" label="按钮" x="227" y="317">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+				<e:Image width="100%" height="100%" source="btn_play_purple_png" source.down="btn_play_purple_png"/>
+				<e:Image source="img_word_bank_tk_png" verticalCenter="0" horizontalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image id="btnCZ" source="img_word_bank_djcz_png" x="535" y="360"/>
+	<e:Button id="btnOK2" x="227" y="317" label="按钮" visible="false">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+				<e:Image width="100%" height="100%" source="btn_play_purple_png" source.down="btn_play_purple_png"/>
+				<e:Image source="img_word_bank_cunkuan_png" verticalCenter="0" horizontalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	
+	<e:Component id="choice" y="0" x="0" skinName="BankChoiceSkin" locked="true"/>
+</e:Skin>

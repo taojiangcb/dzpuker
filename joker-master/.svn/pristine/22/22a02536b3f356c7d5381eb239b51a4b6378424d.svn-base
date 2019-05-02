@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WinUIMoudleSkin" width="1136" height="768" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15842d43c08"/>
+    
+	<e:Group width="100%" height="100%" x="0" y="0" >
+        <e:Image x="0" y="0" alpha="1" width="100%" height="100%" source="img_bg_win_info_jpg"  locked="true"/>
+        <e:Image source="s9_bg_main_dealer_png" bottom="0" x="0" y="140" scaleX="1" scaleY="1"/>
+        <e:Rect width="100%" height="130" scaleX="1" scaleY="1" alpha="0.4" x="0" bottom="0"/>
+        <e:Group width="600" height="620" anchorOffsetX="0" anchorOffsetY="0" top="0" x="456">
+            <e:Image id="jinbeiLight" source="img_jinbei_light_png" y="180" scaleX="2" scaleY="2" x="268" anchorOffsetX="128" anchorOffsetY="128"/>
+            <e:Image source="img_jinbei_win_png" y="120" scaleX="1" scaleY="1" x="194"/>
+            <e:Image source="img_duandai_win_png" y="20" horizontalCenter="0"/>
+            <e:Image source="s9_bg_yingli_win_png" scale9Grid="17,28,1,21" y="272" anchorOffsetX="0" width="438" horizontalCenter="0"/>
+            <e:Image source="s9_bg_time_win_png" scale9Grid="21,24,1,1" y="370" anchorOffsetX="0" width="270" horizontalCenter="0"/>
+            <e:Image source="s9_bg_time_win_png" scale9Grid="21,24,1,1" y="430" anchorOffsetX="0" width="270" horizontalCenter="0"/>
+            <e:Image source="iw_yingli_win_png" x="97" y="288"/>
+            <e:Image source="iw_youxishichang_png" x="178" y="380"/>
+            <e:Image source="iw_jushu_win_png" x="178" y="440"/>
+            <e:Label id="handTxt" text="0" x="253" y="446" width="160" textAlign="right" size="20" scaleX="1" scaleY="1"/>
+            <e:Label id="timTxt" text="00:12:24" x="277" y="386" width="136" textAlign="right" size="20" scaleX="1" scaleY="1"/>
+            <e:BitmapLabel id="winTxt" x="244" y="296" textAlign="right" font="fnt03_fnt" text="0" width="250" scaleX="1" scaleY="1"/>
+            <e:Image id="typeImg" source="img_word_win_back1_png" y="37" horizontalCenter="0"/>
+					
+        </e:Group>
+        <e:Image id="btnXingweifenxi" source="btn_xingweifenxi_png" bottom="25" right="25" x="966" y="663" scaleX="1" scaleY="1"/>
+		<e:Image id="btnWozhidaole" bottom="25" y="673" scaleX="1" scaleY="1" left="25" source="btn_wozhidaole_png"/>
+		<e:Group id="pyBtn" width="325" height="105" bottom="12" x="406">
+			<e:Image source="btn_big_win_png" x="0" y="0"/>
+			<e:Image x="22" y="14" source="icon_fenxianghaoyou_win_png"/>
+			<e:Image x="110" y="30" source="iw_fenxianggeipengyou_win_png"/>
+			<e:Image source="icon_arrow_win_png" x="264" y="40" scaleX="1" scaleY="1"/>
+		</e:Group>
+    </e:Group>
+</e:Skin>

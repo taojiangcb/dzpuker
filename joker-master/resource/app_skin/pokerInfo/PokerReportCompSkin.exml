@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PokerReportCompSkin" xmlns:e="http://ns.egret.com/eui">
+	<e:Rect width="100%" height="100%" id="bgimage" alpha="0.05"/>
+	<e:Image source="s9_bg_erjianniuqipao_png" y="0" scale9Grid="133,36,27,15" width="440" height="152" x="0"/>
+	<e:Button id="btn1" label="按钮" x="33" verticalCenter="-8.5">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:uicomps="uicomps.*" xmlns:w="http://ns.egret.com/wing" xmlns:myInfo="myInfo.*">
+				<e:Image width="100%" height="100%" source="btn_play_purple_png" source.down="btn_play_purple_png"/>
+				<e:Image source="img_word_info_sheqingtouxiang_png" verticalCenter="0" horizontalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btn2" label="按钮" x="236" verticalCenter="-8.5">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:uicomps="uicomps.*" xmlns:w="http://ns.egret.com/wing" xmlns:myInfo="myInfo.*">
+				<e:Image width="100%" height="100%" source="btn_play_purple_png" source.down="btn_play_purple_png"/>
+				<e:Image source="img_word_info_shiyongwaigua_png" verticalCenter="0" horizontalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="JokerNumberAdd" width="54" height="56" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="normal,disable" >
+	<e:Image id="btnBg" source="btn_jiajian_png" x="0" y="0" source.disable="btn_jiajian_disale_png" touchEnabled="false"/>
+	<e:Image id="btnIcon" source="icon_jiahao_png" verticalCenter="0" horizontalCenter="0" source.disable="icon_jiahao_disable_png" touchEnabled="false"/>
+</e:Skin>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PreloadSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="400" height="300">
+	<e:Rect width="100%" height="100%" alpha="0.3" fillColor="0x000000">
+	</e:Rect>
+	
+	<e:Group id="border" width="100" height="100" horizontalCenter="0" verticalCenter="0">
+		<e:Group id="labelContent" horizontalCenter="0" bottom="0">
+			<e:Image y="0" scale9Grid="10,11,18,3" left="-5" right="-5" source="s9_bg_erji_xinxiditu_png"/>
+			<e:Label id="progressLabel" text="10/15" horizontalCenter="0" size="14" bold="true" verticalCenter="0"/>
+		</e:Group>
+	</e:Group>
+	<!--<e:ProgressBar id="uiProgress"  width="50%" height="1" horizontalCenter="0" verticalCenter="0" enabled="true">
+	</e:ProgressBar>-->
+</e:Skin>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RecordAnimalHeaderComp" width="320" height="163" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="158241bb051"/>
+	<e:Group id="_group_header" width="100%" height="163" x="0"  scrollEnabled="true">
+		<e:Image source="img_bg_dongwu_info_png" x="0" y="0" scaleX="1" scaleY="1" height="163"/>
+		<e:Image id="_img_header" x="0" y="0" source="img_bianselong_info_png"/>
+		<e:Label id="_txt_header" text="标签" x="24" y="16" visible="false"/>
+		<e:Image id="_img_type" source="iw_bianselong_info_png" x="11" y="11"/>
+	</e:Group>
+</e:Skin>

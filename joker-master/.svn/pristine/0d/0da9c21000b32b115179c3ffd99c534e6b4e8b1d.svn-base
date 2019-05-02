@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="JokerOperationTableSkin" width="964" height="153" xmlns:e="http://ns.egret.com/eui" xmlns:joker="joker.*"
+        xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="s9_bg_mainUI_png" x="0" y="0" />
+	<e:Image source="s9_wnd_zongzhue_png" x="14" y="17" />
+	<e:Image source="img_title_menshu_png" x="102" y="69" />
+	<joker:JokerNumberInput id="countInput" width="200" height="59" x="21" y="87" skinName="JokerNumberInput" />
+	<joker:JokerNumberInput id="levelInput" width="200" height="59" x="246" y="87" skinName="JokerNumberInput" />
+	<joker:JokerNumberInput id="moneyInput" width="200" height="59" x="471" y="87" skinName="JokerNumberInput" />
+	<e:Image source="s9_bg_jine_png" x="279" y="17" />
+	<e:Component id="btnMaxBet" currentState="normal" width="255" height="46" x="694" y="18">
+		<e:skinName>
+			<e:Skin states="normal,disabled">
+				<e:Image source="btn_zuidatouzhu_png" x="0" y="0" source.disabled="btn_zuidatouzhu_disable_png" touchEnabled="false" />
+				<e:Image source="img_word__zuidatouzhu_png" x="85" y="14" source.disabled="img_word__zuidatouzhu_disable_png" touchEnabled="false" />
+			</e:Skin>
+		</e:skinName>
+	</e:Component>
+	<e:Image source="img_title_touzhujibie_png" x="311" y="69" />
+	<e:Image source="img_title_touzhujine_png" x="535" y="72" />
+	<e:Component id="btnFapai" width="259" height="83" x="692" y="63">
+		<e:skinName>
+			<e:Skin currentState="huanpai" states="fapai,huanpai">
+				<e:Image source="btn_fapai_png" x="0" y="0" touchEnabled="false" />
+				<e:Image source="img_word__fapai_png" verticalCenter="0" horizontalCenter="0" source.huanpai="img_word__huanpai_png" touchEnabled="false" />
+			</e:Skin>
+		</e:skinName>
+	</e:Component>
+	<e:BitmapLabel id="txtTotalBet" width="150" height="20" x="112" y="31" font="joker_number_1_fnt" text="999999999"
+	               letterSpacing="-5" textAlign="right" />
+	<e:BitmapLabel id="txtMoney" width="200" height="20" x="463" y="29" font="joker_number_1_fnt" text="999999999"
+	               letterSpacing="-5" textAlign="right" />
+</e:Skin>

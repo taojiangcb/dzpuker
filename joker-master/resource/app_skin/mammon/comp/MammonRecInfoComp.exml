@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MammonRecInfoComp" width="360" height="80" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="100%" height="100%" y="0" scaleX="1" scaleY="1" horizontalCenter="0">
+		<e:Image source="s9_bg_erji_fengexiang_png" width="96%" y="0" horizontalCenter="0"/>
+		<e:Label id="_txt_recordTime" text="11-17 21:14" y="10" width="95%" textAlign="left" size="14" lineSpacing="4" x="15" scaleX="1" scaleY="1" textColor="0xa896b8" bold="true"/>
+		<e:Label id="_txt_record" text="恭喜玩家xxxxxxxx获得奖池45,999彩豆" y="40" height="40" width="91%" textAlign="left" size="17" bold="true" lineSpacing="4" x="15"/>
+	</e:Group>
+</e:Skin>

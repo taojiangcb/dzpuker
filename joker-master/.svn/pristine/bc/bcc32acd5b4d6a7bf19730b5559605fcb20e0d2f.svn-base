@@ -1,0 +1,83 @@
+module joker {
+	export class JokerScenesMediator extends app.mvc.AbstractMediator {
+		static NAME:string = "__JOKER_SCENES_MEDIATOR_";
+
+		static GAME_STAET:string = "gameStart";						//游戏开初始化
+		static GAME_CONT_CHANGE:string = "gameCountChange";			//改变门数
+
+		public constructor(view?:any) {
+			super(JokerScenesMediator.NAME,view);
+		}
+
+		listNotificationInterests():string[] {
+			return [
+				JokerScenesMediator.GAME_STAET,
+				JokerScenesMediator.GAME_CONT_CHANGE,
+			]
+		}
+
+
+		handleNotification(notification:puremvc.INotification):void {
+			switch(notification.getName()) {
+				case JokerScenesMediator.GAME_STAET:
+					this.gameStartState();
+					break;
+				case JokerScenesMediator.GAME_CONT_CHANGE:
+					this.changePokerContent(notification);
+					break;
+			}	
+		}
+
+		/**上次的门数 */
+		oldCount:number = 1;
+		/**
+		 * 改变了门数
+		 */
+		async changePokerContent(notification:puremvc.INotification) {
+			if(this.viewComp) {
+				var newCount:number = notification.getBody();
+				if(this.oldCount == 1 && newCount ==1) {
+					this.viewComp.JPCS.onePkContent();
+				} 
+				else if(newCount == 1 && this.oldCount != 1) {
+					this.oldCount = newCount;
+					this.viewComp.JPCS.changePkContent(notification.getBody())
+					this.viewComp.JPCS.onePkContent();
+				}
+				else if(this.oldCount != newCount) {
+					this.oldCount = newCount;
+					this.viewComp.JPCS.denyOnePkContent();
+					this.viewComp.JPCS.changePkContent(notification.getBody())
+				}
+			}
+		}
+
+		/**
+		 * 游戏开始了
+		 */
+		async gameStartState() {
+			if(this.viewComp) {
+				var pokerContent = this.viewComp.handPokerContent;
+				var pokerBg = this.viewComp.pokerBg;
+				var handPoker = this.viewComp.pokerComp;
+
+				var x:number = AppGlobal.stageFullWidth - pokerContent.width >> 1;
+				var y:number = AppGlobal.stageFullHeight - pokerContent.height - this.viewComp.operationPanel.height - 10;
+
+				pokerContent.x = x;
+				pokerContent.y = y;
+
+				pokerBg.alpha = 0;
+				handPoker.visible = true;
+
+				await handPoker.arrageAnimateion.flyIn();
+				__SEND_NOTIFICATION(JokerScenesMediator.GAME_CONT_CHANGE,1);	//选择一手牌
+			}
+		}
+
+		get viewComp():joker.JokerGameModule {
+			return <joker.JokerGameModule>this.viewComponent;
+		}
+
+	}
+}

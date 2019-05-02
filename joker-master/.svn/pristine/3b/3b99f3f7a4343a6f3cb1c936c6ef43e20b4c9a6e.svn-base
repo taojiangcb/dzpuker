@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuichuSmallAwardsSkin" width="800" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="awardTween">
+			<tween:TweenItem target="{awardsTxt}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="1350"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{0}" scaleY="{0}" alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500" ease="elasticOut">
+					<tween:props>
+						<e:Object scaleX="{1}" scaleY="{1}" rotation="{-5}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="350">
+					<tween:props>
+						<e:Object rotation="{5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object rotation="{-5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object rotation="{5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object rotation="{-5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object rotation="{5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object rotation="{-5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="450" ease="sineOut">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+            <tween:TweenItem target="{img}">
+							<tween:Set>
+								<tween:props>
+									<e:Object alpha="{0}" scaleX="{0}" scaleY="{0}"/>
+								</tween:props>
+							</tween:Set>
+							<tween:To duration="400" ease="backOut">
+								<tween:props>
+									<e:Object alpha="{1}" scaleX="{1}" scaleY="{1}"/>
+								</tween:props>
+							</tween:To>
+							<tween:Wait duration="750"/>
+							<tween:Set>
+								<tween:props>
+									<e:Object alpha="{1}"/>
+								</tween:props>
+							</tween:Set>
+							<tween:To duration="200">
+								<tween:props>
+									<e:Object rotation="{1}" alpha="{0}"/>
+								</tween:props>
+							</tween:To>
+            
+            </tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:BitmapLabel id="awardsTxt" font="number_big_fnt" text="5000" anchorOffsetX="212" anchorOffsetY="57" letterSpacing="-20" y="312" x="402"/>
+	<e:Image id="img" source="guichu_icon_hs_b_3_png" y="265" x="350"/>
+</e:Skin>

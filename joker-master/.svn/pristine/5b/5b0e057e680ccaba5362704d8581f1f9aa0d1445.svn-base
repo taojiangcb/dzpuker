@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CharmWheelItemSkin" width="120" height="190" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="120" height="190" horizontalCenter="-0.5">
+		<e:Image id="light" source="icon_charm_sx_png" scaleY="-1" horizontalCenter="0" verticalCenter="0" alpha="0.6" visible="false"/>
+		<e:Label id="label" text="门票" horizontalCenter="0" verticalCenter="-2" size="18" bold="true" textColor="0xffffff"/>
+		<e:Image id="image" horizontalCenter="0" anchorOffsetX="0" scaleX="0.7" scaleY="0.7" verticalCenter="-50" source="icon_shop_box2_png"/>
+	</e:Group>
+</e:Skin>

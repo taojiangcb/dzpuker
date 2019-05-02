@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RecordRadarInfoSkin" width="100" height="80" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:BitmapLabel id="numTxt" y="34" text="99.88%" font="white_fnt" width="122" scaleX="0.6" scaleY="0.6" textAlign="center" height="24" x="13"/>
+	<e:Image id="icon" source="img_word_play_type_1_png" y="0" x="3"/>
+</e:Skin>

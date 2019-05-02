@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="JokerCardItemSkin" width="92" height="124" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+   <e:Image id="cardImg" anchorOffsetX="46" x="46" y="62" anchorOffsetY="62" source="card-1-11_png"/> <!--source="card-1-6_png" -->
+   <e:Image id="darkImg"  source="s9_bg_play_zezhao1_png" width="92" height="124" visible="false"/>
+	<e:Image id="img_baoliu" source="icon_baoliu_png" y="-3.2" x="24.8"/>
+</e:Skin>

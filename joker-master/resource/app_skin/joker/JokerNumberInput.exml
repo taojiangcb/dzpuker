@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="JokerNumberInput" width="200" height="59" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="s9_bg_caozuoqu_png" scale9Grid="13,13,10,31" height="56" left="28" right="22" verticalCenter="0"/>
+	<e:Component id="btnReduce" width="54" height="56" skinName="JokerNumberReduce" enabled="true" left="0" y="1"/>
+	<e:BitmapLabel id="txtNumber" text="5000" anchorOffsetX="0" width="96" anchorOffsetY="0" height="43" touchEnabled="false" textAlign="center" verticalAlign="middle" horizontalCenter="0" verticalCenter="0" font="joker_number_1_fnt" scaleX="1" scaleY="1" letterSpacing="-7"/>
+	<e:Component id="btnAdd" skinName="JokerNumberAdd" enabled="true" right="0" verticalCenter="0"/>
+</e:Skin>

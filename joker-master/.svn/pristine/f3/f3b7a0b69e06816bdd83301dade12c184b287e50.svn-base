@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin id="choice" class="BankChoiceItemSkin" width="235" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="70">
+	<e:Image source="s9_bg_fangxinditu_png" scale9Grid="15,16,14,18" x="0" y="0" width="100%" height="100%"/>
+	<e:Image source="btn_play_shezhi_png" scaleX="0.8" scaleY="0.8" x="0" y="0" width="100%" height="100%"/>
+                <e:Image x="106" id="txtImage" verticalCenter="0" source="img_bank_game_28_png"/>
+                <e:Image x="22" id="iconImage" verticalCenter="0" source="icon_bank_game_28_png"/>
+                <e:Image source="s9_bg_erji_fengexiang_png" width="94%" x="8" bottom="68"/>
+</e:Skin>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="JokerRatioUIModule" width="920" height="340" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bg" source="s9_bg_xiazhu_png" x="0" y="0"/>
+	<e:Image id="img_chroose" source="s9_bg_xuanzhong_png" x="124" y="46"/>
+	<e:Image source="img_word_xiazhu_png" x="9.96" y="47.86"/>
+	<e:Image id="btnClose" source="btn_guanbi_png" x="867" y="10"/>
+</e:Skin>

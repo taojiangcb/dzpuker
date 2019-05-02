@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BankChoiceSkin" width="650" height="400" xmlns:e="http://ns.egret.com/eui">
+<e:Rect width="100%" height="100%" id="bgimage" alpha="0.1"/>
+<e:Group  width="250" height="260" x="21" y="40">
+    <e:Image source="s9_bg_erjiditubeijing_png" scale9Grid="21,17,11,16" x="0" y="0" height="100%" width="100%"/>
+        <e:Image source="img_word_bank_xzqkyx_png" y="5" x="56"/>
+       <e:Scroller height="215" y="32" width="236" x="5">
+			<e:List id="fristList"  itemRendererSkinName="BankChoiceItemSkin" y="0" width="235" horizontalCenter="0">
+			</e:List>
+	</e:Scroller>
+</e:Group>
+</e:Skin>

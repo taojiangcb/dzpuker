@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DragInUIModuleSkin" width="513" height="480" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:uicomps="uicomps.*">
+	<e:Image y="0" scale9Grid="134,78,2,4" width="100%" height="100%" x="0" source="s9_bg_yijijiemiangditu_png"/>
+	<e:Image source="img_word_dairuyinzi_png" x="197" y="10"/>
+	<e:Image id="btnClose" source="btn_shop_close_png" y="4" x="450"/>
+	<e:Group y="208" x="33">
+		<uicomps:SubKeyBoardComp id="_comp_subKeyBoard" skinName="SubKeyBoardSkin" />
+		<!--<e:Button id="btn1" x="0" y="0" width="145">
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+			<e:BitmapLabel horizontalCenter="0" verticalCenter="0" text="1" font="fnt05_fnt"/>
+		</e:Skin>
+		</e:Button>
+		<e:Button id="btn4" y="64" x="0" width="145">
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+			<e:BitmapLabel horizontalCenter="0" verticalCenter="0" text="4" font="fnt05_fnt"/>
+		</e:Skin>
+		</e:Button>
+		<e:Button id="btn5" y="64" x="155" width="145">
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+			<e:BitmapLabel horizontalCenter="0" verticalCenter="0" text="5" font="fnt05_fnt"/>
+		</e:Skin>
+		</e:Button>
+		<e:Button id="btn6" y="64" x="308" width="145">
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+			<e:BitmapLabel horizontalCenter="0" verticalCenter="0" text="6" font="fnt05_fnt"/>
+		</e:Skin>
+		</e:Button>
+		<e:Button id="btn7" y="127" x="0" width="145">
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+			<e:BitmapLabel horizontalCenter="0" verticalCenter="0" text="7" font="fnt05_fnt"/>
+		</e:Skin>
+		</e:Button>
+		<e:Button id="btn9" y="127" x="308" width="145">
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+			<e:BitmapLabel horizontalCenter="0" verticalCenter="0" text="9" font="fnt05_fnt"/>
+		</e:Skin>
+		</e:Button>
+		<e:Button id="delButton" y="191" x="0" width="145">
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+			<e:Image horizontalCenter="0" verticalCenter="0" source="btn_play_close_png"/>
+		</e:Skin>
+		</e:Button>
+		<e:Button id="btn0" y="191" x="155" width="145">
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+			<e:BitmapLabel horizontalCenter="0" verticalCenter="0" text="0" font="fnt05_fnt"/>
+		</e:Skin>
+		</e:Button>
+		<e:Button id="enterButton" y="191" x="308" width="145">
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+			<e:Image horizontalCenter="0" verticalCenter="0" source="img_word_queding_pkroom_png"/>
+		</e:Skin>
+		</e:Button>
+		<e:Button id="btn2" y="0" x="155" width="145">
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+			<e:BitmapLabel horizontalCenter="0" verticalCenter="0" text="2" font="fnt05_fnt"/>
+		</e:Skin>
+		</e:Button>
+		<e:Button id="btn3" x="308" y="0" width="145">
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+			<e:BitmapLabel horizontalCenter="0" verticalCenter="0" text="3" font="fnt05_fnt"/>
+		</e:Skin>
+		</e:Button>
+		<e:Button id="btn8" y="127" x="155" width="145">
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+			<e:BitmapLabel horizontalCenter="0" verticalCenter="0" text="8" font="fnt05_fnt"/>
+		</e:Skin>
+		</e:Button>-->
+	</e:Group>
+	<e:Group y="77" height="120" x="24">
+		<e:Group x="0" y="66">
+			<e:Image id="textLblBg0" height="52" width="454" source="s9_bg_shurukuangditu_png" scale9Grid="16,17,10,5" x="3.552713678800501e-15" y="1.0000000000000142"/>
+			<e:Image id="btnClear" x="321" y="-1" source="btn_qingkong_png"/>
+			<e:BitmapLabel id="txtInput" x="147" y="12" font="fnt03_fnt" text="10000" width="175" textAlign="center"/>
+			<e:Image source="img_word_nindasuandairu_png" x="16" y="14"/>
+		</e:Group>
+		<e:Group x="0" y="3">
+			<e:Image id="textLblBg" height="52" width="454" source="s9_bg_shurukuangditu_png" scale9Grid="16,17,10,5" x="0" y="0"/>
+			<e:Image id="btnGoBank" x="321" y="-1" source="btn_qianwangqianzhuang_png"/>
+			<e:BitmapLabel id="txtTotal" x="156" y="12" font="fnt03_fnt" text="10000" width="166" textAlign="center"/>
+			<e:Image source="img_word_ninyongyoudeyinzi_png" x="13" y="14"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

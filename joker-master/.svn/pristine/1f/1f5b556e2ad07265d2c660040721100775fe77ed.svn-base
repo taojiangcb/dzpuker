@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="IOSShared" width="600" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect width="100%" height="100%" x="0" y="0" fillColor="0x000000" fillAlpha="0.3"/>
+    <e:Rect width="100%" height="160" x="0" y="0" bottom="0" fillColor="0xFFFFFF"/>
+	<e:Group width="600" height="160" bottom="0" horizontalCenter="0">
+		<e:Image id="btnWX" source="icon_weixinhaoyou_fenxiang_png" x="0" y="0"/>
+		<e:Image id="btnTimeLine" source="icon_pengyouquan_fenxiang_png" x="160" y="0"/>
+		<e:Image id="btnQQ" source="icon_qq_fenxiang_png" x="320" y="0"/>
+		<e:Image id="btnQQZone" source="icon_qqzone_fenxiang_png" x="480" y="0"/>
+	</e:Group>
+</e:Skin>

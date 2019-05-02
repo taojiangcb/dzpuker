@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuiChuWheelItemCompSkin" width="64" height="240" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bg" source="guichu_wheel_xzq_1_png" cacheAsBitmap="true" width="64" height="240"/>
+	<e:Image id="image" rotation="-7.5" horizontalCenter="5" top="15" source="guichu_icon_hs_s_1_png"/>
+</e:Skin>

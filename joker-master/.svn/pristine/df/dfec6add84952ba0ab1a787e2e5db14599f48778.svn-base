@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuiChuAwardsSkin" width="800" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="awardTween">
+            <tween:TweenItem target="{img}">
+							<tween:Set>
+								<tween:props>
+									<e:Object alpha="{0}" scaleX="{0}" scaleY="{0}"/>
+								</tween:props>
+							</tween:Set>
+							<tween:To duration="400" ease="backOut">
+								<tween:props>
+									<e:Object alpha="{1}" scaleX="{1}" scaleY="{1}"/>
+								</tween:props>
+							</tween:To>
+							<tween:Wait duration="850"/>
+							<tween:Set>
+								<tween:props>
+									<e:Object alpha="{1}"/>
+								</tween:props>
+							</tween:Set>
+							<tween:To duration="200">
+								<tween:props>
+									<e:Object alpha="{0}" rotation="{0}"/>
+								</tween:props>
+							</tween:To>
+            
+            </tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Image id="img" source="award_1_png" x="400" y="339" anchorOffsetX="250" anchorOffsetY="200"/>
+</e:Skin>

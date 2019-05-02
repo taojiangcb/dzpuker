@@ -1,0 +1,65 @@
+
+/**
+ * 游戏的操作控制面板
+ */
+module joker {
+	export class JokerOperationPanel extends gameabc.UICustomComponent {
+
+		public countInput:joker.JokerNumberInput;
+		public levelInput:joker.JokerNumberInput;
+		public moneyInput:joker.JokerNumberInput;
+		public btnMaxBet:eui.Component;
+		public btnFapai:eui.Component;
+		public txtTotalBet:eui.BitmapLabel;
+		public txtMoney:eui.BitmapLabel;
+
+		public constructor() {
+			super();
+			this.skinName = "resource/app_skin/joker/JokerOperationTableSkin.exml";
+		}
+		
+		createComplete(event:egret.Event):void  {
+			super.createComplete(event);
+
+			this.countInput.stepValues = getProxy().handlerCount;
+			this.levelInput.stepValues = [1,2,3,4,5];
+			this.moneyInput.stepValues = getProxy().putIntoBet;
+
+			this.bindButton(this.btnMaxBet);
+			this.bindButton(this.btnFapai);
+
+			this.countInput.addEventListener(egret.Event.CHANGE,this.gameCountChange,this);
+			this.levelInput.addEventListener(egret.Event.CHANGE,this.gameLevelChange,this);
+			this.moneyInput.addEventListener(egret.Event.CHANGE,this.gameMoneyChange,this);
+		}
+
+		/**
+		 * 设置手牌次数
+		 */
+		gameCountChange(event:egret.Event):void {
+			var value:number = event.data;
+			__SEND_NOTIFICATION(JokerScenesMediator.GAME_CONT_CHANGE,value);
+
+		}
+
+		gameLevelChange(event:egret.Event):void {
+
+		}
+
+		gameMoneyChange(event:egret.Event):void {
+
+		}
+
+		touchBindButtonHandler(tag:egret.DisplayObject):void {
+			var tar = tag;
+			switch(tar) {
+				case this.btnFapai:
+				var tempCardValues:number[] = getProxy().getFiveRandomCard();
+				__SEND_NOTIFICATION(JokerGameMediator.GAME_FA_PAI,tempCardValues);
+				break;
+				case this.btnMaxBet:
+				break;
+			}
+		}
+	}
+}

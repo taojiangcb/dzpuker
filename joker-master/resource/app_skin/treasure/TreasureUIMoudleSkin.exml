@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TreasureUIMoudleSkin" width="1136" height="768" xmlns:e="http://ns.egret.com/eui">
+	<e:Rect id="r" fillColor="0xffffff" left="0" right="0" top="0" bottom="0" visible="false"/>
+	<e:Image source="s9_bg_main_jpg" width="1136" height="768" x="0"/>
+	<e:Group width="100%">
+		<e:Image width="100%" height="100" alpha="0.6" scale9Grid="91,40,9,15" source="img_bg_title3_png"/>
+		<e:Button id="closeButton">
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing" xmlns:uicomps="uicomps.*" xmlns:main="main.*" xmlns:playcards="playcards.*" xmlns:charmWheel="charmWheel.*" xmlns:bill="bill.*" xmlns:ns1="*">
+			<e:Rect width="64" height="96" alpha="0"/>
+			<e:Image x="10" y="30" source="btn_back_png"/>
+			</e:Skin>
+		</e:Button>
+		<e:Group horizontalCenter="0" verticalCenter="0">
+			<e:ToggleButton id="tb1" label="">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="tab_duobaodating_0_png" source.down="tab_duobaodating1_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:ToggleButton>
+			<e:ToggleButton id="tb2" label="" x="199">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="tab_zhengzaikaijiang_0_png" source.down="tab_zhengzaikaijiang_1_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:ToggleButton>
+			<e:ToggleButton id="tb3" label="" x="398">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="tab_wodeduobao_0_png" source.down="tab_wodeduobao_1_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:ToggleButton>
+		</e:Group>
+		<e:Group height="39" width="175" right="15" y="27">
+			<e:Image source="sg_bg_shezhi_ditu_png" x="0" y="0" scale9Grid="14,4,9,29" width="100%" height="100%"/>
+			<e:Image source="icon_caoma_png" verticalCenter="2.5" left="5"/>
+			<e:Label id="coinLabel" x="44" width="116" size="20" verticalCenter="0" textAlign="right" text=""/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="particleGroup" left="0" right="0" top="100" bottom="0"/>
+	<e:ViewStack id="vs" top="100" bottom="0" selectedIndex="2" left="0" right="0">
+		<e:Group id="vsg1" width="100%" height="100%" name="视图">
+			<e:Scroller width="95%" top="0" horizontalCenter="0" bottom="0">
+				<e:Group>
+					<e:List id="g1l" width="100%">
+						<e:layout>
+							<e:TileLayout horizontalGap="30" verticalGap="10" horizontalAlign="justify" verticalAlign="justify" requestedColumnCount="3" rowAlign="justifyUsingHeight" columnAlign="justifyUsingWidth" paddingTop="30" paddingBottom="30"/>
+						</e:layout>
+					</e:List>
+				</e:Group>
+			</e:Scroller>
+			<e:Group horizontalCenter="0" verticalCenter="0" width="95%" height="90%" visible="false">
+				<e:Panel x="74" y="39" skinName="TreasureItemSkin"/>
+				<e:Panel x="84" y="49" skinName="TreasureItemSkin"/>
+				<e:Panel x="94" y="59" skinName="TreasureItemSkin"/>
+				<e:Panel x="104" y="69" skinName="TreasureItemSkin"/>
+				<e:Panel x="114" y="79" skinName="TreasureItemSkin"/>
+				<e:Panel x="124" y="89" skinName="TreasureItemSkin"/>
+				<e:layout>
+					<e:TileLayout requestedRowCount="2" requestedColumnCount="3" rowAlign="justifyUsingHeight" columnAlign="justifyUsingWidth" horizontalAlign="justify" verticalAlign="justify" horizontalGap="5" verticalGap="20"/>
+				</e:layout>
+			</e:Group>
+			<e:Label text="夺宝大厅" visible="false"/>
+		</e:Group>
+		<e:Group id="vsg2" width="100%" height="100%" name="视图">
+			<e:Label text="正在开奖" visible="false"/>
+			<e:Label id="tip2l" text="没有正在进行的开奖" verticalCenter="0" horizontalCenter="0" size="22"/>
+			<e:Scroller width="95%" top="0" bottom="0" horizontalCenter="0">
+				<e:Group>
+					<e:List id="g2l" width="100%">
+						<e:layout>
+							<e:TileLayout horizontalGap="30" verticalGap="10" horizontalAlign="justify" verticalAlign="justify" requestedColumnCount="3" rowAlign="justifyUsingHeight" columnAlign="justifyUsingWidth" paddingTop="30" paddingBottom="30"/>
+						</e:layout>
+					</e:List>
+				</e:Group>
+			</e:Scroller>
+		</e:Group>
+		<e:Group id="vsg3" width="100%" height="100%" name="视图">
+			<e:Image source="icon_sng_bg_scdt_png" width="100%" horizontalCenter="0" height="60" scale9Grid="0,5,6,36"/>
+			<e:Group horizontalCenter="0" top="5">
+				<e:ToggleButton id="tbs1" label="" x="5" y="27">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="tab_quanbu_0_png" source.down="tab_quanbu_1_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:ToggleButton>
+				<e:ToggleButton id="tbs2" label="" x="15" y="37">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="tab_jinxingzhong_0_png" source.down="tab_jinxingzhong_1_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:ToggleButton>
+				<e:ToggleButton id="tbs3" label="" x="25" y="47">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="tab_zhongjiangjilu_0_png" source.down="tab_zhongjiangjilu_1_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:ToggleButton>
+				<e:layout>
+					<e:HorizontalLayout gap="70"/>
+				</e:layout>
+			</e:Group>
+			<e:Label text="我的夺宝" visible="false"/>
+			<e:ViewStack id="vss" left="0" top="60" bottom="0" right="0" selectedIndex="2">
+				<e:Group width="100%" height="100%" name="视图">
+					<e:Scroller left="0" right="0" top="0" bottom="0">
+						<e:Group>
+							<e:List id="g3l1" width="100%">
+								<e:layout>
+									<e:VerticalLayout horizontalAlign="justify" verticalAlign="justify" gap="0"/>
+								</e:layout>
+							</e:List>
+						</e:Group>
+					</e:Scroller>
+					<e:Label text="全部" visible="false"/>
+				</e:Group>
+				<e:Group width="100%" height="100%" name="视图">
+					<e:Label id="tip3l2" text="没有进行中的记录" size="22" horizontalCenter="0" verticalCenter="0"/>
+					<e:Scroller width="95%" horizontalCenter="0" top="0" bottom="0">
+						<e:Group top="0" height="578">
+						<e:List id="g3l2" width="100%">
+							<e:TileLayout horizontalGap="5" verticalGap="20" horizontalAlign="justify" verticalAlign="justify" requestedColumnCount="3" rowAlign="justifyUsingHeight" columnAlign="justifyUsingWidth"/>
+							<e:layout>
+								<e:TileLayout horizontalAlign="justify" verticalAlign="justify" rowAlign="justifyUsingHeight" columnAlign="justifyUsingWidth" requestedColumnCount="3" horizontalGap="30" verticalGap="10" paddingTop="30" paddingBottom="30"/>
+							</e:layout>
+						</e:List>
+						</e:Group>
+					</e:Scroller>
+					<e:Label text="进行中" visible="false"/>
+				</e:Group>
+				<e:Group width="100%" height="100%" name="视图">
+					<e:Label id="tip3l3" text="没有中奖纪录" size="22" horizontalCenter="0" verticalCenter="0"/>
+					<e:Scroller left="0" right="0" bottom="0" top="0">
+						<e:Group>
+							<e:List id="g3l3" width="100%">
+								<e:layout>
+									<e:VerticalLayout horizontalAlign="justify" verticalAlign="justify" gap="0"/>
+								</e:layout>
+							</e:List>
+						</e:Group>
+					</e:Scroller>
+					<e:Label text="中奖纪录" visible="false"/>
+				</e:Group>
+			</e:ViewStack>
+		</e:Group>
+	</e:ViewStack>
+</e:Skin>

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PokerReportUIMoudleSkin" width="510" height="360" xmlns:e="http://ns.egret.com/eui" xmlns:uicomps="uicomps.*" xmlns:w="http://ns.egret.com/wing" xmlns:myInfo="myInfo.*">
+	<e:Rect width="100%" height="100%" id="bgimage" alpha="0.05"/>
+	<e:Group horizontalCenter="0" verticalCenter="0" height="360" width="510">
+		<e:Image x="0" y="0" width="100%" height="100%" scale9Grid="113,57,65,8" source="s9_bg_yijijiemiangditu_png"/>
+		<e:Image y="19" horizontalCenter="0" source="img_word_info_qingxuanzhe_png"/>
+		<e:Image source="s9_bg_erjiditubeijing_png" scale9Grid="21,17,11,16" x="9" y="56" width="495" height="216"/>
+		<e:Scroller width="488" x="13" top="65" bottom="106">
+			<e:Group>
+				<e:List id="fristList"  itemRendererSkinName="PokerReportItemSkin" y="0" left="0" right="0">
+					<e:layout>
+						<e:VerticalLayout/>
+					</e:layout>
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object label="数据1"/>
+							<e:Object label="数据2"/>
+							<e:Object label="数据3"/>
+							<e:Object label="数据4"/>
+							<e:Object label="数据5"/>
+							<e:Object label="数据6"/>
+							<e:Object label="数据7"/>
+						</e:Array>
+					</e:ArrayCollection>
+					
+				</e:List>
+			</e:Group>
+		</e:Scroller>
+		
+		
+		<e:Button id="btn1" label="按钮" x="55" verticalCenter="130">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:uicomps="uicomps.*" xmlns:w="http://ns.egret.com/wing" xmlns:myInfo="myInfo.*">
+					<e:Image width="100%" height="100%" source="btn_play_purple_png" source.down="btn_play_purple_png"/>
+					<e:Image source="img_word_info_tijiao_png" verticalCenter="0" horizontalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btn2" label="按钮" x="258" verticalCenter="130">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:uicomps="uicomps.*" xmlns:w="http://ns.egret.com/wing" xmlns:myInfo="myInfo.*">
+					<e:Image width="100%" height="100%" source="btn_play_purple_png" source.down="btn_play_purple_png"/>
+					<e:Image source="iw_quxiao_bx_png" verticalCenter="0" horizontalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	
+	</e:Skin>

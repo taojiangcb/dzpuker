@@ -1,0 +1,15 @@
+{
+	"name": "egret",
+	"version": "2.5.0",
+	"modules": [
+		{
+			"name": "uploadLib",
+			"description": "uploadLib",
+			"files": [
+			  "uploadLib.d.ts",
+			  "uploadLib.js"
+			],
+			"root": "src"
+		}
+	]
+}

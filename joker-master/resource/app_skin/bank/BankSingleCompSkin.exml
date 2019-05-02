@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BankSingleCompSkin" width="250" height="105" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="bg_bank_type2_png" y="0" x="0"/>
+	<e:Image y="64" x="3" scale9Grid="16,17,10,5" width="246" height="37" source="s9_bg_shurukuangditu_png"/>
+	<e:Image id="iconType" source="icon_bank_game_28_png" x="14" y="9"/>
+	<e:Image id="iconTxt" source="img_bank_game_28_png" x="94" y="13"/>
+	<e:BitmapLabel id="text1" x="69" y="69" font="fnt03_fnt" text="123" width="163" height="31" textAlign="right"/>
+	<e:Label id="txtMony" text="财富" x="16" y="71" bold="true" size="22" width="73"/>
+	<e:Image id="btnDowd" source="btn_drop_down_png" x="207" y="22" visible="false"/>
+	</e:Skin>

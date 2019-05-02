@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="HeadRepItemSkin" width="80" height="80" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="headIcon" x="0" y="0" height="100%" width="100%" source="img_Default_Avatar_png"/>
+	<e:Image id="icon2" scale9Grid="4,3,2,4" x="0" y="0" width="100%" height="100%" source="s9_bg_head_2_png"/>
+	<e:Image id="icon1" scale9Grid="4,4,2,2" x="0" y="0" width="100%" height="100%" source="s9_bg_head_1_png"/>
+	
+	
+</e:Skin>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RecordHistoryItemRenderSkin" width="760" height="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:uicomps="uicomps.*">
+	<e:Image source="s9_bg_fangxinditu_png" scale9Grid="15,16,14,18" x="0" y="0" width="100%" height="100%"/>
+	<!--<e:Image id="bgScaleImg" source="s9_wnd_shenhe_blue_bg_png" x="0" y="0" scale9Grid="3,3,2,3" height="100%" width="100%"/>-->
+
+	<e:Group y="11" x="106">
+		<e:Label id="txt1" y="10" x="0" size="20" text="第134手牌"/>
+		<e:Label id="txt2" y="48" text="新手场（6人）：5/10" x="0" size="20" textColor="0xBCA7DE" height="23"/>
+	</e:Group>
+	<e:Group verticalCenter="2.5" left="20">
+		<e:Image id="card1" x="-12" y="10" scaleX="0.6" scaleY="0.6" source="card-1-0_png" skewX="-10" skewY="-10"/>
+		<e:Image id="card2" source="card-1-0_png" y="0" x="28" scaleX="0.6" scaleY="0.6" skewX="20" skewY="20"/>
+		<!--playcards:CardItem/-->
+	</e:Group>
+	
+		<e:Image source="img_word_record_shijiang_png" x="376" y="58"/>
+		<e:Image source="img_word_record_yingli_png" x="376" y="21"/>
+		<e:Label id="txt3" text="+100" x="425" y="21" size="20" width="112"/>
+		<e:Label id="txt4" y="59" text="2016-2-23" x="425" width="121" size="20"/>
+		
+	
+	
+	<e:Button id="btn1" label="按钮" x="555" y="3">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:uicomps="uicomps.*" xmlns:w="http://ns.egret.com/wing" xmlns:myInfo="myInfo.*" xmlns:playcards="playcards.*">
+				<e:Image width="100%" height="100%" source="btn_records_type1_png" source.down="btn_records_type1_png"/>
+				<e:Image source="img_word_records_hg_png" verticalCenter="-4" horizontalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	
+	<e:Button id="btn2" label="按钮" x="660" y="3">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:uicomps="uicomps.*" xmlns:w="http://ns.egret.com/wing" xmlns:myInfo="myInfo.*">
+				<e:Image width="100%" height="100%" source="btn_records_type2_png" source.down="btn_records_type2_png"/>
+				<e:Image source="img_word_records_scan_png" verticalCenter="-4" horizontalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	
+	<e:Button id="btn3" label="按钮" x="660" y="3" visible="false">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:uicomps="uicomps.*" xmlns:w="http://ns.egret.com/wing" xmlns:myInfo="myInfo.*">
+				<e:Image width="100%" height="100%" source="btn_records_type2_png" source.down="btn_records_type2_png"/>
+				<e:Image source="img_word_records_sc_png" verticalCenter="-4" horizontalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+		
+	
+	</e:Skin>

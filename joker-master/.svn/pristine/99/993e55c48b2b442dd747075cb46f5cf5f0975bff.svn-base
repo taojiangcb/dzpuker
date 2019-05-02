@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="QRCodeMoudleSkin" width="400" height="520" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<!--e:Image id="bgimg" width="100%" height="100%" source="s9_bg_ditu_bottom_png"/-->
+	<e:Rect id="bgimg"  width="100%" height="100%" fillColor="0xffffff"  strokeWeight="1"/>
+	<e:Group id="grop" horizontalCenter="19" verticalCenter="-26" width="350" height="350">
+		
+	</e:Group>
+	
+	<e:Label text="扫码进入房间" y="6" textColor="0x010101" x="110"  bold="true"/>
+	<e:EditableText id="urltext" width="95%" height="45" y="456" horizontalCenter="0" textColor="0x000000" size="20" wordWrap="true" multiline="true"/>
+	<e:Label text="点击地址复制到浏览器进入房间" y="420" textColor="0x020202" size="25" x="25" bold="true"/>
+</e:Skin>

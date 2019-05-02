@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RecordUIMoudleCompSkin" width="790" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:record="record.*">
+	<e:Component width="100%" height="100%" id="sceneBase" horizontalCenter="0" verticalCenter="0" skinName="SceneSkin" visible="false"/>
+	<e:Rect width="100%" height="100%" id="bgimage" alpha="0.5"/>
+	<e:Group width="690" height="500" horizontalCenter="0" verticalCenter="0">
+		<e:Image x="0" y="0" width="100%" height="100%" scale9Grid="113,57,65,8" source="s9_bg_yijijiemiangditu_png"/>
+		<e:Group width="661" y="44" horizontalCenter="0">
+			<e:ToggleButton id="tabButton1" width="320" height="58" y="10" x="10">
+				<e:skinName>
+					<e:Skin states="up,down,disabled" xmlns:uicomps="uicomps.*" xmlns:w="http://ns.egret.com/wing" xmlns:myInfo="myInfo.*">
+						<e:Image width="100%" height="100%" source="btn_tab_right_1_png" source.down="btn_tab_right_2_png" scale9Grid="78,28,7,14"/>
+						<e:Image source="img_word_btn_type2_png" source.down="img_word_btn_type1_png" y.up="0" y.down="-4" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:ToggleButton>
+			<e:ToggleButton id="tabButton2" width="320" height="58" y="10" x="330">
+				<e:skinName>
+					<e:Skin states="up,down,disabled" xmlns:uicomps="uicomps.*" xmlns:w="http://ns.egret.com/wing" xmlns:myInfo="myInfo.*">
+						<e:Image width="100%" height="100%" source="btn_tab_left_1_png" source.down="btn_tab_left_2_png" scale9Grid="76,28,10,14"/>
+						<e:Image source="img_word_btn_type22_png" source.down="img_word_btn_type21_png" y.up="0" y.down="-4" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:ToggleButton>
+		</e:Group>
+		<e:ViewStack id="viewStackUI"   width="670" height="380" y="115" selectedIndex="0" horizontalCenter="0">
+			<e:Group width="100%" height="100%" name="视图" x="0" y="-5" scaleX="1" scaleY="1">
+				<record:RecordCompreListComp id="comperUI" skinName="RecordCompreListCompSkin" horizontalCenter="0" height="100%" y="-6"/>
+			</e:Group>
+			<e:Group width="100%" height="100%" x="0" y="-4" scaleX="1" scaleY="1">
+				<record:RecordMajorComp id="majorUI" skinName="RecordMajorCompSkin" width="100%" height="100%"/>
+			</e:Group>
+		</e:ViewStack>
+		<e:Group y="0" horizontalCenter="0">
+			<e:Image source="img_word_record_icon_png" x="12" y="10"/>
+		</e:Group>
+		<e:Image id="btnClose" source="btn_shop_close_png" y="3" x="629"/>
+		
+			
+	</e:Group>
+	
+	</e:Skin>

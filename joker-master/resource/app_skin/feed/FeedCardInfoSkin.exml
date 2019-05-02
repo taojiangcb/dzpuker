@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FeedCardInfoSkin" width="330" height="325" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="img_word_feed_pjxx_png" y="1" x="118"/>
+	<e:Image scale9Grid="16,16,5,4" x="0" y="27" width="100%" height="300" source="s9_bg_shurukuangditu_png"/>
+	
+	<e:Image source="s9_bg_fangxinditu_png" scale9Grid="15,16,14,18" y="40" width="97%" height="104" horizontalCenter="0"/>
+	<e:Group verticalCenter="-71" left="25">
+		<e:Image id="card1" x="-12" y="10" scaleX="0.6" scaleY="0.6" source="card-1-0_png" skewX="-10" skewY="-10"/>
+		<e:Image id="card2" source="card-1-0_png" y="0" x="28" scaleX="0.6" scaleY="0.6" skewX="20" skewY="20"/>
+	</e:Group>
+	<e:Group y="57" x="109" width="216">
+		<e:Image source="s9_bg_shurukuangditu_png" scale9Grid="16,15,11,6" x="-11" y="40" width="223"/>
+		<e:Label id="txt1" y="10" x="0" width="143" size="20" text="第134手牌"/>
+		<e:Label id="txt2" y="48" text="新手场（6人）：5/10" x="-4" width="209" size="18" height="23" textColor="0xF3F1F8" verticalAlign="middle"/>
+	</e:Group>
+	<e:Group id="jbGroup" width="100%" height="119" y="154">
+		<e:Image source="img_word_feed_jbts_png" y="2" x="127"/>
+		<e:Label lineSpacing="1" text="牌桌内举报：只能举报上一手牌局！" y="34" size="18" height="21" width="314" textColor="0x86789B" x="9" bold="true"/>
+		<e:Label lineSpacing="10" text="历史牌局举报：主界面→点击用户头像→点击牌局记录→点击回顾，在历史牌局动画界面举报历史牌局！" y="74" size="18" height="84" width="314" textColor="0x86789B" x="9" bold="true"/>
+	</e:Group>
+	
+</e:Skin>

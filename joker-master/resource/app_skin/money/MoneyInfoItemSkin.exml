@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MoneyInfoItemSkin" width="680" height="78" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:uicomps="uicomps.*">
+  <e:Group width="100%" height="100%">
+		<e:Image id="bgImag" width="100%" x="0" source="s9_bg_fangxinditu_png" height="100%" y="0"/>
+
+		<e:Image id="icon" source="icon_money_type_1_png" x="18" y="4"/>
+			<e:Group id="okBtn"  width="150" height="64" x="525" y="7" touchChildren="false">
+					<e:Button  width="100%" height="100%">
+								<e:skinName>
+									<e:Skin states="up,down,disabled">
+									<e:Image width="100%" height="100%" source="btn_bank_zise1_png" source.down="btn_bank_zise1_png"/>
+									</e:Skin>
+								</e:skinName>
+							</e:Button>
+								<e:Image id="btnIcon" source="img_word_sng_bm_png" horizontalCenter="0" verticalCenter="0"/>
+			</e:Group>
+		<e:Image id="tips" x="96" y="27" source="img_word_money_type_2_png"/>
+		<e:BitmapLabel id="numTxt" x="289" y="24" font="fnt03_fnt" text="1" width="56" height="31" textAlign="right"/>
+	</e:Group>	
+</e:Skin>

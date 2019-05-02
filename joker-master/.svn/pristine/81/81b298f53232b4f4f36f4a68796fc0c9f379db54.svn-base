@@ -1,0 +1,28 @@
+ï»¿<?xml version="1.0" encoding="utf-8"?>
+<ctConfig>
+
+    <!-- ½ð±Ò·¿ -->
+    <room gameId="5052" ofsId="302" roomId="15155" svrMode="4"   sb="50"   bb="100"  min="600"     max="12000"/>
+    <!-- ÆÕÍ¨·¿ -->
+	<room gameId="5028" ofsId="214" roomId="15028" svrMode="4"   sb="100"  bb="200"  min="1000"    max="40000"/>
+	<room gameId="5028" ofsId=""    roomId=""      svrMode="201" sb="200"  bb="400"  min="10000"   max="80000"/>
+	<room gameId="5028" ofsId="223" roomId="15029" svrMode="201" sb="500"  bb="1000" min="20000"   max="400000"/>
+	<room gameId="5028" ofsId="224" roomId="15030" svrMode="201" sb="3000" bb="6000" min="360000"  max="1200000"/>
+
+    <!-- Ë½ÈË·¿ -->
+	<room gameId="5028" ofsId="266" roomId="15141" svrMode="6"   sb="50"   bb="100"  min="600"     max="12000"   anti="0"/>
+
+    <!-- Á½ÈË·¿ -->
+	<room gameId="5028" ofsId="272" roomId="15151" svrMode="6"   sb="10"   bb="20"   min="200"     max="1000000"/>
+	<room gameId="5028" ofsId="273" roomId="15152" svrMode="6"   sb="1000" bb="2000" min="100000"  max="5000000"/>
+	<room gameId="5028" ofsId="274" roomId="15153" svrMode="6"   sb="2000" bb="4000" min="1000000" max="20000000"/>
+
+    <!-- ÕæÈË·¿ -->
+	<room gameId="5028" ofsId="225" roomId="15131" svrMode="6"   sb="100"  bb="200"  min="1000"    max="40000"/>
+
+    <!-- ¾Å¾Å·¿ -->
+	<room gameId="5050" ofsId="301" roomId="15050" sb="100"  blinds="100,1000,10000" bb="20000"  min="1000"  max="100000"/>
+	<room gameId="5050" ofsId="301" roomId="15050" sb="100"  blinds="100,1000,10000" bb="20000"  min="1000"  max="100000"/>
+	<room gameId="5050" ofsId="301" roomId="15050" sb="1000" blinds="100,1000,10000" bb="120000" min="10000" max="1000000"/>
+
+</ctConfig>

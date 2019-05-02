@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BankUIMoudleSkin" width="1136" height="768" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:bank="bank.*">
+	<e:Image width="100%" height="100%" source="guichu_bg_jpg"/>
+	<e:Rect width="100%" height="100%" alpha="0.3" />
+	<e:Group  verticalCenter="0" width="680" height="500" horizontalCenter="0">
+		<e:Component id="sceneBase" skinName="SceneSkin" width="100%" height="100%" />
+		<e:ViewStack id="viewStack" width="628" height="395" selectedIndex="0" x="26" y="105">
+			<e:Group width="100%" height="100%" name="视图">
+				<bank:BankTransferComp id="trankComp1" skinName="BankTransferCompSkin" y="0" height="395"/>
+			</e:Group>
+			
+			<e:Group width="100%" height="100%" name="视图">
+				<bank:BankTransferComp id="trankComp2" skinName="BankTransferCompSkin" y="0" height="395"/>
+			</e:Group>
+		</e:ViewStack>
+		<e:Image y="13" horizontalCenter="0.5" source="img_word_bank_qz_png" x="308" scaleX="1" scaleY="1"/>
+		
+		<e:Group height="63" y="68" x="20">
+			<e:ToggleButton id="tabButton1" width="320" height="58">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_tab_right_1_png" source.down="btn_tab_right_2_png" scale9Grid="81,29,1,2"/>
+						<e:Image source="img_word_bank_qukuan2_png" source.down="img_word_bank_qukuan1_png" verticalCenter="0" horizontalCenter="-3"/>
+					</e:Skin>
+				</e:skinName>
+			</e:ToggleButton>
+			<e:ToggleButton id="tabButton2" width="320" height="58">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_tab_left_1_png" source.down="btn_tab_left_2_png" scale9Grid="76,29,2,2"/>
+						<e:Image source="img_word_bank_chunkuan2_png" source.down="img_word_bank_chunkuan1_png" verticalCenter="0" horizontalCenter="-3"/>
+					</e:Skin>
+				</e:skinName>
+			</e:ToggleButton>
+			<e:layout>
+				<e:HorizontalLayout gap="0" horizontalAlign="justify"/>
+			</e:layout>
+		</e:Group>
+		<e:Image source="s9_bg_erji_fengexiang_png" width="97%" y="413" x="10"/>
+	</e:Group>
+</e:Skin>

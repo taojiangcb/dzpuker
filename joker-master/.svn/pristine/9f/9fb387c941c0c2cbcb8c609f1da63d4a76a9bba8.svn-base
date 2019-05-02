@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin id="billButton" class="BillUIMoudleSkin" width="600" height="480" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="s9_bg_erjijiemiangditu_png" scale9Grid="67,70,122,12" left="0" top="0" bottom="0" right="0"/>
+	<e:Image source="img_word_room_zdmx_png" horizontalCenter="0" top="20"/>
+	<e:Image id="closeButton" source="btn_shop_close_png" x="537" y="5"/>
+	<e:Group width="95%" height="45" horizontalCenter="0" top="70">
+		<e:Image source="s9_bg_shurukuangditu_png" scale9Grid="16,15,11,6" left="0" right="0" top="0" bottom="0"/>
+		<e:Group top="0" bottom="0" left="20">
+			<e:Image source="img_word_room_pjsjgj_png" verticalCenter="0" left="20"/>
+			<e:Label id="timeLabel" text="1小时20分钟" size="20" verticalCenter="0" left="160"/>
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Group top="0" bottom="0" right="20">
+			<e:Image source="img_word_room_.jszj_png" verticalCenter="0" x="0"/>
+			<e:Label id="countLabel" text="999局" size="20" verticalCenter="0" right="20"/>
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Image source="s9_bg_shurukuangditu_png" scale9Grid="16,15,11,6" left="15" right="15" bottom="15" top="130"/>
+	<e:Group top="130" left="15" right="15" height="30">
+		<e:Image source="img_word_room_nc_png" verticalCenter="0" left="150"/>
+		<e:Image source="img_word_room_yl_png" verticalCenter="0" left="460"/>
+		<e:Image source="img_word_room_zdr_png" verticalCenter="0" left="300"/>
+		<e:Image source="img_word_play_mingci_png" verticalCenter="0" left="25"/>
+		<e:Image source="s9_bg_erji_fengexiang_png" width="98%" bottom="0" horizontalCenter="0"/>
+	</e:Group>
+	<e:Scroller left="15" right="15" bottom="25" top="160">
+		<e:Group>
+			<e:List id="list" width="100%" horizontalCenter="0" top="0">
+				<e:layout>
+					<e:VerticalLayout gap="0"/>
+				</e:layout>
+			</e:List>
+			<e:layout>
+				<e:BasicLayout/>
+			</e:layout>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

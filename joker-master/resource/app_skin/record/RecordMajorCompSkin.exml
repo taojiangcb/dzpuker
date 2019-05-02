@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RecordMajorCompSkin" width="675" height="382" xmlns:e="http://ns.egret.com/eui" xmlns:record="record.*" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15823a39f2a"/>
+	<e:Group top="-1" width="100%" height ="382">
+		
+		<e:Group width="398" height="370" x="9" visible="false" locked="true">
+			<e:Group width="340" x="0" y="36">
+				<e:Image x="0" y="0" width="331" source="s9_bg_ditujiangjiao_png" scale9Grid="16,15,3,29"/>
+				<e:Image source="img_word_wanjialeixing_png" y="-28" x="10"/>
+				<e:Label id="txtType" x="0" size="17" width="100%" textAlign="center" text="鲨鱼型" bold="true" y="19"/>
+				<e:Image source="s9_bg_erji_fengexiang_png" x="0" y="85" width="100%"/>
+			</e:Group>
+			<e:Group width="340" y="275" x="0">
+					<e:Image x="0" y="0" width="331" source="s9_bg_ditujiangjiao_png" scale9Grid="16,15,3,29"/>
+				<e:Image source="img_word_wanjiatese_png" y="-28" x="10"/>
+				<e:Label id="txtTs" text="具备很强的攻击性" x="0" size="17" width="340" bold="true" textAlign="center" verticalCenter="0"/>
+			</e:Group>
+			
+			<e:Group width="340" x="0" y="156">
+					<e:Image x="0" y="0" width="331" source="s9_bg_ditujiangjiao_png" scale9Grid="16,15,3,29"/>
+				<e:Image source="img_word_hexinshuju_png" left="10" y="-28"/>
+				<e:Label id="txtData" x="0" size="17" width="340" bold="true" textAlign="center" y="19" text="0"/>
+				<e:Image source="s9_bg_erji_fengexiang_png" x="0" y="85" width="100%"/>
+			</e:Group>
+			
+			
+			
+			
+		</e:Group>
+		
+		<e:Group width="320" height="356" x="10" y="9" scaleX="1" scaleY="1">
+			<record:RecordAnimalDescComp id="_comp_animalDesc"  width="100%" height="365" skinName="RecordAnimalDescCompSkin" y="-1"/>
+		</e:Group>
+		<e:Group x="335" y="0" scaleX="1" scaleY="1" width="330">
+			<record:RecordMajorICompInfo id="majorInfoUI" skinName="RecordMajorICompInfoSkin" x="0" y="5" width="100%" scaleX="1" scaleY="1"/>
+			<e:Group y="11" horizontalCenter="0">
+			<e:Image source="img_word_record_zysy_png" y="6" horizontalCenter="0"/>
+			</e:Group>
+			<e:Image id="btnTerm" source="btn_record_bangzhu_png" x="285" y="13" scaleX="1" scaleY="1"/>
+		</e:Group>
+		
+	</e:Group>
+
+	
+	
+</e:Skin>

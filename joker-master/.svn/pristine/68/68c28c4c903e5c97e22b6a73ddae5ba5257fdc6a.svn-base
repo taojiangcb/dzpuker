@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PokerGPSItemSkin" width="300" height="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:uicomps="uicomps.*">
+	<e:Image source="s9_bg_fangxinditu_png" scale9Grid="15,16,14,18" x="0" y="0" height="100%" width="100%"/>
+	<e:Label id="label2" y="58" textColor="0xBCA7DE" bold="true" size="22" textAlign="left" left="140" width="98" text="大于1KM"/>
+	<e:Label id="label1" y="26" size="22" text="什么什么名字" textAlign="left" left="140" width="174" bold="true" height="26"/>
+	<uicomps:AvatarImage id="avatar" verticalCenter="0" left="20"/>
+</e:Skin>

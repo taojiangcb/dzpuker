@@ -1,0 +1,15 @@
+{
+	"name": "egret",
+	"version": "3.0.7",
+	"modules": [
+		{
+			"name": "msgpack",
+			"description": "msgpack",
+			"files": [
+				"msgpack.js",
+			    "msgpack.d.ts"
+			],
+			"root": "src"
+		}
+	]
+}

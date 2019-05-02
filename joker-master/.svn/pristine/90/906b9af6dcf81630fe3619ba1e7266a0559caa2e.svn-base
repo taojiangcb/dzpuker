@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RecordMajorTermInfoSkin" width="700" height="525" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="100%" x="1" height="62" y="0">
+		<e:Image width="98%" source="s9_bg_erji_fengexiang_png" height="2" y="62" x="7"/>
+		<e:Image source="img_word_rujulv_voip_png" x="30" y="2"/>
+		<e:BitmapLabel id="txtVpip" text="50%" textAlign="right" width="168" height="27" y="11" x="200" font="white_fnt" scaleX="0.8" scaleY="0.8"/>
+		<e:Label text="玩家主动向底池投入彩豆的比率，大小盲除外" x="36" y="38" size="18" textColor="0xE9E9E9"/>
+	</e:Group>
+	
+	<e:Group width="100%" x="1" y="64" height="60">
+		<e:Image x="7" width="98%" source="s9_bg_erji_fengexiang_png" y="60"/>
+		<e:Image x="30" y="0" source="img_word_fangpaiqianjiazhu_png"/>
+		<e:BitmapLabel id="txtPer" y="9" text="50%" textAlign="right" width="168" font="white_fnt" x="200" scaleX="0.8" scaleY="0.8" height="27"/>
+		<e:Label text="玩家翻牌前加注的比率" x="36" y="36" size="18" textColor="0xE9E9E9"/>
+	</e:Group>
+	<e:Group y="126" width="100%" x="1">
+		<e:Image  x="7" width="98%" source="s9_bg_erji_fengexiang_png" y="80"/>
+		<e:Image x="30" y="0" source="img_word_paixingwenzi_af_png"/>
+		<e:Label text="主动下注和跟注激进行为，跟注为被动行为，用来衡量玩家打牌激进度的数值。激进度通常在1.4~4之间" x="36" y="36" size="18" height="40" width="600" textColor="0xE9E9E9"/>
+		<e:BitmapLabel id="txtAf" x="200" y="9" textAlign="right" text="2.5" width="168" font="white_fnt" scaleX="0.8" scaleY="0.8" height="27"/>
+	</e:Group>
+	
+	<e:Group width="100%" x="1" y="208">
+		<e:Image  x="7" width="98%" source="s9_bg_erji_fengexiang_png" bottom="-4"/>
+		<e:Image x="30" y="0" source="img_word_paixingwenzi_3b_png"/>
+		<e:Label text="即在他人下注，有人加注之后的再加注，由于是下一轮下注中的第三次加注" x="36" y="36" size="18" height="25" width="600" textColor="0xE9E9E9"/>
+		<e:BitmapLabel id="txt3b" x="200" y="9" textAlign="right" text="25%" width="168" font="white_fnt" scaleX="0.8" scaleY="0.8" height="27"/>
+	</e:Group>
+	
+	<e:Group y="273" width="100%" x="1">
+		<e:Image  x="7" width="98%" source="s9_bg_erji_fengexiang_png" y="62"/>
+		<e:Image x="30" y="0" source="img_word_paixingwenzi_stl_png"/>
+		<e:Label text="是指一个玩家单纯的为了赢得盲注而加注" x="36" y="36" size="18" width="548" textColor="0xE9E9E9"/>
+		<e:BitmapLabel id="txtStl" x="200" y="9" textAlign="right" text="19%" width="168" font="white_fnt" scaleX="0.8" scaleY="0.8" height="27"/>
+	</e:Group>
+	
+	<e:Group top="337" width="100%" x="1">
+		<e:Image  x="7" width="98%" source="s9_bg_erji_fengexiang_png" y="64"/>
+		<e:Image x="30" y="0" source="img_word_paixingwenzi_cd_png"/>
+		<e:Label text="是指一个玩家在前一轮主动下注或加注后，在当前这一轮再次主动下注" x="36" y="38" size="18" width="600" textColor="0xE9E9E9"/>
+		<e:BitmapLabel id="txtCd" x="200" y="9" textAlign="right" text="19%" width="168" font="white_fnt" scaleX="0.8" scaleY="0.8" height="27"/>
+	</e:Group>
+	
+	<e:Group top="403" width="100%" x="1" height="62">
+		<e:Image  x="7" width="98%" source="s9_bg_erji_fengexiang_png" y="62"/>
+		<e:Image x="30" y="0" source="img_word_paixingwenzi_wtsd_png"/>
+		<e:Label text="是指一个玩家看到翻牌圈并玩到摊牌的百分比" x="36" y="38" size="18" height="40" width="548" textColor="0xE9E9E9"/>
+		<e:BitmapLabel id="txtWtsd" x="200" y="9" textAlign="right" text="19%" width="168" font="white_fnt" scaleX="0.8" scaleY="0.8" height="27"/>
+	</e:Group>
+	
+	<e:Group top="467" width="100%" x="1">
+		<e:Image x="30" y="0" source="img_word_paixingwenzi_baifen_png"/>
+		<e:Label text="总盈利/总局数，用于衡量玩家盈利水平" x="36" y="38" size="18" width="548" textColor="0xE9E9E9"/>
+		<e:BitmapLabel id="txtBs" x="200" y="9" textAlign="right" text="19%" width="168" font="white_fnt" scaleX="0.8" scaleY="0.8" height="27"/>
+	</e:Group>
+	
+</e:Skin>

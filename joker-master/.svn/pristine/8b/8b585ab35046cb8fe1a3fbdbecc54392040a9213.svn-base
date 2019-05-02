@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BillMainUILabelSkin" width="610" height="80" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image left="0" top="0" bottom="0" right="0" source="s9_bg_fangxinditu_png"/>
+	<e:Group top="5" left="20">
+		<e:Image source="img_word_room_mz_png" x="25" y="9"/>
+		<e:Label id="blindLabel" text="1万/2万" x="119" y="11" size="22" height="31" verticalAlign="middle"/>
+		<e:layout>
+			<e:HorizontalLayout gap="10"/>
+		</e:layout>
+	</e:Group>
+	<e:Group top="5" left="250">
+		<e:Image x="25" y="9" source="img_word_room_kdsj_png"/>
+		<e:Label id="timeLabel" x="119" y="11" size="20" height="31" verticalAlign="middle" text="12月22日24点"/>
+		<e:layout>
+			<e:HorizontalLayout gap="10"/>
+		</e:layout>
+	</e:Group>
+	<e:Group left="20" bottom="5">
+		<e:Image x="25" y="9" source="img_word_room_wdylqk_png"/>
+		<e:Label id="gainLabel" text="+99999" x="119" y="11" size="22" height="31" verticalAlign="middle"/>
+		<e:layout>
+			<e:HorizontalLayout gap="10"/>
+		</e:layout>
+	</e:Group>
+	<e:Image id="button" source="btn_room_xq_png" verticalCenter="0" right="20"/>
+</e:Skin>

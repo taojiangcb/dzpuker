@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CharmWheelUIMoudleSkin" width="1136" height="768" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15828ff608f"/>
+	<e:Image source="bg_charm_bjt_jpg" y="0" x="0"/>
+	<e:Group width="100%" height="100%" x="0" y="0">
+		<e:Image source="img_bg_title3_png" y="-5" scale9Grid="91,40,9,15" width="100%" height="90" alpha="0.45"/>
+		<e:Image source="img_word_charm_mldzp_png" horizontalCenter="0" top="12"/>
+		<e:Label text="魅力积分来源：4w及以上额度房打赏荷官或者发送魔法表情" size="18" textColor="0xffd200" left="20" lineSpacing="6" top="95"/>
+		<e:Button id="closebtn" y="-11" left="0">
+			<e:Skin states="up,down,disabled" xmlns:uicomps="uicomps.*" xmlns:main="main.*" xmlns:playcards="playcards.*" xmlns:fiveCard="fiveCard.*">
+			<e:Rect width="64" height="96" alpha="0"/>
+			<e:Image x="10" y="30" source="btn_back_png"/>
+			</e:Skin>
+		</e:Button>
+		<e:Group top="130" left="341">
+			<e:Image source="s9_charm_mlzdt_png" scale9Grid="25,6,14,42" width="231"/>
+			<e:Image source="img_word_charm_mljf_png" verticalCenter="3" left="20"/>
+			<e:Group width="60%" y="8" height="44" x="72">
+				<e:Image source="icon_meilijifen_png" x="162" y="16" scaleX="0.8" scaleY="0.8"/>
+				<e:BitmapLabel id="charmValueLabel" text="0" font="fnt03_fnt" verticalCenter="3" right="20" x="195" y="15" scaleX="1" scaleY="1"/>
+				<e:layout>
+					<e:HorizontalLayout gap="5"  horizontalAlign="right" verticalAlign="middle"/>
+				</e:layout>
+			</e:Group>
+		</e:Group>
+		<e:Group width="422" top="200" left="245" height="422">
+			<e:Group id="wheel" anchorOffsetX="190" anchorOffsetY="190" x="211" y="211" width="380" height="380">
+				<e:Image source="icon_charm_nq_png"/>
+			</e:Group>
+			<e:Image source="icon_charm_wq_png" y="0"/>
+			<e:Image id="circlelight" source="icon_charm_yq_png" verticalCenter="0" horizontalCenter="0" visible="false"/>
+			<e:Group id="gobtn" horizontalCenter="0" verticalCenter="-15">
+				<e:Image source="btn_charm_go_png" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image id="gobtnlight" source="btn_charm_go_light_png" verticalCenter="0" horizontalCenter="0" visible="false"/>
+			</e:Group>
+			<e:Group horizontalCenter="0" verticalCenter="50">
+				<e:Image source="icon_play_word_bg_png" width="120" height="24" scale9Grid="6,6,1,17"/>
+				<e:Label text="50魅力积分" verticalCenter="0" horizontalCenter="0" size="18" textColor="0xffd200"/>
+			</e:Group>
+		</e:Group>
+		<e:Group width="246" height="200" x="0" y="110" visible="false">
+			<e:Group width="100%">
+				<e:Label text="加速时间" size="20"/>
+				<e:Group width="151" height="20" y="0" right="0">
+					<e:Rect fillColor="0xffffff" left="0" right="0" top="0" bottom="0"/>
+					<e:EditableText id="et1" height="20" text="标签" size="20" textColor="0x000000" width="100%"/>
+				</e:Group>
+			</e:Group>
+			<e:Group width="100%" x="0" y="25">
+				<e:Label text="匀速时间" size="20"/>
+				<e:Group width="151" height="20" y="0" right="0">
+				<e:Rect fillColor="0xFFFFFF" left="0" right="0" top="0" bottom="0"/>
+				<e:EditableText id="et2" height="20" text="标签" size="20" textColor="0x000000" width="100%"/>
+				</e:Group>
+			</e:Group>
+			<e:Group width="100%" x="0" y="50">
+				<e:Label text="减速时间" size="20"/>
+				<e:Group width="151" height="20" y="0" right="0">
+				<e:Rect fillColor="0xFFFFFF" left="0" right="0" top="0" bottom="0"/>
+				<e:EditableText id="et3" height="20" text="标签" size="20" textColor="0x000000" width="100%"/>
+				</e:Group>
+			</e:Group>
+			<e:Group width="100%" x="0" y="75" visible="false">
+				<e:Label text="扫光速度" size="20"/>
+				<e:Group width="151" height="20" y="0" right="0">
+				<e:Rect fillColor="0xFFFFFF" left="0" right="0" top="0" bottom="0"/>
+				<e:EditableText id="et4" height="20" text="标签" size="20" textColor="0x000000" width="100%"/>
+				</e:Group>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+	<e:Group id="record" top="90" bottom="0" width="264" right="0">
+		<e:Image source="sg_bg_shezhi_ditu_png" scale9Grid="16,16,5,4" width="100%" height="100%"/>
+		<e:Group horizontalCenter="0" top="5">
+		<e:layout>
+			<e:HorizontalLayout gap="0" horizontalAlign="center"/>
+		</e:layout>
+		<e:Image id="myRecordButton" x="958" y="168" source="btn_charm_wdzj1_png"/>
+		<e:Image id="allRecordButton" source="btn_charm_zjjl1_png" x="940" y="212"/>
+		</e:Group>
+		<e:ViewStack id="recordViewStack" selectedIndex="1" right="0" left="0" bottom="0" top="55">
+			<e:Group id="g1" width="100%" height="100%" name="视图">
+				<e:Scroller left="8" right="8" bottom="6" top="6">
+					<e:Group width="248" height="586">
+						<e:Image source="icon_paly_fengexian_png" width="100%" horizontalCenter="0"/>
+						<e:List id="myRecordList" width="248" x="0" y="0">
+						</e:List>
+					</e:Group>
+				</e:Scroller>
+			</e:Group>
+			<e:Group id="g2" width="100%" height="100%" name="视图">
+				<e:Scroller left="8" right="8" top="6" bottom="6">
+					<e:Group height="586" width="248">
+						<e:Image source="icon_paly_fengexian_png" width="100%" horizontalCenter="0"/>
+					<e:List id="allRecordList" width="248" x="0" y="0"/>
+					</e:Group>
+				</e:Scroller>
+			</e:Group>
+		</e:ViewStack>
+	</e:Group>
+</e:Skin>

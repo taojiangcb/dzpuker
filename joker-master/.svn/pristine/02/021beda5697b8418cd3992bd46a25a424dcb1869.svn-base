@@ -1,0 +1,101 @@
+/**
+ * 选择手牌门数时的逻辑处理变化
+ */
+module joker {
+
+	export class JokerPkContenScrolltController {
+		private SPACE: number = 50;				//间隔
+
+		pkContentIndex: number = 0;				//当前选中的门数索引 0 表示 1 门
+		pkContentTx: number = 0;				//当前要缓动到的位置
+		
+		tempWidth:number = 0;
+		
+		public constructor() {
+			this.initPkContents();
+		}
+
+		initPkContents(): void {
+			var ls = [this.viewComp.content5, this.viewComp.content10, this.viewComp.content25, this.viewComp.content50];
+			var space: number = this.SPACE;
+			var sx: number = this.viewComp.width - this.viewComp.content5.width >> 1;
+			this.tempWidth = this.viewComp.content5.width;
+			for (var i: number = 0; i < ls.length; i++) {
+				ls[i].x = (i + 1) * (this.tempWidth + space);
+				ls[i].y = 0;
+				ls[i].visible = false;
+			}
+		}
+
+		/**
+		 * 只选择一副牌时的动画
+		 */
+		async onePkContent() {
+			egret.Tween.removeTweens(this.viewComp.pokerBg);
+			egret.Tween.removeTweens(this.viewComp.handPokerContent);
+			egret.Tween.get(this.viewComp.pokerBg)
+				.set({visible:true})
+				.to({alpha:1},300)
+			egret.Tween.get(this.viewComp.handPokerContent)
+				.wait(300)
+				.to({bottom:(AppGlobal.stageFullHeight >> 1)},600,egret.Ease.backOut)
+		}
+
+		/**
+		 * 不是一手牌
+		 */
+		async denyOnePkContent() {
+			egret.Tween.removeTweens(this.viewComp.handPokerContent);
+			egret.Tween.get(this.viewComp.handPokerContent)
+				.to({bottom:170},600,egret.Ease.backOut)
+		}
+
+		/**
+		 * 门数变化
+		 */
+		async changePkContent(val: number) {
+			var page_index: number[] = getProxy().handlerCount;
+			var index = page_index.indexOf(val);
+			if (index == -1) return;
+			if(this.pkContentIndex == index) return;
+
+			this.pkContentIndex = index;
+			var space: number = this.SPACE;
+			var tx: number = index * (this.tempWidth + space);
+			this.pkContentTx = this.viewComp.pokerContentGroup.localToGlobal(0,0).x;
+
+			return new Promise((resolve,reject)=>{
+				egret.Tween.removeTweens(this.viewComp.scrollContentGroup);
+				egret.Tween.get(this.viewComp.scrollContentGroup, { loop: false, onChange: this.onChange, onChangeObj: this })
+				.to({ x: -tx }, 600, egret.Ease.quartOut)
+				.call(()=>{
+					this.onChange();
+					resolve();
+				},this);
+			})
+		}
+
+		onChange(): void {
+			var ls = [this.viewComp.content5, this.viewComp.content10, this.viewComp.content25, this.viewComp.content50];
+			ls.forEach(element => {
+				var tx:number = element.localToGlobal(0,0).x
+				var distance:number = Math.abs(tx - this.pkContentTx);
+				element.alpha = 1 - distance / this.tempWidth;
+				if(distance < this.tempWidth) {
+					element.visible = true;
+				} 
+				else {
+					element.visible = false;
+				}
+				console.log("=======%s,%s",this.pkContentTx,tx);
+				if(this.pkContentTx == Math.round(tx)) {
+					console.log("+++++++++++%s,%s",this.pkContentTx,tx);
+				}
+			});
+		}
+
+		private get viewComp(): joker.JokerGameModule {
+			return __GET_MEDIATOR(JokerScenesMediator).viewComp
+		}
+	}
+}

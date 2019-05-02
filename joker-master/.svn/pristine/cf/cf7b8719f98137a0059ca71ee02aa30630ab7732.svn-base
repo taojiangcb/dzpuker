@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuiChuModuleSkin" width="1136" height="768" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:guichu="guichu.*">
+	<w:Config id="15938f3129f"/>
+	<e:Image width="100%" height="100%" source="guichubg_2_jpg"/>
+	<guichu:GuiChuWheelComp id="wheelComp" skinName="GuiChuWheelCompSkin" top="0" horizontalCenter="0"/>
+	<e:Group width="100%" y="70" horizontalCenter="0">
+		<e:Image source="guichu_bg_title_fgx_png" scaleX="1" scaleY="1" verticalCenter="0" left="0" scale9Grid="0,2,2,13" width="390"/>
+		<e:Image source="guichu_bg_title_fgx_png" scaleX="-1" scaleY="1" verticalCenter="0" right="0" scale9Grid="0,2,2,13" width="390"/>
+	</e:Group>
+	<e:ViewStack left="10" top="95" id="noticePlate">
+		<e:Group>
+			<e:Image source="guichu_set_bg_png" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%" scale9Grid="18,18,9,13" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+			<e:Label text="“新春夺彩  福禄临门”" size="14" fontFamily="微软雅黑" scaleX="1" scaleY="1" horizontalCenter="0" top="10"/>
+			<e:Label text="活动时间：2017年1月19日-2月20日\n活动规则：\n1.活动期间游戏不设充值功能，禁止转账。\n2.活动结束后，用于游戏免费体验的代币和积分将作废。" size="14" left="10" right="10" width="264" top="30" bottom="10" lineSpacing="4"/>
+		</e:Group>
+		<e:Group>
+			<e:Image source="guichu_set_bg_png" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%" scale9Grid="18,18,9,13" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+			<e:Label text="“新春嘉年华”" size="14" fontFamily="微软雅黑" scaleX="1" scaleY="1" horizontalCenter="0" top="10"/>
+			<e:Label text="活动时间：即日起-2017年2月11日\n活动规则：\n1.活动期间游戏不设充值功能。\n2.本活动每天可获得3个新年币，限当日有效" size="14" left="10" right="10" width="264" top="30" bottom="10" lineSpacing="4"/>
+		</e:Group>
+	</e:ViewStack>
+	<e:Rect id="betRect" width="100%" height="100%" alpha="0.4" visible="false"/>
+	<e:Image id="back" source="btn_back_room_png" y="12" x="356" visible="false"/>
+	<e:Group id="zhuanpanGroup" x="100" y="150" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+		<e:Rect width="100%" height="100%" fillColor="0xffffff" locked="true"/>
+		<e:Group width="100%" height="100%">
+			<e:Label id="testStart" text="开始" x="44" y="34" scaleX="1" scaleY="1" textColor="0x000000"/>
+			<e:layout>
+				<e:VerticalLayout gap="10" paddingTop="10" paddingBottom="10" paddingLeft="10" paddingRight="10"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<guichu:GuiChuTableComp id="tableComp" skinName="GuiChuTableCompSkin" horizontalCenter="0" bottom="0"/>
+	<guichu:GuiChuRecordComp id="recordComp" skinName="GuiChuRecordCompSkin" right="0" top="90"/>
+	<e:Group id="testBetGroup" width="200" height="200" x="50" y="214" visible="false">
+		<e:Rect width="100%" height="100%" fillColor="0xffffff"/>
+	</e:Group>
+	<e:Group id="testCommadGroup" width="200" height="366" anchorOffsetY="0" left="0" top="90" visible="false">
+		<e:Rect width="100%" height="100%" fillColor="0xffffff"/>
+	</e:Group>
+	<e:Group left="20" top="100" id="poolBar" visible="false">
+		<e:Image source="guichu_bg_zjc_png" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0"/>
+		<e:BitmapLabel id="rewardPool" text="100,000,000" letterSpacing="-12" verticalCenter="0" right="16" height="29" font="guichu_front_5_fnt"/>
+	</e:Group>
+	<e:Rect id="waitRect" width="100%" height="100%" alpha="0.4" horizontalCenter="0" verticalCenter="0" visible="false"/>
+	<e:Group width="100%" horizontalCenter="0" top="5" height="62">
+		<e:Image id="testBtn" source="guichu_botton_gz_png" scaleX="1" scaleY="1" verticalCenter="0" y="10" right="200" visible="false"/>
+		<e:Group id="setBtn" verticalCenter="0" left="20" minWidth="200">
+		<e:Image source="guichu_bg_wj_png" width="100%" scale9Grid="73,12,4,4" verticalCenter="4" horizontalCenter="0"/>
+		<e:Image source="guichu_botton_shezhi_png" verticalCenter="0" right="-10"/>
+		<e:Image source="guichu_word_wj_png" verticalCenter="1" left="10"/>
+		<e:Label id="userName" text="qiyisi" verticalCenter="1" left="80" size="22" right="50"/>
+		</e:Group>
+		<e:Group id="ruleBtn" width="45" height="62" verticalCenter="0" right="20">
+		<e:Image source="guichu_botton_gz_png" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+		<e:Group id="bankBtn" width="45" height="62" verticalCenter="0" right="90" x="1081" y="10" visible="false">
+		<e:Image scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" source="guichu_botton_qz_png"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="stateLabelGroup" height="56" width="100%" verticalCenter="0" horizontalCenter="0">
+		<e:Image id="stateLabelBg" source="guichu_bg_states_png" verticalCenter="0" horizontalCenter="0" width="100%" height="56"/>
+		<e:Image id="stateLabel" source="guichu_word_zzxz_png" horizontalCenter="0" verticalCenter="0"/>
+		<e:BitmapLabel id="enterCountLabel" horizontalCenter="0" font="guichu_front_2_fnt" text="99" top="54" visible="false"/>
+	</e:Group>
+	<e:Group id="countdownGroup" width="100%" height="0" bottom="290"/>
+	<guichu:GuiChuTestComp id="testComp" skinName="GuiChuTestCompSkin" top="180" left="20" visible="false"/>
+</e:Skin>

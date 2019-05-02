@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RealNameSkin" width="454" height="280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image y="0" scale9Grid="134,78,2,4" width="100%" height="100%" x="0" source="s9_bg_yijijiemiangditu_png"/>
+	<e:Image source="btn_shop_close_png" y="3" id="btnClose" x="391"/>
+	<e:TextInput id="txtName" x="125" y="85" width="307">
+		<e:skinName>
+			<e:Skin minHeight="40" minWidth="300" states="normal,disabled,normalWithPrompt,disabledWithPrompt">
+				<e:Image source="s9_bg_shurukuangditu_png" scale9Grid="16,16,5,4" width="100%" height="100%" />
+				<e:EditableText id="textDisplay" verticalCenter="0.5" left="10" right="10" textColor="0xFFFFFF" textColor.disabled="0xff0000" width="100%" height="30" size="24" verticalAlign="middle" textAlign="left"/>
+				<e:Label id="promptDisplay" verticalCenter="0.5" left="10" right="10" textAlign="left" width="100%" height="30" size="24" touchEnabled="false" includeIn="normalWithPrompt,disabledWithPrompt" verticalAlign="middle" textColor="0xFDFBFB"/>
+			</e:Skin>
+		</e:skinName>
+	</e:TextInput>
+	<e:TextInput id="txtNumber" x="125" y="143" width="307" maxChars="20" restrict="0-9,X">
+		<e:skinName>
+			<e:Skin minHeight="40" minWidth="300" states="normal,disabled,normalWithPrompt,disabledWithPrompt">
+				<e:Image source="s9_bg_shurukuangditu_png" scale9Grid="16,16,5,4" width="100%" height="100%" />
+				<e:EditableText id="textDisplay" textAlign="left" verticalCenter="0.5" left="10" right="10" textColor="0xFFFFFF" textColor.disabled="0xff0000" width="100%" height="30" size="24" verticalAlign="middle"/>
+				<e:Label id="promptDisplay" verticalCenter="0.5" left="10" right="10" textAlign="left" width="100%" height="30" size="24" touchEnabled="false" includeIn="normalWithPrompt,disabledWithPrompt" verticalAlign="middle" textColor="0xFDFBFB"/>
+			</e:Skin>
+		</e:skinName>
+	</e:TextInput>
+	<e:Button id="okBtn" y="199" horizontalCenter="0" width="170">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" minHeight="50" minWidth="100">
+				<e:Image width="100%" height="100%" alpha.disabled="0.5" scale9Grid="54,29,29,13" source="btn_play_purple_png"/>
+				<e:Image source="img_word_info_queding_png" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image source="img_word_real_smrz_png" x="169" top="10"/>
+	<e:Image source="img_word_real_xm_png" x="35" y="91"/>
+	<e:Image source="img_word_real_sfzh_png" x="35" y="150"/>
+</e:Skin>

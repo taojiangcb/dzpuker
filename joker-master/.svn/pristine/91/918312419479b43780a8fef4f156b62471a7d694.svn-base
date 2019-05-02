@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TreasureSubLabelSkin" width="626" height="70" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="s9_bg_erji_fengexiang_png" width="98%" bottom="0" horizontalCenter="0"/>
+	<e:Group width="60" height="60" left="10" verticalCenter="0">
+		<e:Image id="img" width="60" height="60" verticalCenter="0" horizontalCenter="0" source="img_Default_Avatar_1_png"/>
+		<e:Image source="s9_bg_head_2_png" scale9Grid="4,3,2,4" width="100%" height="100%" verticalCenter="0" horizontalCenter="0"/>
+		<e:Image source="s9_bg_head_1_png" scale9Grid="4,4,2,2" width="100%" height="100%" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Label id="lb1" text="大明哥扫六合" verticalCenter="0" left="80" size="20" textColor="0xffd200" maxWidth="150"/>
+	<e:Group verticalCenter="0" left="210">
+		<e:Label id="lb2" text="参与2400次" size="18" verticalCenter="0" left="0"/>
+		<e:Label id="lb3" text="中奖概率:124%" size="18" verticalCenter="0" left="105"/>
+		<e:Label id="lb4" text="2016-09-07" size="18" textColor="0xab8db5" left="240" verticalCenter="0"/>
+		<e:Label id="lb5" text="16:52:32" size="18" textColor="0xab8db5" verticalCenter="0" left="340"/>
+		<e:layout>
+			<e:BasicLayout/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

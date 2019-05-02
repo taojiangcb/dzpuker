@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RecordMajorICompInfoSkin" width="330" height="371" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1582304a066"/>
+<e:Group width="330" y="0" height="371">
+   <e:Image x="0" y="0" width="100%" height="100%" source="s9_bg_shurukuangditu_png" scale9Grid="15,16,14,6"/>
+	<e:Group width="100%" height="40" x="0" y="0" scaleX="1" scaleY="1">
+		<e:Image source="s9_bg_erji_fengexiang_png" x="4" width="98%" y="38" scaleX="1" scaleY="1"/>
+	</e:Group>
+   <e:Group width="100%" height="40" y="40">
+		<e:Image source="img_word_rujulv_voip_png" x="20" y="5"/>
+		<e:BitmapLabel id="txtVpip" text="0" width="138" y="2" textAlign="right" verticalAlign="middle" height="39" scaleX="0.9" scaleY="0.9" font="white_fnt" right="20"/>
+		<e:Image source="s9_bg_erji_fengexiang_png" x="4" width="98%" y="38"/>
+			<e:Label text="入局率：" x="20" y="0" width="159" height="39" textAlign="left" verticalAlign="middle" size="17" fontFamily="Microsoft YaHei UI"   textColor="0xbb96c2" bold="true" visible="false"/>
+			<e:Label id="txt_Vpip" text="50%" x="306" y="0" width="104" textAlign="center" verticalAlign="middle" height="39" size="26" fontFamily="华文细黑" strokeColor="0x271231" stroke="1" visible="false"/>
+	</e:Group>
+	
+	<e:Group width="100%" height="40" y="80">
+		<e:Image x="20" y="5" source="img_word_fangpaiqianjiazhu_png"/>
+		<e:BitmapLabel id="txtPer" text="0" width="138" font="white_fnt" y="2" textAlign="right" verticalAlign="middle" height="39" scaleX="0.9" scaleY="0.9" right="20"/>
+		<e:Image source="s9_bg_erji_fengexiang_png" width="98%" y="38" x="4"/>
+		<e:Label text="翻牌前加注率：" x="20" y="0" width="158" height="39" textAlign="left" verticalAlign="middle" size="17" fontFamily="Microsoft YaHei UI" textColor="0xBB96C2" bold="true" visible="false"/>
+		<e:Label id="txt_Per" text="50%" x="306" y="0" width="104" textAlign="center" verticalAlign="middle" height="39" size="26" fontFamily="华文细黑" strokeColor="0x271231" stroke="1" visible="false"/>
+	</e:Group>
+
+	<e:Group width="100%" y="120">
+		<e:Image x="20" source="img_word_paixingwenzi_af_png" y="3"/>
+		<e:BitmapLabel id="txtAf" text="0" width="138" font="white_fnt" y="2" textAlign="right" verticalAlign="middle" height="39" scaleX="0.9" scaleY="0.9" right="20"/>
+		<e:Image source="s9_bg_erji_fengexiang_png" x="4" width="98%" y="38"/>
+		<e:Label text="激进度：" x="20" y="0" width="159" height="39" textAlign="left" verticalAlign="middle" size="17" fontFamily="Microsoft YaHei UI" textColor="0xBB96C2" bold="true" visible="false"/>
+		<e:Label id="txt_Af" text="50%" x="306" y="0" width="104" textAlign="center" verticalAlign="middle" height="39" size="26" fontFamily="华文细黑" strokeColor="0x271231" stroke="1"  visible="false"/>
+	</e:Group>
+	
+	<e:Group width="100%" y="160" height="40">
+		<e:Image x="20" source="img_word_paixingwenzi_3b_png" y="3"/>
+		<e:BitmapLabel id="txt3b" text="0" width="138" font="white_fnt" y="2" textAlign="right" verticalAlign="middle" height="39" scaleX="0.9" scaleY="0.9" right="20"/>
+		<e:Image source="s9_bg_erji_fengexiang_png" x="4" width="98%" y="38"/>
+		<e:Label text="再加注率：" x="20" y="0" width="159" height="39" textAlign="left" verticalAlign="middle" size="17" fontFamily="Microsoft YaHei UI" textColor="0xBB96C2" bold="true" visible="false"/>
+		<e:Label id="txt_3b" text="50%" x="306" y="0" width="104" textAlign="center" verticalAlign="middle" height="39" size="26" fontFamily="华文细黑" strokeColor="0x271231" stroke="1"  visible="false"/>
+	</e:Group>
+	
+	<e:Group width="100%" y="200" height="40">
+		<e:Image x="20" source="img_word_paixingwenzi_stl_png" y="3"/>
+		<e:BitmapLabel id="txtStl" text="0" width="138" font="white_fnt" y="2" textAlign="right" verticalAlign="middle" height="39" scaleX="0.9" scaleY="0.9" right="20"/>
+		<e:Image source="s9_bg_erji_fengexiang_png" x="4" width="98%" y="38"/>
+		<e:Label text="偷盲率：" x="20" y="0" width="159" height="39" textAlign="left" verticalAlign="middle" size="17" fontFamily="Microsoft YaHei UI" textColor="0xBB96C2" bold="true" visible="false"/>
+		<e:Label id="txt_Stl" text="50%" x="306" y="0" width="104" textAlign="center" verticalAlign="middle" height="39" size="26" fontFamily="华文细黑" strokeColor="0x271231" stroke="1"  visible="false"/>
+	</e:Group>
+	
+	<e:Group width="100%" height="40" y="240">
+		<e:Image x="20" y="3" source="img_word_paixingwenzi_cd_png"/>
+		<e:BitmapLabel id="txtCd" text="0" width="138" font="white_fnt" y="2" textAlign="right" verticalAlign="middle" height="39" scaleX="0.9" scaleY="0.9" right="20"/>
+		<e:Image source="s9_bg_erji_fengexiang_png" x="4" width="98%" y="38"/>
+		<e:Label text="持续下注率：" x="20" y="0" width="159" height="39" textAlign="left" verticalAlign="middle" size="17" fontFamily="Microsoft YaHei UI" textColor="0xBB96C2" bold="true" visible="false"/>
+		<e:Label id="txt_Cd" text="50%" x="306" y="0" width="104" textAlign="center" verticalAlign="middle" height="39" size="26" fontFamily="华文细黑" strokeColor="0x271231" stroke="1" visible="false"/>
+	</e:Group>
+	
+	<e:Group width="100%" y="280" height="40">
+		<e:Image x="20" y="3" source="img_word_paixingwenzi_wtsd_png"/>
+		<e:BitmapLabel id="txtWtsd" text="0" width="138" font="white_fnt" y="2" textAlign="right" verticalAlign="middle" height="39" scaleX="0.9" scaleY="0.9" right="20"/>
+		<e:Image source="s9_bg_erji_fengexiang_png" x="4" width="98%" y="38"/>
+		<e:Label text="摊牌率：" x="20" y="0" width="159" height="39" textAlign="left" verticalAlign="middle" size="17" fontFamily="Microsoft YaHei UI" textColor="0xBB96C2" bold="true" visible="false"/>
+		<e:Label id="txt_Wtsd" text="50%" x="306" y="0" width="104" textAlign="center" verticalAlign="middle" height="39" size="26" fontFamily="华文细黑" strokeColor="0x271231" stroke="1"  visible="false"/>
+	</e:Group>
+	
+	<e:Group width="100%" y="320" height="40">
+		<e:Image x="20" y="3" source="img_word_paixingwenzi_baifen_png"/>
+		<e:BitmapLabel id="txtBs" textAlign="right" verticalAlign="middle" text="0" width="138" font="white_fnt"  height="39" y="2"  scaleX="0.9" scaleY="0.9" right="20"/>
+		<e:Label text="每手盈利：" x="20" y="0" width="159" height="39" textAlign="left" verticalAlign="middle" size="17" fontFamily="Microsoft YaHei UI" textColor="0xBB96C2" bold="true" visible="false"/>
+		<e:Label id="txt_Bs" text="50%" x="306" y="0" width="104" textAlign="center" verticalAlign="middle" height="39" size="26" fontFamily="华文细黑" strokeColor="0x271231" stroke="1" visible="false"/>
+		<e:Image source="s9_bg_erji_fengexiang_png" width="96%" y="38" horizontalCenter="0.5"/>
+	</e:Group>
+</e:Group>
+	
+	
+</e:Skin>

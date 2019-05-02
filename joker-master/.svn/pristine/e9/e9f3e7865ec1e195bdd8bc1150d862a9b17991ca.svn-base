@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LoadingSkin" width="1136" height="768" currentState="init_" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="init_,loading_" >
+	<e:Rect width="100%" height="100%" fillColor="0"/>
+	
+	
+	<e:Label id="textField" text="0/0" bold="true" horizontalCenter="0" verticalCenter="0" visible.loading_="false" />
+	<e:ProgressBar includeIn="loading_" id="progress_bar" width="50%" visible="false" horizontalCenter="0" visible.loading_="true" verticalCenter="0">
+		<e:skinName>
+			<e:Skin minWidth="30" minHeight="18">
+				<e:Image source="img_loading_barbg_png" width="100%" scale9Grid="2,2,1,2" height="100%" verticalCenter="0"/>
+				<e:Image id="thumb" height="100%" width="100%" source="img_loading_bar_png"/>
+				<e:Label id="labelDisplay" textAlign="center" verticalAlign="middle" size="30" fontFamily="Tahoma" textColor="0x707070" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:ProgressBar>
+</e:Skin>

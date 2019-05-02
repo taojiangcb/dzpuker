@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RecordAnimalDescCompSkin" width="320" height="362" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:record="record.*" >
+	<w:Config id="158231adb4f"/>
+	<e:Group width="100%" height="100%" x="0" y="0">
+		<e:Group width="100%" height="163" y="-1" x="0" scaleX="1" scaleY="1">
+			<e:Image width="100%" height="100%" x="0" y="0" scaleX="1" scaleY="1" source="s9_bg_fangxinditu_png" scale9Grid="15,16,14,18"/>
+			<!--<e:Component id="_comp_header" x="0" y="0" width="100%" height="100%" skinName="RecordAnimalHeader"/>-->
+			<record:RecordAnimalHeaderComp id="_comp_header" x="0" y="0" width="100%" height="100%"  skinName="RecordAnimalHeaderComp"/>
+		</e:Group>
+		<e:Group width="100%" height="80" y="165" x="0">
+			<e:Image width="100%" height="100%" x="0" y="0" scaleX="1" scaleY="1" source="s9_bg_fangxinditu_png" scale9Grid="15,16,14,18"/>
+			<e:Label id="_txt_bianselong" text="入局率>..., 激进度>..., 摊牌率>...入局率>..., 激进度>..., 摊牌率>.." y="0" width="282" height="100%" textAlign="left" size="17"  bold="true" verticalAlign="middle"  horizontalCenter="0" visible="false"/>
+			<e:Label id="_txt_rule_1" text="入局率&gt;75%" x="20" y="20" size="17" textAlign="left" verticalAlign="middle" width="130" bold="true" scaleX="1" scaleY="1"/>
+			<e:Label id="_txt_rule_2" text="入局率&gt;75%" x="195" y="20" size="17" textAlign="left" verticalAlign="middle" width="130" bold="true" scaleX="1" scaleY="1"/>
+			<e:Label id="_txt_rule_3" text="摊牌前加注率>75%" x="20" y="45" size="17" textAlign="left" verticalAlign="middle" width="180" bold="true" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Group width="100%" height="116" y="247" x="0" scaleX="1" scaleY="1">
+			<e:Image width="100%" height="100%" x="0" y="0" scaleX="1" scaleY="1" source="s9_bg_fangxinditu_png" scale9Grid="15,16,14,18"/>
+			<e:Label id="_txt_animalDesc" text="打牌风格摇摆不定，无法判断打牌风格摇摆不定，无法判断" y="0" width="90%" height="100%" verticalAlign="middle" textAlign="left" size="17" textColor="0x9874a4" bold="true" horizontalCenter="0" lineSpacing="8" />
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HeadReplaceUIMoudleSkin" width="685" height="450" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:gameabc="gameabc.*" xmlns:uicomps="uicomps.*">
+<e:Rect width="100%" height="100%" id="bgimage" alpha="0.3"/>
+	<e:Group height="450" width="620" horizontalCenter="0" verticalCenter="0">
+		
+		<e:Image x="0" y="0" width="100%" height="100%" source="s9_bg_yijijiemiangditu_png" scale9Grid="134,78,2,4"/>
+		<e:Button id="btnColse" y="3" x="556">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_shop_close_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		
+		<e:Group  horizontalCenter="0" y="8">
+			<e:Image source="img_word_head_ghtx_png" x="12" y="0"/>
+
+		</e:Group>
+
+		<e:Group width="425" height="140" y="73" horizontalCenter="-78.5">
+			<e:Image source="s9_bg_fangxinditu_png" scale9Grid="15,16,14,18" x="-1" y="-3" width="100%" height="100%"/>
+			<e:Image source="img_word_head_pttx_png" x="-15" y="-15"/>
+			<e:Scroller y="43" x="5" width="415" height="84">
+				
+					<e:List itemRendererSkinName="HeadRepItemSkin" id="currList" width="410">
+						<e:ArrayCollection>
+							<e:Array>
+								<e:Object label="数据1" headID="1"/>
+								<e:Object label="数据2" headID="2"/>
+								<e:Object label="数据3" headID="3"/>
+								<e:Object label="数据2" headID="2"/>
+								<e:Object label="数据3" headID="3"/>
+							</e:Array>
+						</e:ArrayCollection>
+						<e:layout>
+							<e:HorizontalLayout gap="3"/>
+						</e:layout>
+					</e:List>
+				
+			</e:Scroller>
+		</e:Group>
+		
+		<e:Group width="425" height="220" y="217" horizontalCenter="-78.5">
+			<e:Image source="s9_bg_fangxinditu_png" scale9Grid="15,16,14,18" x="-1" y="-3" width="100%" height="100%"/>
+			<e:Label id="noHead" textColor="0xEBB6F6" size="20" text="当前没有购买头像哦" y="83" horizontalCenter="0" visible="false"/>
+			<e:Image x="-15" y="-11" source="img_word_head_gztx_png"/>
+			<e:Scroller y="44" x="5" width="415" height="163" scrollPolicyH="off">
+				
+					<e:List itemRendererSkinName="HeadRepItemSkin" id="buyList" width="410">
+						<e:ArrayCollection>
+							<e:Array>
+								<e:Object label="数据1" typeID="1" />
+								<e:Object label="数据2" typeID="2" />
+								<e:Object label="数据3" typeID="3" />
+								<e:Object label="数据4" typeID="4" />
+								<e:Object label="数据1" typeID="5"/>
+								<e:Object label="数据2" typeID="6" />
+								<e:Object label="数据3" typeID="7" />
+								<e:Object label="数据3" typeID="8" />
+								<e:Object label="数据3" typeID="9" />
+								<e:Object label="数据3" typeID="10" />
+								<e:Object label="数据3" typeID="11"/>
+								<e:Object label="数据3" typeID="12" />
+								<e:Object label="数据3" typeID="13" />
+							</e:Array>
+						</e:ArrayCollection>
+						<e:layout>
+							<e:TileLayout horizontalGap="3" rowAlign="top" columnAlign="left" requestedColumnCount="5" verticalGap="3"/>
+						</e:layout>
+					</e:List>
+				
+			</e:Scroller>
+		</e:Group>
+		
+		
+		<e:Group width="163" x="448" height="371" y="70">
+			
+			<e:Button id="btnOk" label="按钮" y="303" width="125" height="62" x="19">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_play_purple_png" />
+						<e:Image source="img_word_baocun_png" verticalCenter="0" horizontalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			
+			<e:Image source="s9_bg_shurukuangditu_png" scale9Grid="16,15,11,6" y="153" width="139" x="12"/>
+			<e:Label id="txtName" text="XXXX名字" x="19" y="161" width="125" size="20" textAlign="center"/>
+			<e:Image source="img_word_head_dqtx_png" y="-1" x="25"/>
+			<uicomps:AvatarImage  id="myAvat" y="46" width="100" height="100" x="32"/>
+		</e:Group>
+
+
+		
+
+
+
+	</e:Group>
+
+</e:Skin>

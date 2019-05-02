@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PCSetItemSkin" width="470" height="60" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="s9_bg_fangxinditu_png" scale9Grid="15,16,14,18" x="0" y="0" height="100%" width="100%"/>
+	<e:Label id="label2" textColor="0xBCA7DE" bold="true" size="22" textAlign="left" left="10" width="172" text="大于1KM" verticalCenter="0"/>
+	<e:CheckBox id="btnCheck" right="10" verticalCenter="0"/>
+	<e:Label id="labelText" text="标签" anchorOffsetX="0" width="143" size="22" textAlign="right" right="12" verticalCenter="0"/>
+	</e:Skin>

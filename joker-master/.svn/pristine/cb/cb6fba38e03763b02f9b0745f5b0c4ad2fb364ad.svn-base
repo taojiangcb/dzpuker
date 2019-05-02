@@ -1,0 +1,706 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>捷克达人</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+	<meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0"> 
+    <style>
+        html, body {
+            -ms-touch-action: none;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+			width: 100%;
+        }
+		 .bottomfull {  
+                width: 100%;  
+                height: 100%;              
+                position: fixed;                
+        }      
+    </style>
+
+    <!--这个标签为通过egret提供的第三方库的方式生成的 javascript 文件。删除 modules_files 标签后，库文件加载列表将不会变化，请谨慎操作！-->
+    <!--modules_files_start-->
+	<script egret="lib" src="libs/modules/egret/egret.js" src-release="libs/modules/egret/egret.min.js"></script>
+	<script egret="lib" src="libs/modules/egret/egret.web.js" src-release="libs/modules/egret/egret.web.min.js"></script>
+	<script egret="lib" src="libs/modules/game/game.js" src-release="libs/modules/game/game.min.js"></script>
+	<script egret="lib" src="libs/modules/tween/tween.js" src-release="libs/modules/tween/tween.min.js"></script>
+	<script egret="lib" src="libs/modules/res/res.js" src-release="libs/modules/res/res.min.js"></script>
+	<script egret="lib" src="libs/modules/socket/socket.js" src-release="libs/modules/socket/socket.min.js"></script>
+	<script egret="lib" src="libs/modules/eui/eui.js" src-release="libs/modules/eui/eui.min.js"></script>
+	<script egret="lib" src="libs/modules/dragonBones/dragonBones.js" src-release="libs/modules/dragonBones/dragonBones.min.js"></script>
+	<script egret="lib" src="libs/modules/protobuf/protobuf.js" src-release="libs/modules/protobuf/protobuf.min.js"></script>
+	<script egret="lib" src="libs/modules/puremvc/puremvc.js" src-release="libs/modules/puremvc/puremvc.min.js"></script>
+	<script egret="lib" src="libs/modules/particle/particle.js" src-release="libs/modules/particle/particle.min.js"></script>
+	<script egret="lib" src="libs/modules/CryptoJS_egret/CryptoJS_egret.js" src-release="libs/modules/CryptoJS_egret/CryptoJS_egret.min.js"></script>
+	<script egret="lib" src="libs/modules/gbk/gbk.js" src-release="libs/modules/gbk/gbk.min.js"></script>
+	<script egret="lib" src="libs/modules/mouse/mouse.js" src-release="libs/modules/mouse/mouse.min.js"></script>
+	<!--modules_files_end-->
+    <!--这个标签为不通过egret提供的第三方库的方式使用的 javascript 文件，请将这些文件放在libs下，但不要放在modules下面。-->
+    <!--other_libs_files_start-->
+    <!--other_libs_files_end-->
+
+    <!--这个标签会被替换为项目中所有的 javascript 文件。删除 game_files 标签后，项目文件加载列表将不会变化，请谨慎操作！-->
+    <!--game_files_start-->
+	<script egret="game" src="bin-debug/framework/uiControls/UICustomComponent.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/netSignal/ProtobuffCommand.js"></script>
+	<script egret="game" src="bin-debug/framework/uiControls/UIMoudleComponent.js"></script>
+	<script egret="game" src="bin-debug/framework/uiControls/UIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/netSignal/HttpCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/BaseUIMoudleComponent.js"></script>
+	<script egret="game" src="bin-debug/application/mvc/AbsractProxy.js"></script>
+	<script egret="game" src="bin-debug/application/comp/BaseItemCilckRenderer.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/SrsCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/room/PlayerVO.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/netSignal/MoudleCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/netSignal/NetStateHttpCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/room/RoomProxy.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/SrsConfig.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/SrsServer.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/room/MatchVO.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/ToolCommand.js"></script>
+	<script egret="game" src="bin-debug/application/comp/AvatarImage.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/item/PlaycardsUIComp.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/BaseNetCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/netSignal/GameCommand.js"></script>
+	<script egret="game" src="bin-debug/application/mvc/AbstractMediator.js"></script>
+	<script egret="game" src="bin-debug/application/platform/executor/PaymentExecutor.js"></script>
+	<script egret="game" src="bin-debug/application/platform/executor/PlatformExecutor.js"></script>
+	<script egret="game" src="bin-debug/application/platform/executor/UserExecutor.js"></script>
+	<script egret="game" src="bin-debug/application/platform/platformFactory/BasePlatform.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/BaseWndUIMoudleComponent.js"></script>
+	<script egret="game" src="bin-debug/framework/move/ParabolaMove.js"></script>
+	<script egret="game" src="bin-debug/framework/movie/MovieClip.js"></script>
+	<script egret="game" src="bin-debug/framework/msgpack/Worker.js"></script>
+	<script egret="game" src="bin-debug/framework/net/protobuf/Binary64.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/standard/base/GameBaseLogin.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/item/CardItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/item/PlayCardsFaceItem.js"></script>
+	<script egret="game" src="bin-debug/framework/uiControls/slowAction/ScaleTo1UIModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/BaseSceneUIMoudleComponent.js"></script>
+	<script egret="game" src="bin-debug/application/comp/chroose/ChrooseMenuItemRenderer.js"></script>
+	<script egret="game" src="bin-debug/framework/utils/StringUtils.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/netSignal/SrsErrorCommand.js"></script>
+	<script egret="game" src="bin-debug/main/appDelegate/mediator/AppDelegateMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/review/ReviewItemRenderer.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/smallGame/SmallGameProxy.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/sng/MttProductDBProxy.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/treasure/ProgressiveConfigVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/treasure/TreasureConfigVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/treasure/TreasureInfoVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/treasure/TreasureRecordVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/treasure/TreasureVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/user/BFQuickAccount.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/user/UserProxy.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/DZRecordVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/DealerInfoVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/DealerTableVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/FeedbackVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/FriendVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/GameConfigVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/GameEndInfoVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/HLCCardVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/HLCGameEndVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/HLCInfoVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/HLCPlayerVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/HLCTableVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/ImsVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/ItemVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/JoinPlayerVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/MessageVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/NoticeVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/ParamVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/PaymentVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/PlayCardsVideoVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/RoleVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/RoomVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/SeatPlayerVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/SeeInfoVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/ShopItemVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/TexasTableVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/UserInfoVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/UserLabelVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/UserVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/VipVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/guichu/ZPGameEndInfo.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/guichu/ZPGameEndVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/guichu/ZPInfoVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/guichu/ZPPlayerVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/vos/guichu/ZPTableVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/win/WinProxy.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/AppMediatorConst.js"></script>
+	<script egret="game" src="bin-debug/application/SystemTimer.js"></script>
+	<script egret="game" src="bin-debug/application/TimerStepParam.js"></script>
+	<script egret="game" src="bin-debug/application/appCommand/ReceiveLocalNotificationCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/Feed/FeedUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/Feed/comp/FeedInfoItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/Feed/mediator/FeedUIMoudleMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/antiAddiction/Anti.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/antiAddiction/AntiMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/antiAddiction/AntiProxy.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/antiAddiction/RealNameUIModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/appSystem/AppMainUIMoudelComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/appSystem/comp/HeadAvatarImage.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/appSystem/comp/MoreTagMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/appSystem/mediator/AppMainUIMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/award/AwardMCUIModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/award/AwardMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/award/AwardWinModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/bank/BankUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/bank/comp/BankChoiceItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/bank/comp/BankHttpAccount.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/bank/comp/BankTransferComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/bank/mediator/BankUIMoudMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/bill/BillMainLabel.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/bill/BillMainUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/bill/BillUILabel.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/bill/BillUIMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/bill/BillUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/bill/BillVO.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/charmWheel/CharmWheelItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/charmWheel/CharmWheelLabel.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/charmWheel/CharmWheelProxy.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/charmWheel/CharmWheelUIMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/charmWheel/CharmWheelUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/dealerInfo/DealerInfoUIMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/dealerInfo/DealerInfoUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/debug/DebugMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/debug/DebugProxy.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/debug/DebugView.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/friend/DealerFollowLabel.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/friend/DealerOnlineListUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/friend/FriendFaceAddLabel.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/friend/FriendFaceAddUIMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/friend/FriendFaceAddUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/friend/FriendInfoUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/friend/FriendInviteUIMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/friend/FriendInviteUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/friend/FriendLabel.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/friend/FriendMailLabel.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/friend/FriendMailUIMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/friend/FriendMailUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/friend/FriendUIMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/friend/FriendUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/appDelegate/BF_GuiChuMainDelegate.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/appDelegate/GuichuMainDelegate.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/gameContent/GuiChuChoumaComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/gameContent/GuiChuCountdownComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/gameContent/GuiChuDailyAwardModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/gameContent/GuiChuModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/gameContent/GuiChuModuleMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/gameContent/GuiChuModuleProxy.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/gameContent/GuiChuRecordComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/gameContent/GuiChuRuleModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/gameContent/GuiChuSetComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/gameContent/GuiChuTableComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/gameContent/GuiChuTableItemComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/gameContent/GuiChuTestComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/gameContent/GuiChuWheelComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/gameContent/GuiChuWheelItemComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/gameContent/GuichuAwardsComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/gameContent/GuichuBigAwardsComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/gameContent/GuichuLogic.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/gameContent/GuichuNewNoticeComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/gameContent/GuichuSmallAwardsComps.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/gameContent/GuichuWheelEndHandler.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/login/DebugLogin.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/login/GuichuAutoLogin.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/login/LoginLogic.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/guichu/mediator/LoginMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/joker/appController/JokerGameLogic.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/joker/appController/JokerLoginLogic.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/joker/appDelegate/JokerMainDelegate.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/joker/gameContent/JokerCardArrageAnimation.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/joker/gameContent/JokerCardItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/joker/gameContent/JokerDBProxy.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/joker/gameContent/JokerDebugModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/joker/gameContent/JokerGameModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/joker/gameContent/JokerNumberInput.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/joker/gameContent/JokerOperationPanel.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/joker/gameContent/JokerPKC4H.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/joker/gameContent/JokerPkContenScrolltController.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/joker/gameContent/JokerPkPatternsComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/joker/mediator/JokerGameMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/joker/mediator/JokerLoginMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/joker/mediator/JokerScenesMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/joker/srs/JokerRoomCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/joker/vos/PMCardVO.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/joker/vos/PMGameEndVO.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/joker/vos/PMInfoVO.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/joker/vos/PMTableVO.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/standard/IGameLogic.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/games/standard/ILogin.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/dealer/DealerProxy.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/guide/GreenHandlerMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/guide/GreenHandlerUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/HappyBankLineUIMoudleComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/HappyLuckySelectUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/HappyNoSeatUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/HappyRewardMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/HappyRoomUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/HappyRuleMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/HappyStatUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/HappyUIMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/HappyUIMoudleComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/HappyUpperUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/HookUIModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/item/CardItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/item/HappyAllCardsComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/item/HappyBetItemComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/item/HappyItemComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/item/HappyNotSeatItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/item/HappyPercentComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/item/HappySingleSeatItemComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/item/HappyStatItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/item/HappyUpperItemComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/item/LuckyCardItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/item/LuckyGroup.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/item/MoveImage.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/item/NotSeatItemComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/item/ResultComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/item/WaitComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/mediator/HappyRoomMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/happy/mediator/HappyStatUIMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/head/HeadListItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/head/HeadReplaceUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/head/mediator/HeadUIMoudMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/iosShared/IOSSharedUIModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/loading/LoadingCircleUI.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/login/LoginMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/login/LoginServerListItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/login/LoginUIMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/login/commands/LoginOutCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/mail/MailItemRenderer.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/mail/MailSubUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/mail/MailUIMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/mail/MailUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/mammon/MammonUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/mammon/comp/MammonRecInfoComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/mammon/newMammonUIModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/mission/MissionBox.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/mission/MissionItemRenderer.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/mission/MissionMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/mission/MissionUIModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/mission/SignItemRenderer.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/mission/SignUIModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/money/MoneyGuideUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/money/comp/MoneyInfoItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/money/mediator/MoneyGuideUIMoudMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/myInfo/InfoTipAdd.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/myInfo/InfoTipDel.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/myInfo/InfoTipEditUIMoudleComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/myInfo/MyInfoUIMoudleComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/myInfo/PokerGPSUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/myInfo/PokerInfoUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/myInfo/PokerReportUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/myInfo/comp/ExpressionFaceItemSmall.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/myInfo/comp/ExpressionListItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/myInfo/comp/InfoTip.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/myInfo/comp/MyInfoComp1.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/myInfo/comp/MyInfoComp2.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/myInfo/mediator/InfoTipEditMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/myInfo/mediator/MyInfoUIMoudMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/myInfo/mediator/PokerInfoUIMoudMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/notice/NoticeLabel.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/notice/NoticeUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/PlayCardsGodTreeUIModuleComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/PlayCardsPlayComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/PlayCardsUIEffect.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/PlayCardsUIMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/PlayCardsUIMoudleComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/PlayCardsVideoComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/PlaycardUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/PlaycardsChengZhangComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/PlaycardsServerMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/SngWheelComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/comp/PlayCardBuyUIModuleComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/comp/PlayCardOutMenuComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/comp/PlayCardSelectMoneyComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/comp/PlayCardTipComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/comp/PlayCardsChatComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/comp/PlayCardsGiftComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/comp/PlayCardsSafeHelpModuleComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/comp/PlayGoldTreeBtnComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/comp/PlaycardSafeComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/comp/PlaycardsChatMessComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/comp/PlaycardsChengZhangTipComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/comp/PlaycardsCountItemRenderer.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/comp/PlaycardsCountUIModuleComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/comp/PlaycardsSidePotComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/comp/PlaycardsTypeEffect.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/item/CDShape.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/happy/EndShowBetVO.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/item/GiftItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/item/MagicFaceItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/item/MessItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/item/MoveImage.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/item/MoveLabel.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/item/MoveText.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/item/PlayCardBankerImg.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/item/PlayCardItemComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/item/PlayCardMoneyComp.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/happy/HappyProxy.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/item/PlayCardsGiftItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/item/PlayCardsMessItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/item/PlayCardsSafeItem.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/happy/HookVO.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/item/WaitComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/review/PlayCardReviewWinModule.js"></script>
+	<script egret="game" src="bin-debug/framework/egretExtends/APIExtends.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/statis/PlayStatisInfoItemRenderer.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/statis/PlayStatisItemRenderer.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/playcards/statis/PlayStatisUIMoudleComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/preload/PreloadUIMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/preload/PreloadUIMoudleComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/prop/PropUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/prop/comp/PropInfoItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/prop/mediator/PropUIMoudleMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/record/PlayRecordUIMoudleComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/record/RecordInfoUIMoudleComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/record/RecordUIMoudleComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/record/animal/RecordAnimalAnalysisDescComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/record/animal/RecordAnimalAnalysisUIMoudleComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/record/animal/RecordAnimalDescComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/record/animal/RecordAnimalHeaderComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/record/animal/RecordSingleObject.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/record/comp/RecordCompreListComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/record/comp/RecordHistoryItemRender.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/record/comp/RecordMajorComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/record/comp/RecordMajorICompInfo.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/record/comp/RecordRadarComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/record/mediator/PlayRecordMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/record/mediator/RecordAnalysisMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/record/mediator/RecordMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/room/CreateMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/room/CreatePKMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/room/CreatePKRoomUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/room/CreateRenderer.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/room/CreateUIMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/room/DealerComp.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/room/DealerLayout.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/room/DealerList.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/room/DealerListItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/room/FreeBrokeMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/room/JoinMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/room/JoinUIMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/room/RoomMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/room/RoomUIMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/room/Table2Renderer.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/room/TableRenderer.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/room/VipRoomRenderer.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/room/VipRuleMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/set/APPSetUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/set/PCSetItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/shop/PropPanel.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/shop/ShopMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/shop/ShopWinModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/shop/ShoppingPanel.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/shop/VipPanel.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/shop/comps/ShopItemItemRenderer.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/shop/comps/VipRowItemRenderer.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/smallGame/clear/ClearCardItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/smallGame/clear/ClearGameMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/smallGame/fiveCard/ChrooseItemButton.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/smallGame/fiveCard/FiveCardProxy.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/smallGame/fiveCard/FiveCardUIModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/smallGame/memory/CardMemoryCardItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/smallGame/memory/CardMemoryUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/smallGame/turn/GameCardItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/smallGame/turn/GameTurnUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/MatchMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/MttExchangeHistoryItemRenderer.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/MttExchangeHistoryUIModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/MttExchangeMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/MttMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/MttMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/MttPhoneValidateMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/MttProductExchangeCodeUIModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/MttProductExchangeUIModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/MttProductItemRenderer.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/MttProductUIModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/MttRemindMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/MttRenderer.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/MttRuleMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/MttStateMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/MttStateMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/SngBlindsRenderer.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/SngMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/SngMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/SngPlayerRenderer.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/SngRankRenderer.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/SngRenderer.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/SngResultMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/SngRuleMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/sng/SngStateMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/svr_debug/DebugConnectCommands.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/svr_debug/DebugLoginModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/svr_debug/DebugPlayConnectCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/svr_debug/DebugServer.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/test/TestChrooseMenu.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/treasure/TreasureItem.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/treasure/TreasureLabel.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/treasure/TreasureProxy.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/treasure/TreasureSubLabel.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/treasure/TreasureSubUIMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/treasure/TreasureSubUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/treasure/TreasureUIMediator.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/treasure/TreasureUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/win/ApprenticeshipUIModule.js"></script>
+	<script egret="game" src="bin-debug/application/appMoudle/win/WinUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/item/ItemProxy.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/NetAction.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/NetConfigs.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/NetExperimental.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/ParamVoWriter.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/SrsPackWriter.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/VirtualServer.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/netSignal/DealerListCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/netSignal/DzFeedAddCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/netSignal/ErrorMessageCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/item/PropVO.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/netSignal/GameConfigCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/netSignal/HappyNetCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/netSignal/HeadNetCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/localDB/InitMissionLDB.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/netSignal/MailCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/netSignal/MammonCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/netSignal/MobileValidateCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/localDB/InitPropLDB.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/mammon/MammonProxy.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/netSignal/NoticeGetCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/netSignal/PlayInfoNetCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/netSignal/PlayRecordCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/netSignal/PlaycardsNetCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/mission/MissionProxy.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/netSignal/RollNoticeCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/netSignal/ShopCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/mission/MissionVO.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/EncryptHelper.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/IServerSuruct.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/notice/RollNoticeVO.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/SrsLogger.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/playcards/CardResultVO.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/SrsStreamReader.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/SrsStreamWriter.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/BillCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/ChangeInfoCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/ChangeStatusCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/CharmWheelCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/ConnectCommands.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/DealerCommands.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/FriendCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/InfoTipCmd.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/JoinRoomCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/LoginCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/MatchCommands.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/MatchVirtualCommands.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/MissionCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/RFRollNoticeCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/RoomCommands.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/SilverCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/SlotCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/playcards/CardVO.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/TestCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/playcards/CardsResult.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/TransCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/TreasureCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/cmds/guichu/GuichuRoomCommand.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/suruct/Enums.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/suruct/GamePackage.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/suruct/MatchConfigInfo.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/suruct/MatchPlazaInfo.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/suruct/MsgBox.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/suruct/PlayerGameData.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/suruct/PlayerInfo.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/suruct/PlayerPlace.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/suruct/PlayerSet.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/suruct/PlayerStateInfo.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/suruct/SrsPackage.js"></script>
+	<script egret="game" src="bin-debug/application/appNet/srs/suruct/TableInfo.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/playcards/CountVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/playcards/PlayCardsProxy.js"></script>
+	<script egret="game" src="bin-debug/application/comp/ButtonGroup.js"></script>
+	<script egret="game" src="bin-debug/application/comp/GameHttpRequest.js"></script>
+	<script egret="game" src="bin-debug/application/comp/chroose/ChrooseMenu.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/playcards/PotVO.js"></script>
+	<script egret="game" src="bin-debug/application/comp/keyboard/DragInMediator.js"></script>
+	<script egret="game" src="bin-debug/application/comp/keyboard/DragInUIComp.js"></script>
+	<script egret="game" src="bin-debug/application/comp/keyboard/DragInUIMoudle.js"></script>
+	<script egret="game" src="bin-debug/application/comp/keyboard/KeyboardComp.js"></script>
+	<script egret="game" src="bin-debug/application/comp/keyboard/KeyboardUIMoudleComp.js"></script>
+	<script egret="game" src="bin-debug/application/comp/keyboard/SubKeyBoardComp.js"></script>
+	<script egret="game" src="bin-debug/application/comp/tips/Alert.js"></script>
+	<script egret="game" src="bin-debug/application/comp/tips/CountTooltip.js"></script>
+	<script egret="game" src="bin-debug/application/comp/tips/KeyboardComp.js"></script>
+	<script egret="game" src="bin-debug/application/comp/tips/SysTemCenterTimeTooltip.js"></script>
+	<script egret="game" src="bin-debug/application/comp/tips/SysTemTopTimeTooltip.js"></script>
+	<script egret="game" src="bin-debug/application/comp/tips/SystemBottomTooltip.js"></script>
+	<script egret="game" src="bin-debug/application/comp/tips/SystemCenterTooltip.js"></script>
+	<script egret="game" src="bin-debug/application/comp/tips/SystemPrompt.js"></script>
+	<script egret="game" src="bin-debug/application/comp/tips/SystemRollTooltip.js"></script>
+	<script egret="game" src="bin-debug/application/comp/tips/SystemTooltipUIComp.js"></script>
+	<script egret="game" src="bin-debug/application/comp/tips/SystemTopTooltip.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/record/RecordProxy.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/record/RecordVO.js"></script>
+	<script egret="game" src="bin-debug/application/mvc/AppFacade.js"></script>
+	<script egret="game" src="bin-debug/application/platform/LocalNotificationInterface.js"></script>
+	<script egret="game" src="bin-debug/application/platform/PaymentInterface.js"></script>
+	<script egret="game" src="bin-debug/application/platform/PaymentWrapper.js"></script>
+	<script egret="game" src="bin-debug/application/platform/PlatformSdk.js"></script>
+	<script egret="game" src="bin-debug/application/platform/UserInterface.js"></script>
+	<script egret="game" src="bin-debug/application/platform/UserWrapper.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/room/MatchBlindsVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/room/MatchProxy.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/room/MatchRewardVO.js"></script>
+	<script egret="game" src="bin-debug/application/platform/executor/browser/BrowserPaymentExecutor.js"></script>
+	<script egret="game" src="bin-debug/application/platform/executor/browser/BrowserPlatformExecutor.js"></script>
+	<script egret="game" src="bin-debug/application/platform/executor/browser/BrowserUserExecutor.js"></script>
+	<script egret="game" src="bin-debug/application/platform/executor/support/H5alipaySupport.js"></script>
+	<script egret="game" src="bin-debug/application/platform/gameTea/GameTeaPay.js"></script>
+	<script egret="game" src="bin-debug/application/platform/platformCfg/PlatformConfig.js"></script>
+	<script egret="game" src="bin-debug/application/platform/platformFactory/AndroidPlatform.js"></script>
+	<script egret="game" src="bin-debug/application/platform/platformFactory/AppStorePlatform.js"></script>
+	<script egret="game" src="bin-debug/application/AppConst.js"></script>
+	<script egret="game" src="bin-debug/application/platform/platformFactory/PlatformFactory.js"></script>
+	<script egret="game" src="bin-debug/application/test/IPV6Test.js"></script>
+	<script egret="game" src="bin-debug/application/test/NativeTest.js"></script>
+	<script egret="game" src="bin-debug/application/utils/DateUtils.js"></script>
+	<script egret="game" src="bin-debug/application/utils/FormatUtils.js"></script>
+	<script egret="game" src="bin-debug/application/utils/GradualColor.js"></script>
+	<script egret="game" src="bin-debug/application/utils/HtmlTextUtils.js"></script>
+	<script egret="game" src="bin-debug/application/utils/NativeUtils.js"></script>
+	<script egret="game" src="bin-debug/application/utils/SoundUtils.js"></script>
+	<script egret="game" src="bin-debug/application/utils/TempSessionUtils.js"></script>
+	<script egret="game" src="bin-debug/framework/IDisposer.js"></script>
+	<script egret="game" src="bin-debug/framework/IUIDispose.js"></script>
+	<script egret="game" src="bin-debug/framework/LocalSO.js"></script>
+	<script egret="game" src="bin-debug/framework/UUID.js"></script>
+	<script egret="game" src="bin-debug/framework/bfas/EventPackageSender.js"></script>
+	<script egret="game" src="bin-debug/framework/bfas/Mc2Sdk.js"></script>
+	<script egret="game" src="bin-debug/framework/bfas/RoleType.js"></script>
+	<script egret="game" src="bin-debug/framework/bfas/activate/HttpActivate.js"></script>
+	<script egret="game" src="bin-debug/framework/bfas/msgPack/Integer.js"></script>
+	<script egret="game" src="bin-debug/framework/bfas/msgPack/IntegerWorker.js"></script>
+	<script egret="game" src="bin-debug/framework/bfas/msgPack/Long.js"></script>
+	<script egret="game" src="bin-debug/framework/bfas/msgPack/LongWorker.js"></script>
+	<script egret="game" src="bin-debug/framework/bfas/vo/AppEvent.js"></script>
+	<script egret="game" src="bin-debug/framework/bfas/vo/AppProfile.js"></script>
+	<script egret="game" src="bin-debug/framework/bfas/vo/DeviceProfile.js"></script>
+	<script egret="game" src="bin-debug/framework/bfas/vo/EventPackage.js"></script>
+	<script egret="game" src="bin-debug/framework/bfas/vo/LocationInfo.js"></script>
+	<script egret="game" src="bin-debug/framework/bfas/vo/Message.js"></script>
+	<script egret="game" src="bin-debug/framework/bfas/vo/Session.js"></script>
+	<script egret="game" src="bin-debug/framework/dragonbones/DragonBonesMgr.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/room/MttMatchVO.js"></script>
+	<script egret="game" src="bin-debug/framework/egretExtends/logger/GTLog.js"></script>
+	<script egret="game" src="bin-debug/framework/loadPools/LoadPool.js"></script>
+	<script egret="game" src="bin-debug/framework/loadPools/PoolsImage.js"></script>
+	<script egret="game" src="bin-debug/framework/md5/md5.js"></script>
+	<script egret="game" src="bin-debug/framework/move/AddSpeedMove.js"></script>
+	<script egret="game" src="bin-debug/framework/move/HeadAttackMove.js"></script>
+	<script egret="game" src="bin-debug/framework/move/IMove.js"></script>
+	<script egret="game" src="bin-debug/framework/move/Juggler.js"></script>
+	<script egret="game" src="bin-debug/framework/move/JumpMove.js"></script>
+	<script egret="game" src="bin-debug/framework/move/LineAttackMove.js"></script>
+	<script egret="game" src="bin-debug/framework/move/LineMove.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/room/MttRankVO.js"></script>
+	<script egret="game" src="bin-debug/framework/move/ShakeMove.js"></script>
+	<script egret="game" src="bin-debug/framework/move/TimeOut.js"></script>
+	<script egret="game" src="bin-debug/framework/move/TreeMove.js"></script>
+	<script egret="game" src="bin-debug/application/AppReg.js"></script>
+	<script egret="game" src="bin-debug/framework/movie/TextureAtlas.js"></script>
+	<script egret="game" src="bin-debug/framework/msgpack/ArrayWorker.js"></script>
+	<script egret="game" src="bin-debug/framework/msgpack/BooleanWorker.js"></script>
+	<script egret="game" src="bin-debug/framework/msgpack/Factory.js"></script>
+	<script egret="game" src="bin-debug/framework/msgpack/IntegerWorker.js"></script>
+	<script egret="game" src="bin-debug/framework/msgpack/MapWorker.js"></script>
+	<script egret="game" src="bin-debug/framework/msgpack/MsgPack.js"></script>
+	<script egret="game" src="bin-debug/framework/msgpack/MsgPackError.js"></script>
+	<script egret="game" src="bin-debug/framework/msgpack/MsgPackFlags.js"></script>
+	<script egret="game" src="bin-debug/framework/msgpack/NullWorker.js"></script>
+	<script egret="game" src="bin-debug/framework/msgpack/NumberWorker.js"></script>
+	<script egret="game" src="bin-debug/framework/msgpack/RawWorker.js"></script>
+	<script egret="game" src="bin-debug/application/AppRoot.js"></script>
+	<script egret="game" src="bin-debug/framework/msgpack/incomplete.js"></script>
+	<script egret="game" src="bin-debug/framework/net/U8Array.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/room/TableVO.js"></script>
+	<script egret="game" src="bin-debug/framework/net/protobuf/Int64.js"></script>
+	<script egret="game" src="bin-debug/framework/net/protobuf/UInt64.js"></script>
+	<script egret="game" src="bin-debug/framework/platform/Platform.js"></script>
+	<script egret="game" src="bin-debug/framework/uiControls/IUIMoudleComponent.js"></script>
+	<script egret="game" src="bin-debug/framework/uiControls/UIConstants.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/set/SettingProxy.js"></script>
+	<script egret="game" src="bin-debug/framework/uiControls/UIManager.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/shop/PayGoodsVO.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/shop/ShopProxy.js"></script>
+	<script egret="game" src="bin-debug/framework/uiControls/UIPreloadManager.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/shop/ShopTemplateVO.js"></script>
+	<script egret="game" src="bin-debug/framework/utils/ArrayUtils.js"></script>
+	<script egret="game" src="bin-debug/framework/utils/BindleButtonUtils.js"></script>
+	<script egret="game" src="bin-debug/framework/utils/GraphicsUtils.js"></script>
+	<script egret="game" src="bin-debug/framework/utils/OSType.js"></script>
+	<script egret="game" src="bin-debug/framework/utils/PointUtils.js"></script>
+	<script egret="game" src="bin-debug/framework/utils/ResourceBundleUtil.js"></script>
+	<script egret="game" src="bin-debug/application/appDBModel/shop/VIPTemplateVO.js"></script>
+	<script egret="game" src="bin-debug/main/AssetAdapter.js"></script>
+	<script egret="game" src="bin-debug/main/CtConfig.js"></script>
+	<script egret="game" src="bin-debug/main/LoadingUI.js"></script>
+	<script egret="game" src="bin-debug/main/Main.js"></script>
+	<script egret="game" src="bin-debug/main/ThemeAdapter.js"></script>
+	<script egret="game" src="bin-debug/main/appDelegate/AppDelegate.js"></script>
+	<script egret="game" src="bin-debug/main/appDelegate/IAppDelegate.js"></script>
+	<script egret="game" src="bin-debug/application/AppGlobal.js"></script>
+	<!--game_files_end-->
+</head>
+<body>
+		<div id="neplayer" class="bottomfull"></div>
+		<div style="margin:auto;width: 100%;height: 100%;" class="egret-player"
+				 data-entry-class="Main"
+				 data-orientation="landscape"
+				 data-scale-mode="showAll"
+				 data-frame-rate="30"
+				 data-content-width="1136"
+				 data-content-height="768"
+				 data-show-paint-rect="false"
+				 data-multi-fingered="2"
+				 data-show-fps="false" data-show-log="false"
+				 data-log-filter="" data-show-fps-style="x:0,y:0,size:20,textColor:0x00c200,bgAlpha:0.5">
+		</div>
+    <script>
+
+	
+        egret.runEgret({renderMode:"webgl"});	
+		document.addEventListener('OPENVEDIO', function (e){
+		// 要用preventDefault()阻止默认行为
+			// e.preventDefault();
+		 	playNow(e.data);
+		});	
+		document.addEventListener('CLOSEVEDIO',removePlay);
+		function playNow(url,width,height) {
+            if (url === '') {
+                alert('请输入播放地址');
+                return;
+            }
+            var container = document.getElementById('neplayer');
+			container.innerHTML = '<iframe id="my-video" width="100%" height="100%" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes" src="'+url+'"/>';
+         }
+		 
+		 function removePlay(){
+			   var container = document.getElementById('neplayer');
+			  var video = document.getElementById("my-video");  
+              if(video!=null)  container.removeChild(video); 
+		 } 
+		
+    </script>
+</body>
+</html>

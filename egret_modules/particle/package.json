@@ -1,0 +1,16 @@
+{
+	"name": "egret",
+	"version": "3.1.5",
+	"modules": [
+		{
+			"name": "particle",
+			"description": "particle",
+			"files": [
+				"particle.d.ts",
+				"particle.js",
+				"particle.min.js"
+			],
+			"root": "src"
+		}
+	]
+}

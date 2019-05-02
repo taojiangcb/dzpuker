@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FiveCardUIModuleSkin" width="1024" height="768" xmlns:e="http://ns.egret.com/eui" xmlns:fiveCard="fiveCard.*">
+	<e:Image source="s9_bg_main_jpg" width="100%" height="100%"/>
+	<e:Group id="reportGroup" width="100%" height="100%" y="0" x="0" visible="false">
+		<e:Rect width="100%" height="100%" x="0" y="0" fillAlpha="0.5"/>
+		<e:Group width="480" height="178" horizontalCenter="0" verticalCenter="0">
+			<e:Image x="172" y="10" source="img_word_gameUI_playjscjd_png"/>
+			<e:Image source="sg_bg_shezhi_ditu_png" y="71" scale9Grid="16,16,5,4" width="350" height="40" x="65"/>
+			<e:Image source="sg_bg_shezhi_ditu_png" y="128" scale9Grid="16,16,5,4" width="350" height="40" x="65"/>
+			<e:Label text="选择正确:" x="76" y="78" textColor="0xFF9200" bold="true" size="24"/>
+			<e:Label text="获得:" x="76" y="135" textColor="0xFF9200" bold="true" size="24"/>
+			<e:Label id="txtRightCount" text="7次" x="224" y="78" size="26" textAlign="right" width="174"/>
+			<e:Group x="225" y="132" width="173">
+				<e:Image source="icon_caoma1_png" y="5" x="4"/>
+				<e:Label id="txtReward" y="5" text="12306" x="56" bold="true"/>
+				<e:layout>
+					<e:HorizontalLayout horizontalAlign="right" gap="0"/>
+				</e:layout>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+	<e:Group id="descGroup" width="100%" height="100%" x="0" y="0">
+		<e:Rect width="100%" height="100%" x="0" y="0" fillAlpha="0.3"/>
+		<e:Group width="570" height="250" horizontalCenter="0" verticalCenter="42">
+		<e:Label text="牌型竞速规则说明" x="563" y="295" bold="true" size="24" stroke="1" textColor="0xFFAE00"/>
+		<e:Label id="txtDesc" multiline="true" horizontalCenter="1" verticalCenter="0" height="100%" width="100%" wordWrap="true" verticalAlign="top" size="24" text="1.牌型竞速是一个快速选择最大牌型的竞速游戏\n2.开始竞速后拥有60秒的选择牌型总时长\n3.最大牌型错误将扣除3秒时间\n4.竞速时间结束后，系统将根据选择正确的次数给予游戏币奖励\n5.牌型大小依次为：皇家同花顺、同花顺、四条、葫芦、同   花、顺子、三条、两对、一对、高牌" lineSpacing="5" stroke="1"/>
+		<e:layout>
+			<e:VerticalLayout horizontalAlign="center" verticalAlign="middle" gap="15"/>
+		</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Rect width="100%" height="100" x="0" bottom="0" fillAlpha="0.3"/>
+
+	<e:Group verticalCenter="0" width="100%" height="300" id="cardBox" locked="true">
+		<e:layout >
+			<e:HorizontalLayout gap="5" horizontalAlign="center" verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+	
+	<e:Image id="yesOrNo" width="110" height="32" y="189" source="img_word_gameUI_playxzzq_png" alpha="0" horizontalCenter="0"/>
+	
+	<e:Group width="100%" height="100" bottom="0" id="chrooseBar" visible="false">
+		<e:layout>
+			<e:BasicLayout/>
+		</e:layout>
+		<fiveCard:ChrooseItemButton id="chrooseBtn1" skinName="ChrooseItemButtonSkin" horizontalCenter="-257" verticalCenter="0"/>
+		<fiveCard:ChrooseItemButton skinName="ChrooseItemButtonSkin" id="chrooseBtn2" horizontalCenter="0" verticalCenter="0"/>
+		<fiveCard:ChrooseItemButton id="chrooseBtn3" skinName="ChrooseItemButtonSkin" horizontalCenter="257" verticalCenter="0"/>
+	</e:Group>
+	
+	<e:Group width="100%" height="80" bottom="25" id="btnBars">
+		<e:layout >
+			<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="50"/>
+		</e:layout>
+		<e:Group width="172" x="166" id="btnStart">
+			<e:Image width="100%" height="100%"  scale9Grid="57,8,12,49" source="btn_play_purple_png"/>
+			<e:Image source="img_word_gameUI_ksyx_png" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+		
+		<e:Group width="172" x="166" id="btnAgin">
+			<e:Image width="100%" height="100%"  scale9Grid="57,8,12,49" source="btn_play_purple_png"/>
+			<e:Image source="img_word_gameUI_zlyj_png" horizontalCenter="0" verticalCenter="0"/>		
+		</e:Group>
+	</e:Group>
+	
+	
+	<e:Group id="consumeBar" height="30" bottom="5" horizontalCenter="0" visible="false">
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" gap="0"/>
+		</e:layout>
+		<e:Image source="img_word_gameUI_xh_png" y="74" x="3"/>
+		<e:Image source="icon_caoma1_png" y="73" x="63"/>
+		<e:Label y="76" text="X1000" bold="true" width="70" size="22" x="100"/>
+	</e:Group>
+	
+	
+	<e:Group id="topBar" width="100%">
+		<e:Image source="icon_sng_bg_scdt_png" width="100%" y="104"/>
+		<e:Image source="img_bg_title3_png" y="-5" scale9Grid="91,40,9,15" width="100%" height="115" alpha="0.6"/>
+		<e:Button id="btnClose0" y="-5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing" xmlns:uicomps="uicomps.*" xmlns:main="main.*" xmlns:playcards="playcards.*" xmlns:fiveCard="fiveCard.*">
+					<e:Rect width="64" height="96" alpha="0"/>
+					<e:Image x="10" y="30" source="btn_back_png"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group horizontalCenter="0" top="5">
+			<e:Image y="29" x="50" source="img_word_gameUI_playpxjs_png"/>
+			<e:Image source="icon_gameUI_glz_png" y="16" scaleX="-1" x="198"/>
+			<e:Image source="icon_gameUI_glz_png" y="16" x="10"/>
+		</e:Group>
+		<e:Group right="30" width="200" y="29">
+			<e:Image source="sg_bg_shezhi_ditu_png" y="0" scale9Grid="16,16,5,4" width="100%" height="40" x="0"/>
+			<e:Label y="5" text="0" x="56" bold="true" width="130" id="numTxt0" textAlign="right"/>
+			<e:Image source="icon_caoma1_png" y="5" x="4"/>
+		</e:Group>
+		<e:Group y="115" horizontalCenter="0" id="winGroup0">
+			<e:layout>
+				<e:HorizontalLayout gap="0" verticalAlign="middle"/>
+			</e:layout>
+			<e:Image id="winImag0" x="131" source="img_word_gameUI_jcsysj_png"/>
+			<e:BitmapLabel id="txtDonwTime" x="65" y="-11" font="fnt03_fnt" text="60"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

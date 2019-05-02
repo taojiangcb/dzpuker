@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RecordAnimalAnalysisDescCompSkin" width="647" height="260" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:record="record.*" >
+	<e:Group width="100%" height="100%" x="0" y="0">
+		<e:Group width="100%" height="163" x="0" y="0">
+			
+            <e:Image width="100%" height="100%" x="0" y="0" scaleX="1" scaleY="1" source="s9_bg_fangxinditu_png" scale9Grid="15,16,14,18"/> 
+			<e:Image id="_img_header" width="100%" height="2100%" x="0" y="0" scaleX="1" scaleY="1" source="icon_award_baozha_3_png" visible="false"/>
+			<e:Group width="100%" height="163" x="0" y="0">
+				<e:Image width="100%" height="100%" x="0" y="0" scaleX="1" scaleY="1" source="s9_bg_fangxinditu_png" scale9Grid="20,16,9,18"/>
+				<record:RecordAnimalHeaderComp id="_comp_header" x="0" y="0" width="100%" height="100%"  skinName="RecordAnimalHeaderComp"/>
+				<e:Group width="318" height="163" x="300" y="0" scaleX="1" scaleY="1">
+					<e:Label id="_txt_description" text="变色龙-如果你不知道自己的能力，请装成保守的牌手，这样别人会把你的底牌想象得无限大。" x="0" y="0" scaleX="1" scaleY="1" width="100%" height="100%" textAlign="left" verticalAlign="middle" bold="true" size="18" textColor="0xffffff" lineSpacing="8"/>
+				</e:Group>
+			</e:Group>
+		</e:Group>
+		<e:Group width="100%" height="100" x="0" y="165">
+			<e:Image width="100%" height="94" x="0" y="0" scaleX="1" scaleY="1" source="s9_bg_fangxinditu_png" scale9Grid="20,16,9,18"/>
+			<e:Image horizontalCenter="0" y="7" x="0" scaleX="1" scaleY="1" source="iw_xiangxishuju_info_png"/>
+			<e:Label text="对局数：" y="45" size="15" left="60" textColor="0xa973bb" verticalAlign="middle" bold="true"/>
+			<e:Label id="_txt_djs" text="暂无" y="45" size="15" left="124" textColor="0xa973bb" textAlign="left" verticalAlign="middle" bold="true"/>
+			<e:Label id="_txt_pfr" text="暂无" y="70" size="15" x="172" textColor="0xa973bb" textAlign="left" verticalAlign="middle" bold="true"/>
+			<e:Label id="_txt_af" text="暂无" x="346" y="70" size="15" textColor="0xa973bb" textAlign="left" verticalAlign="middle" bold="true"/>
+			<e:Label id="_txt_wtsd" text="暂无" x="544" y="45" size="15" textColor="0xa973bb" textAlign="left" verticalAlign="middle" bold="true"/>
+			<e:Label id="_txt_lss" text="暂无" x="544" y="70" size="15" textColor="0xa973bb" textAlign="left" verticalAlign="middle" bold="true"/>
+			<e:Label id="_txt_rjl" text="暂无" x="346" y="45" size="15" textColor="0xa973bb" textAlign="left" verticalAlign="middle" bold="true"/>
+			<e:Label text="激进度：" x="282" y="70" size="15" textColor="0xa973bb" verticalAlign="middle" bold="true"/>
+			<e:Label text="猎杀数：" x="480" y="70" size="15" textColor="0xa973bb" verticalAlign="middle" bold="true"/>
+			<e:Label text="翻牌前加注率：" x="60" y="70" size="15" textColor="0xa973bb" verticalAlign="middle" bold="true"/>
+			<e:Label text="入局率：" x="282" y="45" size="15" textColor="0xa973bb" verticalAlign="middle" bold="true"/>
+			<e:Label text="摊牌率：" x="480" y="45" size="15" textColor="0xa973bb" verticalAlign="middle" bold="true"/>
+        </e:Group>
+	</e:Group>
+</e:Skin>

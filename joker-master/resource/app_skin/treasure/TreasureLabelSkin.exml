@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TreasureLabelSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="icon_sng_bg_type2_png" width="100%" scale9Grid="155,0,114,144"/>
+	<e:Group verticalCenter="0" left="20" height="100%">
+		<e:Image id="img1" source="icon_shop_box4_png" verticalCenter="-10" horizontalCenter="0"/>
+		<e:Image source="img_word_di_qi_png" bottom="5" horizontalCenter="0"/>
+		<e:BitmapLabel id="bl1" font="fnt03_fnt" text="100" horizontalCenter="0" bottom="17"/>
+	</e:Group>
+	<e:Group verticalCenter="-10" left="150">
+		<e:Group>
+			<e:Image source="s9_bg_erjiditubeijing_png" scale9Grid="21,17,11,16" width="200" verticalCenter="0"/>
+			<e:Image source="img_jiangchi_png" left="10" scaleX="1" scaleY="1" verticalCenter="0"/>
+			<e:BitmapLabel id="bl2" text="2000" font="fnt03_fnt" right="20" verticalCenter="0"/>
+		</e:Group>
+		<e:Group x="10" y="10">
+			<e:Image source="s9_bg_erjiditubeijing_png" scale9Grid="21,17,11,16" width="100%" minWidth="200"/>
+			<e:Group verticalCenter="0" left="10" right="10">
+				<e:Image source="img_word_zhongjiangzhe_png" verticalCenter="0" left="0"/>
+				<e:Group minWidth="120" maxWidth="150">
+					<e:Label id="lb1" text="明哥" size="20" verticalCenter="0" right="0" minWidth="0"/>
+				</e:Group>
+				<e:layout>
+					<e:HorizontalLayout horizontalAlign="left" verticalAlign="middle" gap="0"/>
+				</e:layout>
+			</e:Group>
+		</e:Group>
+		<e:Group x="20" y="20">
+			<e:Image source="s9_bg_erjiditubeijing_png" scale9Grid="21,17,11,16" width="200"/>
+			<e:Image source="img_word_benqizhongjianggailv_png" verticalCenter="0" left="10"/>
+			<e:Label id="lb2" text="34%" size="20" verticalCenter="0" right="10"/>
+		</e:Group>
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+	<e:Group bottom="20" left="470">
+		<e:Label id="lb3" text="揭晓时间：" x="24" y="106" size="20" textColor="0xffd200"/>
+		<e:Label id="lb4" text="2016-09-07" x="34" y="116" size="20"/>
+		<e:Label id="lb5" text="12:00:00" x="44" y="126" size="20"/>
+		<e:layout>
+			<e:HorizontalLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="gp" verticalCenter="0" right="40">
+		<e:Image id="img2" source="img_word_yilingqu_png" horizontalCenter="0" verticalCenter="0"/>
+		<e:Group id="btn" left="0" right="0" bottom="0" top="0">
+			<e:Image source="btn_notice_type2_png" width="120"/>
+			<e:Image source="img_word_lingqu_png" verticalCenter="0" horizontalCenter="0"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

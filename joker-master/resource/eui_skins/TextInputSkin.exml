@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.TextInputSkin" minHeight="40" minWidth="300" states="normal,disabled,normalWithPrompt,disabledWithPrompt" xmlns:e="http://ns.egret.com/eui">
+	<e:EditableText id="textDisplay" verticalCenter="0.5" left="10" right="10" textAlign="center"
+	                textColor="0xFFFFFF" textColor.disabled="0xff0000" width="100%" height="30" 
+	                size="24" verticalAlign="middle"/>
+	<e:Label id="promptDisplay" verticalCenter="0.5" left="10" right="10" textAlign="center"
+	                width="100%" height="30" size="24" touchEnabled="false" 
+	         includeIn="normalWithPrompt,disabledWithPrompt" verticalAlign="middle" textColor="0xFDFBFB"/>
+	
+</e:Skin>

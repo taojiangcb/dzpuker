@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Login" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image x="0" y="0" horizontalCenter="0" verticalCenter="0" source="guichubg_2_jpg"/>
+	<e:Group verticalCenter="0" horizontalCenter="0">
+		<e:Image source="s9_bg_erji_xinxiditu_png" x="0" y="0" scale9Grid="12,11,8,6" anchorOffsetX="0" width="190" anchorOffsetY="0" height="52"/>
+		<e:Image source="icon_room_renshu_png" x="13" y="11"/>
+		<e:Label id="loginTxt" text="正在登录..." x="50" y="14" size="24" width="120" verticalAlign="middle" textAlign="left"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CardMemoryUIMoudleSkin" width="1136" height="768" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bg" source="s9_bg_main_jpg" left="0" top="0" width="100%" height="100%"/>
+	<e:Image id="rolebg" source="s9_bg_main_dealer_png" bottom="0" horizontalCenter="-100" alpha="0.7"/>
+	<!--<e:Image source="img_bg_main_ditu_png" width="100%" y="-10" height="800" visible="false"/> -->
+	<e:Rect  width="100%" y="-10" height="800" alpha="0.5" />
+	<e:Image scale9Grid="87,40,25,10" left="0" top="0" height="98" source="img_bg_title3_png" width="100%" alpha="0.7" locked="true"/>
+	<e:Button id="backButton" x="10" y="0" locked="true">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:uicomps="uicomps.*">
+				<e:Rect width="64" height="96" alpha="0"/>
+				<e:Image x="10" y="30" source="btn_back_png"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group height="100" width="200" y="0" horizontalCenter="0" locked="true">
+		<e:Image source="img_word_gameUI_jyzp_png" verticalCenter="0" horizontalCenter="0" locked="true"/>
+		<e:Image source="icon_gameUI_glz_png" scaleX="-1" right="0" verticalCenter="0" locked="true"/>
+		<e:Image source="icon_gameUI_glz_png" verticalCenter="0" locked="true"/>
+	</e:Group>
+	<e:Group height="50" width="200" right="10" top="24">
+		<e:Image source="sg_bg_shezhi_ditu_png" scale9Grid="16,16,5,4" width="200" verticalCenter="0"/>
+		<e:Image source="icon_caoma_png" verticalCenter="0"/>
+		<e:Label id="moneyLabel" size="20" verticalCenter="0" right="15"/>
+	</e:Group>
+	<e:Group bottom="0" left="0" right="0" top="98">
+		<e:Group id="ruleGroup" right="0" bottom="0" left="0" top="0" x="10" y="10">
+			<e:Label text="记忆纸牌规则说明" textColor="0xFEB300" horizontalCenter="-50" top="80"/>
+			<e:Group top="150" horizontalCenter="-50">
+				<e:Label text="1.系统生成18张成对的纸牌，30秒记忆后盖牌" x="228" y="246" size="24"/>
+				<e:Label y="304" size="24" text="2.选中2张成对的纸牌即可消除纸牌，纸牌全部消除即可获胜" x="232"/>
+				<e:Label y="360" size="24" x="234" text="3.你有9次选错的机会，超过9次则算失败"/>
+				<e:Label y="416" size="24" text="4.记忆时间，错误次数，选牌时间将决定你的收益" x="234"/>
+				<e:layout>
+					<e:VerticalLayout gap="30"/>
+				</e:layout>
+			</e:Group>
+		</e:Group>
+		<e:Group id="playGroup" left="0" right="0" top="0" bottom="0" visible="false">
+			<e:Image source="s9_bg_play_fangxingxinxi_png" x="0" y="0" width="100%" scale9Grid="6,7,37,44" height="50"/>
+			<e:Image id="countDownTitle" source="img_word_gameUI_gpdjs_png" y="15" horizontalCenter="-30"/>
+			<e:Label id="countDownLabel" y="15" size="20" horizontalCenter="50" text="20秒"/>
+			<e:Label id="topTipLabel" size="20" horizontalCenter="0" y="15" visible="false"/>
+			<e:Group id="tabelGroup" bottom="40" left="40" right="244" top="94">
+				<e:layout>
+					<e:TileLayout requestedRowCount="3" requestedColumnCount="6" horizontalAlign="center" verticalAlign="middle" rowAlign="justifyUsingHeight" columnAlign="justifyUsingWidth"/>
+				</e:layout>
+			</e:Group>
+		</e:Group>
+		<e:Group id="resultGroup" left="0" right="0" top="0" bottom="0" visible="false">
+			<e:Group id="winGroup" right="250" left="50" bottom="180" top="70" visible="false">
+				<e:Label text="YOU WIN" textColor="0xFEB300" size="40" horizontalCenter="0" top="50"/>
+				<e:Image source="img_word_gameUI_gxtzcg_png" horizontalCenter="0" top="150"/>
+				<e:Group left="0" right="0" bottom="0" top="200">
+					<e:Group width="25%" height="50" top="20" left="80">
+						<e:Image scale9Grid="16,16,5,4" width="200" verticalCenter="0" source="s9_bg_shurukuangditu_png"/>
+						<e:Label verticalCenter="0" text="记忆用时：" size="20" left="15" width="100" textColor="0xFEB300"/>
+						<e:Label id="memoryTimeRSLabel" right="15" verticalCenter="0" size="20" x="10" y="10"/>
+					</e:Group>
+					<e:Group width="25%" height="50" top="20" horizontalCenter="0">
+						<e:Image source="s9_bg_shurukuangditu_png" scale9Grid="16,16,5,4" width="200" verticalCenter="0"/>
+						<e:Label width="100" left="15" verticalCenter="0" size="20" text="选牌用时：" textColor="0xFEB300"/>
+						<e:Label id="gameTimeRSLabel" y="10" verticalCenter="0" right="15" size="20" x="10"/>
+					</e:Group>
+					<e:Group width="25%" height="50" top="20" right="80">
+						<e:Image source="s9_bg_shurukuangditu_png" scale9Grid="16,16,5,4" width="200" verticalCenter="0"/>
+						<e:Label left="15" verticalCenter="0" text="错误次数：" width="100" textColor="0xFEB300" size="20"/>
+						<e:Label id="wrongTimeRSLabel" y="10" verticalCenter="0" right="15" size="20" x="10"/>
+					</e:Group>
+					<e:Group width="36%" height="50" top="90" left="80">
+						<e:Image source="s9_bg_shurukuangditu_png" scale9Grid="16,16,5,4" verticalCenter="0" right="0" left="0"/>
+						<e:Label left="15" verticalCenter="0" text="本局积分：" width="100" textColor="0xFEB300" size="20"/>
+						<e:Label id="scoreGetRSLabel" y="10" verticalCenter="0" right="15" size="20" x="10"/>
+					</e:Group>
+					<e:Group width="36%" height="50" top="90" right="80">
+						<e:Image source="s9_bg_shurukuangditu_png" scale9Grid="16,16,5,4" verticalCenter="0" left="0" right="0"/>
+						<e:Label left="15" verticalCenter="0" text="获得：" width="100" textColor="0xFEB300" size="20"/>
+						<e:Group right="15" height="50" verticalCenter="0">
+							<e:Image source="icon_caoma_png" verticalCenter="0" left="0"/>
+							<e:Label id="coinGetRSLabel" y="10" verticalCenter="0" size="20" left="34"/>
+						</e:Group>
+					</e:Group>
+				</e:Group>
+			</e:Group>
+			<e:Group id="loseGroup" right="250" left="50" top="70" bottom="180" x="10" y="10">
+				<e:Image horizontalCenter="0" top="150" source="img_word_gameUI_tzsp_png"/>
+				<e:Label text="失败是成功他娘，壕不如再来一局？" horizontalCenter="0" size="24" top="250" height="24"/>
+				<e:Image source="img_word_gameUI_sp_png" horizontalCenter="0" top="0"/>
+			</e:Group>
+			<e:Group id="closeButton" height="73" width="176" left="200" bottom="50">
+				<e:Image source="btn_play_yellow_png" x="0" y="0"/>
+				<e:Image source="img_word_gameUI_gbyx_png" horizontalCenter="0" verticalCenter="-5"/>
+			</e:Group>
+			<e:Group id="retryButton" bottom="50" height="73" y="10" width="176" left="550">
+				<e:Image source="btn_play_yellow_png" y="0" x="0"/>
+				<e:Image source="img_word_gameUI_zlyj_png" verticalCenter="-5" horizontalCenter="0"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+	<e:Group width="200" top="98" bottom="0" right="0">
+		<e:Image source="s9_fb_gameUI_bg_png" scale9Grid="19,51,114,2" top="0" bottom="0" right="0" left="0"/>
+		<e:Image source="img_word_czts_png" horizontalCenter="0" top="0"/>
+		<e:Group id="startTipGroup" left="0" right="0" top="0" bottom="0" visible="false">
+			<e:Label text="见证最强大脑诞生的时刻..." size="20" width="160" lineSpacing="5" horizontalCenter="0" top="200"/>
+			<e:Group height="50" width="200" bottom="0" horizontalCenter="0">
+				<e:Image source="img_word_gameUI_xh_png" verticalCenter="0" left="22"/>
+				<e:Image source="icon_caoma_png" verticalCenter="0" horizontalCenter="0"/>
+				<e:Label text="X1000" size="20" verticalCenter="0" right="22"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="gameButton" height="70" width="170" horizontalCenter="0" bottom="50">
+			<e:Image width="170" height="70" verticalCenter="0" horizontalCenter="0" source="btn_play_purple_png"/>
+			<e:Image id="gameButtonLabel" source="img_word_gameUI_ksyx_png" verticalCenter="0" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="gameTipGroup" height="270" left="0" right="0" top="48">
+			<e:Image source="img_word_gameUI_zglsjl_png" horizontalCenter="0" top="20"/>
+			<e:Image source="img_word_gameUI_sycwjh_png" horizontalCenter="0" top="110"/>
+			<e:Image source="img_word_gameUI_xpsj_png" horizontalCenter="0" top="200"/>
+			<e:Image source="s9_bg_erji_fengexiang_png" width="95%" horizontalCenter="0" top="90"/>
+			<e:Image source="s9_bg_erji_fengexiang_png" width="95%" horizontalCenter="0" top="180"/>
+			<e:Image source="s9_bg_erji_fengexiang_png" width="95%" horizontalCenter="0" top="270"/>
+			<e:Label id="historyHighScoreLabel" size="20" horizontalCenter="0" top="50"/>
+			<e:Label id="leftChanceLabel" horizontalCenter="0" size="20" top="140" x="10" y="10"/>
+			<e:Label id="usedTimeLabel" horizontalCenter="0" size="20" top="230" x="10" y="10"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

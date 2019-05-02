@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ButtonZiseSkin" states="up,down,disabled" 
+        xmlns:e="http://ns.egret.com/eui" width="134" height="52">
+	<e:Image width="100%" height="100%" alpha.disabled="0.5"  horizontalCenter="0" verticalCenter="0" source="btn_play_blue_png" scale9Grid="45,23,48,7"/>
+	
+	<e:BitmapLabel id="labelDisplay" font="fnt03_fnt" text="100" horizontalCenter="0" verticalCenter="0"  />
+</e:Skin>

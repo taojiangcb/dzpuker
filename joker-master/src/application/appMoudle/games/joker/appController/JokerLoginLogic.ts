@@ -1,0 +1,76 @@
+module joker {
+
+	var loginC:JokerLoginLogic
+	export function shareLoginC():JokerLoginLogic {
+		if(loginC == null) loginC = new JokerLoginLogic();
+		return loginC;
+	}
+
+	export function destoryLoginC():void{
+		if(loginC) loginC.dispose();
+		loginC = null;
+	}
+
+	export class JokerLoginLogic extends games.GameBaseLogin  {
+		public constructor() {
+			super();
+		}
+
+		/**
+		 * 登录成功处理
+		 */
+		onLoginSucceed():void {
+			super.onLoginSucceed()
+		}
+
+		//进入房间
+		autoJoinRoom():void {
+			var roomData:appvos.RoomVO[] = [];
+			if(cy.srsServer.connectSrs.roomType == room.CONFIG.AUTO_SRS) {
+				roomData = room.getProxy().zRoom1;
+			}
+			else if(cy.srsServer.connectSrs.roomType == room.CONFIG.PUBLIC) {
+				 roomData = room.getProxy().pRoom1;
+			}
+			else {
+				roomData = room.getProxy().mRoom1;
+			}
+			user.getProxy().joinRoom(roomData[0]);
+		}
+
+		/**
+		 * 进入房间成功
+		 */
+		onRoomSucceed() {
+			__CLOSE_PRELOAD();
+			__CLOSE_ALLMOUDLE_OPEN(AppReg.JOKER_MODULE);
+			console.log("进入房间成功")
+			/**发送心跳协议 */
+			gameLogic().beginHeart();
+		}
+
+		/**
+		 * 登录失败
+		 */
+		onloginError(agin:boolean):void {
+			
+		}
+
+		 //********如果5秒自定义模块没有返回信息就强行进入登录**********
+        private forceId:number = 0;
+        forceLogin():void {
+            this.forceId = egret.setTimeout(()=> {
+                __SEND_NOTIFICATION(app.constant.AppMediatorConst.LOGIN_ACTION);
+            }, this, 100);
+        }
+
+		clearForceLogin():void {
+			egret.clearTimeout(this.forceId)
+		}
+
+		dispose():void {
+			this.clearforceLogin();
+			super.dispose();
+		}
+	}	
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MissionItemRenderer" width="198" height="335" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1569c6201e5"/>
+	<e:Group width="198" height="335">
+	<e:Image source="bg_sign_ditu_png" x="0" y="0"/>
+    <e:Group id="title" horizontalCenter="0" y="8" width="136" height="27">
+        <e:layout>
+            <e:HorizontalLayout gap="0" verticalAlign="middle"/>
+        </e:layout>
+		<e:Image source="icon_ganlanzhi_left_png" x="140" y="0" width="20" height="27" scaleX="1" scaleY="1"/>
+        <e:Label id="txtName" text="富国之路" size="24" bold="true" italic="true" width="100"/>
+		<e:Image source="icon_ganlanzhi_left_png" x="139" y="16" scaleX="-1" width="20" height="27"/>
+
+    </e:Group>
+   
+	<e:Label id="txtMemo" text="赠送好友50个箱子" x="6" y="232" size="19" textAlign="center" width="188"/>
+	<e:Image id="imgBg" source="icon_sign_ticket__gx_png" x="27" y="14"/>
+		<e:Image id="imgReward" horizontalCenter="0" top="13" source="icon_sign_box3_png"/>
+
+	<e:Group id="chipBar" x="6" y="163">
+		<e:Image source="icon_play_word_bg_png" scale9Grid="6,13,1,3" x="31" y="0" width="156" alpha="0.5"/>
+		<e:Image source="icon_caoma_png" x="11" y="0"/>
+		<e:BitmapLabel id="txtReward" x="45" y="0" font="fnt03_fnt" text="3000" width="136" textAlign="center"/>
+	</e:Group>
+	
+	<e:ProgressBar touchEnabled="false" slideDuration="300" touchChildren="false" id="progress" x="16" y="281" width="171" minimum="0">
+		<e:skinName>
+			<e:Skin minWidth="30" minHeight="18">
+			<e:Image source="s9_progress_bar_bg1_png" width="100%" height="14" scale9Grid="5,6,4,2" y="0"/>
+			<e:Image id="thumb" width="100%" scale9Grid="1,5,1,4" source="s9_progress_bar1_png" y="5"/>
+			<e:Label id="labelDisplay" textAlign="center" verticalAlign="middle" size="15" fontFamily="Tahoma" textColor="0xB79EC6" y="15" horizontalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:ProgressBar>
+	<e:Image id="imgOB" touchEnabled="false" x="63" y="277" source="img_word_yilingqu_png"/>
+	 <e:Group id="btnAward" y="261" horizontalCenter="0">
+	    <e:Image id="img" source="btn_play_yellow_png" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image horizontalCenter="0" verticalCenter="0" source="iw_lingqu_sign_png"/>
+    </e:Group>
+	</e:Group>
+</e:Skin>

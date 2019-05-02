@@ -1,0 +1,58 @@
+module joker {
+	export class JokerGameModule extends app.base.BaseSceneUIMoudleComponent {
+
+		public pokerContentGroup:eui.Group;
+		public scrollContentGroup:eui.Group;
+
+		public content5:eui.Group;
+		public content10:eui.Group;
+		public content25:eui.Group;
+		public content50:eui.Group;
+		public operationPanel:joker.JokerOperationPanel;
+		public handPokerContent:eui.Group;
+		public pokerBg:eui.Image;
+		public pokerComp:joker.JokerPkPatternsComp;
+		public imgXuanze:eui.Image;
+
+		// jokerPKC4:JokerPKC4H;
+
+		JPCS:joker.JokerPkContenScrolltController;
+
+		public constructor() {
+			super();
+			this.skinName = "JokerGameModuleSkin";
+		}
+
+		createChildren():void {
+			super.createChildren();
+			// this.jokerPKC4 = new JokerPKC4H();
+			// this.jokerPKC4.cardScale = 0.58;
+			// this.jokerPKC4.cardHSpace = 2;
+			// this.jokerPKC4.hspace = 15;
+			// this.jokerPKC4.vspace = 15;
+			// this.jokerPKC4.horizontalCenter = 0;
+			// this.jokerPKC4.y = 8;
+			// this.content5.addChild(this.jokerPKC4);
+		}
+
+		createComplete(event:egret.Event):void {
+			super.createComplete(event);
+
+			__REGISTER_MEDIATOR(JokerGameMediator,this);
+			__REGISTER_MEDIATOR(JokerScenesMediator,this);
+
+			this.pokerBg.alpha = 0;
+			this.pokerComp.visible = false;
+			this.JPCS = new JokerPkContenScrolltController();
+
+			this.imgXuanze.visible = false;
+			__SEND_NOTIFICATION(JokerScenesMediator.GAME_STAET);
+		}
+
+		dispose():void {
+			__REMOVE_MEDIATOR(JokerScenesMediator);
+			__REMOVE_MEDIATOR(JokerGameMediator);
+			super.dispose();
+		}
+	}
+}

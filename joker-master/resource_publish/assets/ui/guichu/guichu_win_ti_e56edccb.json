@@ -1,0 +1,58 @@
+{"mc":{
+	"guichu_win_ti":{
+		"frameRate":24,
+		"labels":[
+			{"name":"guichu_win_ti","frame":1,"end":7}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"guichu_win_ti_0",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"guichu_win_ti_1",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"guichu_win_ti_2",
+			"x":0,
+			"y":3
+			},
+			{
+			"res":"guichu_win_ti_3",
+			"x":0,
+			"y":1
+			},
+			{
+			"res":"guichu_win_ti_4",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"guichu_win_ti_5",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"guichu_win_ti_6",
+			"x":0,
+			"y":0
+			}
+			]
+}},
+	"res":{
+		"guichu_win_ti_3":{"x":305,"y":1,"w":150,"h":149},
+		"guichu_win_ti_6":{"x":1,"y":305,"w":150,"h":150},
+		"guichu_win_ti_4":{"x":1,"y":153,"w":150,"h":150},
+		"guichu_win_ti_1":{"x":153,"y":153,"w":150,"h":150},
+		"guichu_win_ti_0":{"x":1,"y":1,"w":150,"h":150},
+		"guichu_win_ti_2":{"x":153,"y":305,"w":150,"h":147},
+		"guichu_win_ti_5":{"x":153,"y":1,"w":150,"h":150}
+	}}

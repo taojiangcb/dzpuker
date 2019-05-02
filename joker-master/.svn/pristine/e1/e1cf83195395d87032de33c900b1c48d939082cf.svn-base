@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TreasureProgressBarSkin" minWidth="30" minHeight="18" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="100%" source="s9_progress_bar_bg1_png" scale9Grid="3,4,10,6" top="-2" bottom="-2"/>
+	<e:Image id="thumb" height="100%" width="100%" scale9Grid="0,1,3,12" source="s9_progress_bar1_png"/>
+	<e:Label id="labelDisplay" textAlign="center" verticalAlign="middle"
+			 size="15" fontFamily="Tahoma" textColor="0x707070"
+			 horizontalCenter="0" verticalCenter="0" visible="false"/>
+</e:Skin>

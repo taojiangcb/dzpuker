@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PokerGPSUIMoudleSkin" width="300" height="500" xmlns:e="http://ns.egret.com/eui" xmlns:uicomps="uicomps.*" xmlns:w="http://ns.egret.com/wing" xmlns:myInfo="myInfo.*">
+	<e:Rect width="100%" height="100%" id="bgimage" alpha="0.05"/>
+	<e:Group horizontalCenter="0" verticalCenter="0" height="500" width="300">
+		<e:Image x="0" y="0" width="100%" height="100%" scale9Grid="113,57,65,8" source="s9_bg_yijijiemiangditu_png"/>
+		<e:Image source="img_word_info_muqianweiyu_png" y="19" horizontalCenter="0"/>
+		<e:Label id="txtGps" text="杭州市西湖区翠苑街道天天软件园" y="51" size="22" width="247" height="52" bold="true" horizontalCenter="0.5"/>
+		<e:Scroller width="280" x="10" top="102" bottom="7">
+			<e:Group>
+				<e:List id="fristList"  itemRendererSkinName="PokerGPSItemSkin" y="0" width="100%" horizontalCenter="0">
+					<e:layout>
+						<e:VerticalLayout/>
+					</e:layout>
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object label="数据1"/>
+							<e:Object label="数据2"/>
+							<e:Object label="数据3"/>
+							<e:Object label="数据4"/>
+							<e:Object label="数据5"/>
+							<e:Object label="数据6"/>
+							<e:Object label="数据7"/>
+						</e:Array>
+					</e:ArrayCollection>
+					
+				</e:List>
+			</e:Group>
+		</e:Scroller>
+		
+		
+		
+	</e:Group>
+	
+	</e:Skin>

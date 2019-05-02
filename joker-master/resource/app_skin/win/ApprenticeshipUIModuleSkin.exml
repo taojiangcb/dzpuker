@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ApprenticeshipUIModuleSkin" width="1136" height="768" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="100%" height="100%" x="0" y="0" >
+        <e:Image x="0" y="0" alpha="1" width="100%" height="100%" source="img_bg_win_info_jpg"  locked="true"/>
+        <e:Image source="s9_bg_main_dealer_png" bottom="0" x="0" y="140" scaleX="1" scaleY="1"/>
+        <e:Rect width="100%" height="130" scaleX="1" scaleY="1" alpha="0.4" x="0" bottom="0"/>
+        <e:Group width="600" height="620" anchorOffsetX="0" anchorOffsetY="0" top="0" x="456">
+            <e:Image id="jinbeiLight" source="img_jinbei_light_png" y="184" scaleX="1" scaleY="1" x="300" anchorOffsetX="128" anchorOffsetY="128"/>
+            <e:Image y="121.33" x="228.66" source="img_jinbei_win_png"/>
+            <e:Image source="img_duandai_win_png" y="20" horizontalCenter="0"/>
+            <e:Image id="typeImg" y="41" horizontalCenter="0" source="iw_gongxinichengweiren_big_win_png"/>
+					<e:Group width="520" height="141.33" x="54" y="265" anchorOffsetX="0" anchorOffsetY="0">
+						<e:Image source="s9_bg_play_fjzjdt_png" x="0" y="0" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%" scaleX="1" scaleY="1" alpha="0.78"/>
+						<e:Label id="_txt_info1" text="" size="23" horizontalCenter="0" top="35" bold="true"/>
+						<e:Label id="_txt_info2" text="" size="23" top="85" bold="true" horizontalCenter="0"/>
+					</e:Group>
+        </e:Group>
+        <e:Image id="_btn_close" right="0" x="1073" y="0" source="btn_analysis_close_png"/>
+       
+        <e:Group id="_btn_youxi" width="325" height="105" bottom="12" x="190">
+			<e:Image source="btn_big_win_png" x="0" y="0"/>
+			<e:Image source="icon_arrow_win_png" x="264" y="40" scaleX="1" scaleY="1"/>
+			<e:Image x="22" y="14" source="icon_youxichang_win_png"/>
+			<e:Image x="117" y="30" source="iw_qianwangyouxichang_win_png"/>
+		</e:Group>
+		<e:Group id="_btn_saishi" width="325" height="105" bottom="12" right="190">
+			<e:Image source="btn_big_win_png" x="0" y="0"/>
+			<e:Image x="22" y="14" source="icon_bisaichang_win_png"/>
+			<e:Image x="117" y="30" source="iw_qianwangsaishichang_win_png"/>
+			<e:Image source="icon_arrow_win_png" x="264" y="40" scaleX="1" scaleY="1"/>
+		</e:Group>
+    </e:Group>
+</e:Skin>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RecordRadarCompSkin" width="330" height="350" xmlns:e="http://ns.egret.com/eui" xmlns:uicomps="uicomps.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group top="0" width="330" height ="350" horizontalCenter="0">
+		
+		
+		<e:Image source="s9_bg_leidatu_png" horizontalCenter="0" verticalCenter="1"/>
+		
+		<e:Component id="infoUI5" skinName="RecordRadarInfoSkin"  y="43" width="94" height="53" x="54"/>
+		<e:Component id="infoUI6" skinName="RecordRadarInfoSkin"  y="44" height="53" x="180"/>
+		<e:Component id="infoUI1" skinName="RecordRadarInfoSkin"  y="138" width="95" height="58" x="242"/>
+		<e:Component id="infoUI2" skinName="RecordRadarInfoSkin"  y="255" height="57" x="182"/>
+		<e:Component id="infoUI3" skinName="RecordRadarInfoSkin"  y="255" height="57" x="41"/>
+		<e:Component id="infoUI4" skinName="RecordRadarInfoSkin"  y="136" height="59" x="-8"/>
+		
+			<e:Group id="gImg" verticalCenter="3" horizontalCenter="0"/>
+			
+		
+		
+	</e:Group>
+	
+	<e:Group width="100%" horizontalCenter="0" bottom="20" visible="false">
+		<e:ToggleButton width="96" height="27" id="tabButton1" horizontalCenter="-100" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_20_tongji_1_png" source.down="btn_20_tongji_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:ToggleButton>
+		
+		<e:ToggleButton id="tabButton2" width="96" height="27" horizontalCenter="0" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_100_tongji_1_png" source.down="btn_100_tongji"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:ToggleButton>
+		<e:ToggleButton id="tabButton3" width="96" height="27" horizontalCenter="100" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_quanbu_tongji_1_png" source.down="btn_quanbu_tongji_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:ToggleButton>
+		
+		
+	</e:Group>
+	</e:Skin>

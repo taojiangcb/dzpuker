@@ -1,0 +1,17 @@
+module joker {
+	export class JokerRoomCommand extends app.GameCommand {
+		public constructor() {
+			super();
+		}
+
+		execute(notification:puremvc.INotification):void {
+			super.execute(notification);
+		}
+        
+        resultHandler(action:string, paramVO:appvos.ParamVO):void {
+            //抽象函数保持空，可减少子类忽略super引发的错误
+			switch(action) {
+			}
+		}
+	}
+}

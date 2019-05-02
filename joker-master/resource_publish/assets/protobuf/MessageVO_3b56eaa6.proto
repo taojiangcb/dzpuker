@@ -1,0 +1,636 @@
+﻿package com.gameabc.ipad.http;
+option java_package = "com.gameabc.ipad.http";
+option java_outer_classname = "MessageProto";
+
+message ZPInfoVO  {
+  optional int32 seatId = 1;//座位号
+  optional int32 betNum = 2;//筹码最终值
+  optional int32 posWin1 = 3;//输赢位置1
+  optional int32 posWin2 = 4;//输赢位置2
+  optional int32 posWin3 = 5;//输赢位置3
+  optional int32 posWin4 = 6;//输赢位置4
+  optional int32 posWin5 = 7;//输赢位置5
+  optional int32 posWin6 = 8;//输赢位置6
+  optional int32 posWin7 = 9;//输赢位置7
+  optional int32 realWin = 10;//实际输赢
+}
+
+
+message MessageVO  {
+  optional int32 action = 1;
+  optional int32 phase = 2;
+  optional ParamVO data = 3;
+  optional int64 sendAt = 4;
+  optional int64 futureId = 5;
+  optional string clientNumId = 6;
+  optional string name= 7;
+  optional int32 errorCode = 8;
+  optional bool isEncrypt = 9;
+  optional string token = 10;
+  optional int32 seqNum = 11;//返回值
+}
+
+message ParamVO  {
+  repeated string strValues = 1;
+  repeated int32 intValues = 2;
+  repeated int64 longValues = 3;
+  repeated bytes data = 4;
+}
+
+message UserVO  {
+  optional string userId = 1;
+  //3:管理员，0:普通玩家，1:测试人员，2:推广员' 4:快速游戏玩家
+  optional int32 type = 2;
+  //元宝
+  optional int64 points = 3;
+  
+  optional RoleVO roleVo = 4;
+}
+message RoleVO  {
+  optional int64 roleId = 1;//ID
+  optional string name = 2;//名称
+  optional int32 sex = 3;//性别
+  optional int64 gold = 4;//金币
+  optional string avatarID = 5;//头像
+  optional int32 vipLevel = 6;//VIP
+  
+  optional int32 MaxWin = 7; //最大赢取
+	optional int32 totalHand = 8; //总手数
+	optional int32 winHand = 9; //最终胜利手数
+	optional int32 flopHand = 10; //进入翻牌手数
+	optional int64 maxCard = 11; //最大成牌
+	optional int32 spreadHand = 12; //摊牌手数
+	optional int32 highCardHand = 13; //高牌手数
+	optional int32 onePairHand = 14; //对子手数
+	optional int32 twoPairsHand = 15; //两对手数
+	optional int32 threeKindHand = 16; //三条手数
+	optional int32 fullHouseHand = 17; //葫芦手数
+	optional int32 fourKindHand = 18; //四条手数
+	optional int32 straightHand = 19; //顺子手数
+	optional int32 flushHand = 20; //同花手数
+	optional int32 straightFlushHand = 21; //同花顺手数
+	optional int32 callWinHand = 22; //跟注胜利手数
+	optional int32 callHand = 23; //跟注局手数
+	optional int32 raiseWinHand = 24; //加注胜利手数
+	optional int32 raiseHand = 25; //加注局手数
+	optional int32 allinWinHand = 26; //allin胜利手数
+	optional int32 spreadWinHand = 27; //河牌摊牌胜利手数
+	optional int32 foldWinHand = 28; //弃牌胜利局手数
+	optional int32 haveBetHand = 29; //（跟注或下注或加注）行为手数
+	optional int32 raiseWhenPreflop = 30; //翻牌前加注行为手数
+	optional int32 betOrRaiseTime = 31; //（下注的次数+加注的次数）
+	optional int32 callTime = 32; //跟注的次数
+	optional int32 raiseTime = 33; //在他人下注，有人加注之后的再加注手数
+	optional int32 continueBetTime = 34; //上轮已经下注或者加注，这次又加注或者下注手数
+	optional int32 betOrRaiseHand = 35; //下注或者加注手数
+	optional int32 winDivBB = 36; //赢的大盲数量之和
+	optional int32 allinHand = 37; //allin手数
+	optional int32 tmHand=38;//偷盲手数
+	optional int32 tmWinHand=39;//偷盲胜利手数
+	optional int32 score=40;//历史输赢
+}
+message JoinPlayerVO  {
+  optional int64 roleId = 1;//ID
+  optional bytes name = 2;//名称
+}
+message SeatPlayerVO  {
+   optional int64 roleId = 1;//ID
+  optional bytes name = 2;//名称
+  optional int32 sex = 3;//性别
+  optional string avatarID = 4;//头像
+  optional int32 vipLevel = 5;//VIP
+  
+  optional int32 seatId = 6;//
+  optional int32 totalBringBet = 7;//总带入
+  optional int32 nowBet = 8;//当前筹码
+  optional bool isAllIn = 9;//是否ALLIN
+  optional bool isFold = 10;//是否弃牌
+  optional bool isPlay = 11;//是否入局
+  optional int32 totalBet = 12;//总下注
+  optional int32 turnBet = 13;//当前轮下注
+  repeated int32 myCard = 14;//我的手牌
+  optional int32 rcheck = 15;//用户标签1
+  optional string rlabel = 16;//用户标签2
+  
+  optional int32 numWins = 17;//胜
+  optional int32 numLosts = 18;//负
+  optional int32 numPeaces = 19;//平
+  optional int32 numEscapes = 20;//逃跑
+  optional int64 cardPower = 21;//牌力权值
+	optional int32 raiseTime = 22;//当前轮加注次数
+  optional string nameutf8 = 23;//用户名utf8字符串
+}
+message TexasTableVO  {
+  
+  optional int32 gTableId = 1;//房间ID
+  optional int64 roleId = 2;//房主ID
+  optional string roomName = 3;//房间名称
+  optional int32 tableSize = 4;//桌子人数
+  optional int32 minJoinMoney = 5;//最低筹码
+  optional int32 maxMagnification = 6;//最大带入倍数
+  optional int64 gameEndTime = 7;//结束时间
+  optional int32 sbBet = 8;//小盲
+  optional int32 bbBet = 9;//大盲
+  optional int32 whoplay = 10;//轮到谁
+  optional int32 banker = 11;//庄家
+  optional int32 gameStatus = 12;//游戏状态
+  optional int32 timeCount = 13;//倒计时
+  optional int32 totalBet = 14;//当前底池
+  repeated int32 globalCards = 15;//公共牌
+  
+  repeated SeatPlayerVO seatPlayerVO = 16;
+  repeated JoinPlayerVO joinPlayerVO = 17;
+  
+  optional int32 tableStatus = 18;//桌子状态 TABLE_STATUS_NOUSE(0),TABLE_STATUS_WAIT_START(1),TABLE_STATUS_PAUSE(2),TABLE_STATUS_GAME_GAP(3),TABLE_STATUS_INGAME(4)
+  
+  optional int32 maxPot = 19;//最大底池
+  optional int32 totalHand = 20;//总手数
+  repeated int32 pots = 21;//边池
+  optional int32 preBet = 22;//前注
+  optional int32 timeLast = 23;//倒计时剩余
+  optional int32 roommode = 24;//房间模式
+
+ 	optional int32 caishentime = 25;//财神送礼轮数 0不开放 >0 每多少轮发放
+ 	optional int32 caishenmoney = 26;//财神送礼金额
+ 	optional int32 caishenround = 27;//财神送礼当前轮数
+  optional string dealer = 28;//荷官
+  optional int32 dealerstate = 29;			//荷官状态
+  optional int32 roomtype = 30;// 房间类型 0 未知 1 金币 2 普通4W 3 40W 4 SNG MTT
+ 	optional int32 cardmode = 31;// 0 正常 1 5-A
+  repeated int32 whiteReporter = 32;  //举报
+ 	optional int32 versionNum = 33;  //版本
+}
+message PlayCardsVideoVO {  
+  optional TexasTableVO tablevo = 1;//房间vo
+  repeated MessageVO actions = 2;//指令列表
+  optional int64 startTime = 3;//开始时间
+  optional int64 roleid= 4;//玩家id
+  optional int64 playId= 5;//牌局id
+}
+message WatchPlayerVO  {
+  optional int64 roleId = 1;//ID
+  optional string name = 2;//名称
+  optional int32 sex = 3;//性别
+  optional string avatarID = 4;//头像
+  optional int32 vipLevel = 5;//VIP
+}
+
+message TableVO  {
+  optional int32 gTableId = 1;//房间ID
+  optional int64 roleId = 2;//房主ID
+  optional string roomName = 3;//房间名称
+  optional int32 tableSize = 4;//桌子人数
+  optional int32 minJoinMoney = 5;//最低筹码
+  optional int32 maxMagnification = 6;//最大带入倍数
+  optional int64 gameEndTime = 7;//结束时间
+  optional int32 sbBet = 8;//小盲
+  optional int32 bbBet = 9;//大盲
+  optional int64 clubId = 10;//俱乐部
+  optional string clubName = 11;//俱乐部名称
+  optional int32 gameType = 12;//1常规 2 SNG
+  optional int32 tableSit = 13;//已经在座位的人数
+  optional string roleName = 14;//房主名字
+  optional string avatarID = 15;//房主头像
+  optional int32 tableType = 16;//1 俱乐部牌局 2 圈子牌局 3 好友牌局 4 分开牌局
+  optional int64 gameStartTime = 17;//开始时间
+  optional int32 tableLastTime = 18;//牌局持续时间
+  optional int32 totalBring = 19;//总带入
+  optional int32 remain = 20;//剩余
+  optional int64 onlyId = 21;//ID 房间唯一ID
+}
+
+message ClubPlayerJoinerVO  {
+  optional int64 id = 1;//ID
+	optional int64 clubId = 2;//俱乐部ID
+	optional int64 roleId = 3;//玩家ID
+	optional string roleName = 4;//玩家
+}
+message ClubPlayerVO  {
+  optional int64 id = 1;//ID
+	optional int64 clubId = 2;//俱乐部ID
+	optional string clubName = 3;//俱乐部名称
+	optional int32 officer = 4;//职位
+	optional int64 roleId = 5;//玩家ID
+	optional string roleName = 6;//玩家名字
+}
+message ClubVO  {
+    optional int64 clubId = 1;//ID
+	optional string clubName = 2;//俱乐部名字
+	optional string avatarID = 3;//俱乐部图标
+	optional string regron = 4;//地域位置
+	optional string founder = 5;//创始人
+	optional string createTime = 6;//创建时间
+	optional string memberLimit = 7;//人数上限
+	optional string numMembers = 8;//当前人数
+	optional int32 level = 9;//俱乐部评级
+	optional string message = 10;//俱乐部介绍
+}
+message GameEndInfoVO  {
+  optional int32 seatId = 1;//座位号
+  optional int32 betNum = 2;//筹码最终值
+  repeated int32 card = 3;//手牌 可能没有
+  repeated int32 winPool = 4;//赢的边池 可能没有
+  optional int32 addBetNum = 5;//自动补充筹码值
+  optional int32 gameResult = 6;//游戏结果 1胜2负3平
+  optional int32 canContinue = 7;//下局能否继续 0继续 1退出
+  optional int32 huntFlag = 8;//猎杀标志 0无关1猎杀者2被杀者
+  optional int64 winlostnum = 9;//输赢多少钱
+  optional int64 insurnum = 10;//保险盈亏
+}
+
+
+message ChatVO  {
+	optional int64 id = 1;                              //chatId
+    	optional int64 chatType = 2;                    //1聊天,2牌谱,3战绩,4创建牌局,5进入牌局,6退出牌局,7牌局结束,8加入俱乐部,9退出俱乐部,10邀请加入群聊
+    	optional int64 rootType = 3;                    //房间类型 :1俱乐部,2圈子,3私密房间,4,私聊
+    	optional int64 rootId = 4;                      //房间ID 俱乐部Id,圈子Id
+    	optional int64 tableId = 5;                     //牌局Id
+    	optional int64 sendPlayerID = 6;                //发送者id
+    	optional string sendName = 7;                   //发送者名称
+    	optional string sendAvatar = 8;
+    	optional int64 toPlayerId = 9;                  //私聊接收者ID
+    	optional string content = 10;                   //信息内容
+    	optional int64 createTime = 11;                 //发送的时间
+
+    	optional int64 tableLimitedTime = 12;			//牌局时间
+    	optional int32 BB = 13;							//大盲
+    	optional int32 SB = 14;							//小盲
+    	optional string tableName = 15; 				//牌局名称
+    	optional int64 tableEndTime = 16;				//牌局结束时间
+}
+
+//消息
+message DisconverMsgVO  {
+	optional int64 id = 1;                  		//消息id
+	optional int64 chatType = 2;            		//1聊天,2牌谱,3战绩,4创建牌局,5进入牌局,6退出牌局,7牌局结束,8加入俱乐部,9退出俱乐部，10邀请加入群聊
+	optional int64 rootType = 3;            		//房间类型 :1俱乐部,2圈子,3私密房间,4,私聊
+	optional int64 rootId = 4;              		//房间ID 俱乐部Id,圈子Id
+	optional int64 tableId = 5;             		//牌局Id
+	optional int64 sendPlayerID = 6;        		//发送者id
+	optional string sendName = 7;           		//发送者名称
+	optional string sendAvatar = 8;					//发送者的头像
+	optional int64 toPlayerId = 9;          		//私聊接收者ID
+	optional string content = 10;           		//信息内容
+
+	optional string rootName = 11;					//房间名称
+	optional string rootAvatar = 12;				//房间头像
+	optional int32 tipCount = 13;						//消息tip数量
+	optional int64 createTime = 14;         		//发送的时间
+}
+
+message ItemVO  {
+  optional int64 id = 1;		//物品id
+  optional int64 templateId = 2;	//物品模板id
+  optional int64 roleId = 3;		//物品角色id
+  optional int64 itemCount = 4;		//物品数量
+}
+
+message ShopItemVO  {
+  optional int64 id = 1;		//id
+  optional int64 templateId = 2;	//模板id
+}
+
+message NoticeVO  {
+  optional int64 noticeId = 1; //自曾ID
+  optional string title = 2;//标题
+  optional string content = 3;//内容
+  optional string gotoTarget = 4;//跳转URL
+  optional int32 type = 5;//通知类型  1：普通  、2：主推
+  optional string imageUrl = 6;//图片
+  optional int64 startTime = 7;//开始时间抽
+  optional int64 endTime = 8;//结束时间抽
+  optional string business = 9;//渠道
+}
+
+message DZRecordVO  {
+   repeated int32 myCard = 1;//我的手牌
+   optional int64 id = 2;	//牌局ID
+   optional int32 type = 3;	//房间类型
+   optional int32 smallBlinds = 4;	//小盲
+   optional int32 bigBlinds = 5;	//大盲
+   optional int32  winNum= 6;	//盈利
+   optional int64 timeNum = 7;	//模板id
+   optional int64 roleId = 8;//
+   optional int32 handNum = 9;// 第几手
+   optional string key = 10;//本地存储key
+   optional bytes video = 11 ;//回放记录 
+}
+
+message UserInfoVO  {
+ 	  optional int32 totalHand = 1;              //总局数
+		optional int32 winHand = 2;                //胜利局数
+		optional int32 joinHand = 3;               //入局数
+		optional int32 spreadHand = 4;             //摊牌局数
+		optional int32 spreadWinHand = 5;          //摊牌胜利局数
+		optional int64 maxHandWin = 6;             //单局最大盈利
+		optional int64 totalWin = 7;               //总盈利（只算赢的）
+		optional int64 maxCard = 8;                //最大成牌
+		optional int32 sbHand = 9;                 //小盲位置局数
+		optional int32 sbJoinHand = 10;             //小盲位置入局数
+		optional int32 bbHand = 11;                 //大盲位置局数
+		optional int32 bbJoinHand = 12;             //大盲位置入局数
+		optional int32 buttonHand = 13;             //庄家位置局数
+		optional int32 buttonJoinHand = 14;         //庄家位置入局数
+		optional int32 otherPosHand = 15;           //其它位置局数
+		optional int32 otherPosJoinHand = 16;       //其它位置入局数
+		
+		optional int32 raiseWhenPreflop = 17;       //翻牌前加注行为手数
+		optional int32 betOrRaiseTime = 18;        //（下注的次数+加注的次数）
+		optional int32 callTime = 19;              //跟注的次数
+		optional int32 raiseTime = 20;           //在他人下注，有人加注之后的再加注手数
+		optional int32 tmHand = 21;             //偷盲手数
+		optional int32 continueBetTime = 22;       //上轮已经下注或者加注，这次又加注或者下注手数
+		optional int32 betOrRaiseHand = 23;       //下注或者加注手数
+		optional int32 winDivBB = 24;       //赢的大盲数量之和
+		optional string avatarID = 25; //头像
+		optional int64 roleId = 26;// 举报人
+		optional int32 huntKill = 27;       //猎杀数
+		optional int32 huntKillScore = 28;       //猎杀积分
+		
+		optional int32 charm = 29;					//魅力
+		optional int32 charmScore = 30;					//魅力积分
+		
+		optional string name = 31;//用户名utf8字符串
+    optional UserLabelVO label = 32;       //标签名
+    optional int32 phoneValidate = 33;					//是否手机验证（0：未验证，1：已验证）	
+		optional int32 foldright = 34;       			//弃牌
+		optional int32 raiseright = 35;        		//加注
+		optional int32 raiseperfect = 36;         //价值下注
+		optional int32 havesamecolor = 37;        //在免费房中拿到同花牌型
+		optional int32 havethreesheet = 38;       //在免费房中拿到葫芦牌型
+		optional int32 havefoursheet = 39;        //在免费房中拿到四条牌型
+		optional string rewardrecord = 40;             //成长领取记录
+}
+message UserLabelVO  {
+    optional int64 id 			= 1; //id
+		optional int64 userId		= 2;// 用户Id
+		optional string labelName	= 3;//标签名
+		optional int32 labelType	= 4;//标签类型
+		optional int64 modifyTime	= 5;//标签最后修改时间
+
+}
+
+message FeedbackVO  {
+   optional int64 id = 1;
+   optional int64 roleId = 2;// 举报人
+   optional string roleName = 3;//举报人
+   
+   optional string feedbackRoleIds = 4;//被举报人  ，号连接
+   optional string feedbackRoleNames = 5;//被举报人  ，号连接
+   
+   optional string context = 6;//举报内容
+   
+   optional string qq = 7;//联系方式
+   optional string phone = 8;//联系方式
+   
+   optional int32 status = 9;//公状态
+   optional bytes video = 10;//
+   optional int64 createTime = 11;//
+}
+
+message SendImsVO{
+   optional string title = 1;//标题
+   optional int32 type =2;//消息类型  1：全体 、2：私人、3：渠道
+   optional int64 business =3;
+   optional string context = 4;//内容
+   optional int64 formatId =5;//格式化ID
+   optional int64 createTime=6;
+   repeated int64 roleIds=7;//发送的人 多个 A,B
+}
+
+message ImsVO  {
+   optional int64 id = 1;
+   optional string title = 2;//标题
+   optional string context = 3;//内容
+   optional int64 formatId =4;//格式化ID
+   optional int64 createTime=5;
+   optional int32 flag=6;//是否已读
+   optional int32 type=7;//邮件类型
+}
+
+message FriendVO
+{
+   optional int64 id 		= 1; 
+   optional int64 uid 		= 2;//用户id
+   optional int64 fid 		= 3;//好友id
+   optional int64 time 	= 4;//时间
+   optional string fName 	= 5;//名字
+   optional string faceid 	= 6;//头像
+   optional int32 status   =7;//状态
+   optional int32 roomId  =8;
+}
+message GameConfigVO  {
+   optional int64 gcId = 1;
+   optional int64 gcValue = 2;
+   optional int64 business = 3;
+}
+
+message GoGoNoticeShowVO  {
+  optional int64 noticeId = 1; //自曾ID
+  optional string content = 2;//内容
+  optional string gotoTarget = 3;//跳转URL
+}
+message HLCCardVO  {
+  optional int32 posId = 1;//位置号
+  repeated int32 card = 2;//牌
+}
+
+message HLCInfoVO  {
+  optional int32 seatId = 1;//座位号
+  optional int32 betNum = 2;//筹码最终值
+  optional int32 posWin1 = 3;//输赢位置1
+  optional int32 posWin2 = 4;//输赢位置2
+  optional int32 posWin3 = 5;//输赢位置3
+  optional int32 posWin4 = 6;//输赢位置4
+  optional int32 realWin = 7;//实际输赢
+}
+message HLCPlayerVO  {
+  optional int64 roleId = 1;//ID
+  optional bytes name = 2;//名称
+  optional int32 sex = 3;//性别
+  optional string avatarID = 4;//头像
+  optional int32 vipLevel = 5;//VIP
+  optional int32 seatId = 6;//座位号
+  optional int32 banker = 7;//是否是庄家
+  optional int32 totalBet = 8;//总筹码
+  optional int32 posBet1 = 9;//下注筹码1
+  optional int32 posBet2 = 10;//下注筹码2
+  optional int32 posBet3 = 11;//下注筹码3
+  optional int32 posBet4 = 12;//下注筹码4
+  optional int32 showPos = 13;//桌面上位置
+}
+message HLCTableVO  { 
+  optional int32 gTableId = 1;//房间ID
+  optional int64 roleId = 2;//房主ID
+  optional string roomName = 3;//房间名称
+  optional int32 tableSize = 4;//桌子人数
+  optional int32 gameStatus = 5;//游戏状态
+  optional int32 timeLast = 6;//倒计时剩余  
+  repeated HLCPlayerVO PlayerVO = 7;//全部玩家
+  optional int32 servicePay = 8;				//服务费
+  optional int32 bankServicePay = 9;		//庄家服务费
+  repeated int32 winHistory = 10;				//历史输赢
+  optional int32 chatPay = 11;					//表情服务费
+  optional int32 anteDouble = 12;				//是否双倍下注额
+}
+message HLCGameEndVO  {
+  repeated HLCCardVO cardVO = 1;//牌信息
+  repeated HLCInfoVO infoVO = 2;//玩家结算信息	
+}
+
+message TreasureVO  {
+	optional int64 id 			= 1; 
+	optional int64 treasrueId	= 2;//夺宝模板Id
+	optional int32 count		= 3;//期数
+	optional int64 curNum 		= 4;//当前数量
+	optional int64 openTime		= 5;//开奖时间
+	optional int32 roomType		= 6;//房间类型
+	optional int64 createTime	= 7;//创建时间
+	optional int64 totalNum	= 8;//总数
+  optional int64 buyNum     = 9;//购买数量
+}
+
+message TreasureRecordVO
+{
+  optional int64 id 			= 1; //id
+  optional int64 userId		= 2;// 用户Id
+  optional bytes userName	= 3;//姓名
+  optional bytes faceid		= 4;//头像Id 
+  optional int64 buyNum		= 5;//购买量
+  optional int64 totalNum		= 6;// 总数量
+  optional int64 openTime	= 7;//开启时间
+  optional int32 count		= 8;//期数
+  optional int32 state			= 9;//状态
+  optional int64 createTime   = 10;//创建时间 
+  optional int64	iconId 		= 11;//图标id
+  optional int32 roomType	= 12;//房间类型
+  optional int64	treasrueDBId	= 13;//模板Id
+  optional bytes title			= 14;//标题
+}
+
+message ProgressiveConfigVO  {
+	optional int64 id 				= 1; 
+	optional bytes title			= 2;//标题
+	optional int32 iconId			= 3;//图标Id
+	optional int64 totalNum 		= 4;//总数
+}
+
+message TreasureConfigVO  {
+	optional int64 id 				= 1; 
+	optional int32 roomType			= 2;//房间类型
+	optional int64 progressiveId	= 3;//奖池编号
+	optional int64 delayTime 		= 4;//延迟时间
+}
+
+message TreasureInfoVO  {
+  repeated TreasureConfigVO treasureConfigVO = 1;
+  repeated ProgressiveConfigVO progressiveConfigVO = 2;
+  repeated TreasureVO treasureVO = 3;
+}
+
+message SoltRankVO  {
+  	optional int64 id 			= 1; //id
+		optional int64 userId		= 2;//用户Id
+		optional string userName	= 3;//玩家名字
+    optional int64 maxNum		= 4;//最大数
+    optional int64 totalNum		= 5;//总数 
+}
+
+
+message SlotInfoVO  {
+  	repeated SoltRankVO slotMaxRankVO = 1;
+    repeated SoltRankVO soltToTalRankVO = 2;
+}  
+message DealerInfoVO  {
+ 	  optional int64 userid = 1;              //
+		optional string name = 2;               //名字
+		optional int32 matchround = 3;          //比赛局
+		optional int32 gameround = 4;           //现金局
+		optional int32 onlinetime = 5;          //在线时长 
+		optional int64 giftpay = 6;             //打赏
+		optional int64 servicepay = 7;          //服务费
+		optional int32 roomid = 8;              //房间
+		optional int32 tableid = 9;             //桌子
+		optional string faceid = 10;            //形象
+		optional int32 online = 11;             //是否在线
+    optional int32 fans = 12;               //粉丝数
+		optional string notice = 13;            //公告
+}
+
+message ZPTableVO  {
+  
+  optional int32 gTableId = 1;					//房间ID
+  optional int64 roleId = 2;						//房主ID
+  optional string roomName = 3;					//房间名称
+  optional int32 tableSize = 4;					//桌子人数
+  optional int32 gameStatus = 5;				//游戏状态
+  optional int32 timeLast = 6;					//倒计时剩余
+  repeated ZPPlayerVO PlayerVO = 7;    //玩家列表
+  repeated int32 winHistory = 8;				//历史记录
+  optional int64 stockNum = 9;          //总奖池
+  
+  optional int32 FreeNum = 10;          //免费次数
+  
+  optional int64 nowTime = 11;          //当前时间
+  optional int64 nowTimeLast = 12;      //当前状态持续到
+  
+  optional int32 seatID = 13;						//位置号
+  optional int64 totalMoney = 14;				//总筹码
+}
+
+message ZPPlayerVO  {
+
+  optional int64 roleId = 1;//ID
+  optional bytes name = 2;//名称
+  optional int32 seatId = 3;//名称
+  
+  optional int32 posBet1 = 4;  //下注筹码1
+  optional int32 posBet2 = 5; //下注筹码2
+  optional int32 posBet3 = 6; //下注筹码3
+  optional int32 posBet4 = 7; //下注筹码4
+	optional int32 posBet5 = 8;  //下注筹码5
+  optional int32 posBet6 = 9; //下注筹码6
+  optional int32 posBet7 = 10; //下注筹码7
+	
+}
+
+message ZPGameEndVO {
+  optional int32 card = 1;        //牌信息
+  optional int32 showrand = 2;    //显示随机
+  repeated ZPInfoVO infoVO = 3;   //玩家结算信息
+}
+
+message PMTableVO  { 
+  optional int32 gTableId = 1;				//房间ID
+  optional int64 stockNum = 2;        //总奖池
+  optional int32 FreeNum = 3;         //免费次数
+  optional int64 totalMoney = 4;			//总筹码
+  optional PMInfoVO infoVO = 5;       //牌局信息 有可能没有
+}
+
+message PMInfoVO  {
+  optional int32 betNum = 1;    //下注金额
+  optional int32 cardsNum = 2;  //下注门数
+  optional int32 multi = 3;     //下注倍数
+  optional int64 totalBet = 4;  //总下注金额
+  optional int64 leftMoney = 5;  //剩余金额
+  optional PMCardVO card = 6;       //主牌
+}
+
+message PMGameEndVO  {
+  optional int32 betNum = 1;      //下注金额
+  optional int32 cardsNum = 2;    //下注门数
+  optional int32 multi = 3;       //下注倍数
+  optional int64 totalBet = 4;    //总下注金额
+  optional int64 leftMoney = 5;   //剩余金额
+  optional int64 betWinMoney = 6; //牌局获得金额
+  repeated PMCardVO cards = 7;      //各门牌数据
+}
+
+message PMCardVO  {
+  repeated int32 cards = 1;       //牌
+  optional int64 winMoney = 2;    //获得金额
+}
+
+
+

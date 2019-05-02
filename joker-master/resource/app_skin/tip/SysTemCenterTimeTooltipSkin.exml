@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SysTemCenterTimeTooltipSkin" width="400" height="150" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Rect width="100%" height="100%" alpha="0.5" />
+	<e:Image id="messimg" source="img_word_win_dengdaikaijuzhong_2_png" y="24" horizontalCenter="0.5"/>
+	<e:Image source="img_bg_daojishi_small_mtt_png" x="140" y="67"/>
+	<e:Image source="img_bg_daojishi_small_mtt_png" x="214" y="67"/>
+	<e:BitmapLabel x="193" y="76" font="fnt03_fnt" text=":"/>
+	<e:BitmapLabel id="mlab" x="149" y="74" font="fnt03_fnt" text="03"/>
+    <e:BitmapLabel id="slab" x="222" y="74" font="fnt03_fnt" text="50"/>
+</e:Skin>

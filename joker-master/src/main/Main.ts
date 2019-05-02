@@ -1,0 +1,136 @@
+//////////////////////////////////////////////////////////////////////////////////////
+//
+//  Copyright (c) 2014-2015, Egret Technology Inc.
+//  All rights reserved.
+//  Redistribution and use in source and binary forms, with or without
+//  modification, are permitted provided that the following conditions are met:
+//
+//     * Redistributions of source code must retain the above copyright
+//       notice, this list of conditions and the following disclaimer.
+//     * Redistributions in binary form must reproduce the above copyright
+//       notice, this list of conditions and the following disclaimer in the
+//       documentation and/or other materials provided with the distribution.
+//     * Neither the name of the Egret nor the
+//       names of its contributors may be used to endorse or promote products
+//       derived from this software without specific prior written permission.
+//
+//  THIS SOFTWARE IS PROVIDED BY EGRET AND CONTRIBUTORS "AS IS" AND ANY EXPRESS
+//  OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+//  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+//  IN NO EVENT SHALL EGRET AND CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+//  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+//  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;LOSS OF USE, DATA,
+//  OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+//  LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+//  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+//  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+//
+//////////////////////////////////////////////////////////////////////////////////////
+
+/*
+                   _ooOoo_
+                  o8888888o
+                  88" . "88
+                  (| -_- |)
+                  O\  =  /O
+               ____/`---'\____
+             .'  \\|     |//  `.
+            /  \\|||  :  |||//  \
+           /  _||||| -:- |||||-  \
+           |   | \\\  -  /// |   |
+           | \_|  ''\---/''  |   |
+           \  .-\__  `-`  ___/-. /
+         ___`. .'  /--.--\  `. . __
+      ."" '<  `.___\_<|>_/___.'  >'"".
+     | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+     \  \ `-.   \_ __\ /__ _/   .-` /  /
+======`-.____`-.___\_____/___.-`____.-'======
+                   `=---='
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+         佛祖保佑       全年无BUG
+*/
+
+/**
+ * 这是一个渠道号控制，发使用EGPublish发布工具的时候会替换掉设定的渠道号
+ */
+var $CHANNEL_ID$ = "90027";
+var $DEFAULT_RES$ = "default.res.json";
+var $DEFAULT_THM$ = "default.thm.json";
+
+var $RUNTIME_VER$ = "1.0.0";
+var $WEB_VER$ = "1.0.0";
+var $GAME_ID$ = 3;
+
+enum GAME_IDS{
+    DEFAULT,
+    GUICHU_WHEEL = 1,                       //极速转轮
+    BF_GUICHU_WHEEL = 2,                    //边锋极速转轮
+    JOKER = 3                               //捷克高手
+}
+
+class Main extends eui.UILayer {
+   
+    /**
+     * 应用启动代理
+     */
+    private appDelegate:app.IAppDelegate;
+
+    constructor() {
+        super();
+        /**
+         * 当前的启动流程代理处理
+         */
+        this.appDelegate = this.generateDelegate();
+
+        //渠道ID默认
+        platform.CHANNE_ID = $CHANNEL_ID$;
+        //游戏运行的版本号
+        AppConst.RUNTIME_VER = egret.Capabilities.runtimeType == egret.RuntimeType.NATIVE 
+            ? $RUNTIME_VER$ 
+            : $WEB_VER$;
+
+        AppRoot.gameLayer.setFullScreen();                  //游戏中的主场景
+        utils.NativeUtils.init();                           //初始化sendToJs
+
+        platform.init();                                    //初始化魔方统计，并向魔方发送激活数据
+        platform.initCfg();                                 //初始化渠道配置
+
+        /**
+         * 初始化有猫腻sdk
+         */
+        this.appDelegate.initYouMaoNiSdk();
+
+        if(egret.Capabilities.runtimeType == egret.RuntimeType.WEB) {
+            mc2sdk.init();
+            mc2sdk.event(mc2sdk.EVENT_TYPE.ON_LOIGN_STEP_1);
+        }
+        
+        //本地os前缀
+        gameabc.LocalSO.PREFIX = platform.CHANNE_ID;
+
+    }
+
+    private generateDelegate():app.IAppDelegate {
+        if($GAME_ID$ == GAME_IDS.GUICHU_WHEEL)                  return new app.GuichuMainDelegate();
+        else if($GAME_ID$ == GAME_IDS.BF_GUICHU_WHEEL)          return new app.BF_GuiChuMainDelegate();
+        else if($GAME_ID$ == GAME_IDS.JOKER)                    return new app.JokerMainDelegate();
+        else                                                    return new app.AppDelegate();
+    }
+
+    protected createChildren(): void {
+        super.createChildren();        
+        this.addChild(AppRoot.gameLayer);
+        this.appDelegate.appLanuch();
+
+        if(egret.Capabilities.runtimeType == egret.RuntimeType.WEB) {
+            window.onresize = function(): void {
+                AppRoot.gameLayer.setFullScreen();
+            }
+        }
+        else if(egret.Capabilities.runtimeType == egret.RuntimeType.NATIVE)  {
+            egret.MainContext.instance.stage.addEventListener(egret.Event.RESIZE,()=>{
+                AppRoot.gameLayer.setFullScreen();
+            },this);
+        }
+    }
+}

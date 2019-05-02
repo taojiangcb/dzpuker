@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="NoticeUIMoudleSkin" width="800" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bgimage" height="100%" width="100%" x="0" y="0" fillAlpha="0.3"/>
+	<e:Group height="500" width="790" horizontalCenter="0" verticalCenter="0">
+		<e:Component id="sceneBase" x="0" y="0" skinName="SceneSkin" width="100%" height="100%"/>
+		<e:Group height="80%" width="95%" horizontalCenter="0" verticalCenter="30">
+			<e:Group height="100%" width="530" verticalCenter="0" right="0">
+				<e:Image source="bg_notice_dibu_png" x="0" y="0" width="100%" height="100%"/>
+				<e:Image source="icon_paly_fengexian_png" width="90%" horizontalCenter="0" top="130"/>
+				<e:Label id="noticeTitle" horizontalCenter="0" fontFamily="Arial" size="22" top="24" textColor="0x000000" border="false" bold="true"/>
+				<e:Group height="60" width="90%" horizontalCenter="0" top="70">
+					<e:Image source="img_word_notice_hdsj_png" left="10" top="30"/>
+					<e:Group height="37" width="360" top="20" left="100">
+						<e:Image source="s9_bg_shurukuangditu_png" scale9Grid="16,15,11,6" width="360" horizontalCenter="0" verticalCenter="0"/>
+						<e:Label id="timeLabel" left="20" verticalCenter="0" size="18"/>
+					</e:Group>
+				</e:Group>
+				<e:Scroller id="rightScroller" width="80%" height="180" horizontalCenter="1.5" top="140">
+					<e:Group height="190">
+						<e:List id="contentList" width="100%" x="0" y="0"/>
+						<e:Label id="contentLabel" x="0" y="0" width="100%" size="18" fontFamily="Arial" lineSpacing="10"/>
+					</e:Group>
+				</e:Scroller>
+				<e:Group id="urlGroup"  horizontalCenter="0" bottom="10">
+					<e:Image id="urlButton" horizontalCenter="0" y="0" source="btn_play_purple_png"/>
+					<e:Image source="img_word_notice_ljcs_png" horizontalCenter="0" verticalCenter="0"/>
+				</e:Group>
+			</e:Group>
+			<e:Scroller id="leftScroller" width="200" height="100%" left="0" verticalCenter="0">
+				<e:Group width="100%" height="100%">
+					<e:List id="firstList" width="100%" x="0" y="0">
+						<e:layout>
+							<e:VerticalLayout gap="-10"/>
+						</e:layout>
+					</e:List>
+				</e:Group>
+			</e:Scroller>
+		</e:Group>
+		<e:Image source="icon_notice_poker1_png" horizontalCenter="0" top="-40"/>
+		<e:Image source="img_word_notice_jrhd_png" left="40" top="10"/>
+	</e:Group>
+</e:Skin>

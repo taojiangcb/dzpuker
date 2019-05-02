@@ -1,0 +1,86 @@
+module joker {
+
+	/**
+	 * 扑克牌型动画控制类
+	 */
+	export class JokerCardArrageAnimation {
+
+		/**
+		 * 牌形组件
+		 */
+		handCards: JokerPkPatternsComp;
+
+		space:number = 5;
+
+		public constructor(hc: JokerPkPatternsComp) {
+			this.handCards = hc;
+		}
+
+		/**
+		 * 默认排列
+		 */
+		normalArrage(): void {
+			var i: number = 0;
+			for (i = 0; i < FIVE_CARD_NUM; i++) {
+				var card = this.handCards.cards[i];
+				card.x = i * (card.width + this.space);
+			}
+		}
+
+		/**
+		 * 飞入到主场景
+		 */
+		async flyIn() {
+
+			var cards: JokerCardItem[] = this.handCards.cards;
+			var scpr: egret.Point = new egret.Point(AppGlobal.stageFullWidth + cards[0].width, AppGlobal.stageFullHeight >> 1);
+			// scpr = this.handCards.globalToLocal(scpr.x,scpr.y);
+
+			var root = AppRoot.gameLayer;
+
+			var moves: egret.Point[] = [];
+			this.handCards.cards.forEach(element => {
+				moves.push(new egret.Point(element.x, element.y));
+			})
+
+			return new Promise((resolve, reject) => {
+				for (var i: number = 0; i != cards.length; i++) {
+					var sx: number = cards[i].width >> 1;
+					var sy: number = cards[i].height >> 1;
+
+					cards[i].visible = false;
+
+					var ccpx: number = cards[i].width >> 1;
+					var ccpy: number = cards[i].height >> 1;
+					var tempCard:JokerCardItem = new JokerCardItem();
+					tempCard.x = scpr.x;
+					tempCard.y = scpr.y;
+					tempCard.anchorOffsetX = ccpx;
+					tempCard.anchorOffsetY = ccpy;
+					tempCard.setCardBack();
+					// root.addChild(tempCard);
+
+					var cp: egret.Point = this.handCards.localToGlobal(cards[i].x + 1, cards[i].y - 7);
+					var duration: number = 600;
+
+					var tw: egret.Tween = egret.Tween.get(tempCard)
+						.call((tcard) => {
+							root.addChild(tcard);
+						}, this, [tempCard])
+						.set({ x: scpr.x, y: scpr.y, rotation: 760 })
+						.wait(i * duration * 0.5)
+						.to({ x: cp.x + ccpx, y: cp.y + ccpy, rotation: 0 }, duration, egret.Ease.quartOut)
+						.call((...args) => {
+							args[0].removeFromParent(true);
+							args[1].visible = true;
+							if (args[2] == cards.length - 1) {
+								resolve();
+							}
+						}, this, [tempCard, cards[i], i])
+				}
+			})
+
+
+		}
+	}
+}

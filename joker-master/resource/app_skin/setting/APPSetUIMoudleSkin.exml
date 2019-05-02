@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="APPSetUIMoudleSkin" width="570" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	
+	<e:Rect width="100%" height="100%" id="bgimage" alpha="0.05"/>
+	<e:Group horizontalCenter="0" verticalCenter="0" height="560" width="510">
+		<e:Image x="0" y="0" width="100%" height="100%" source="s9_bg_erjijiemiangditu_png" scale9Grid="113,69,16,7"/>
+		<e:Label id="verTxt" y="20" textColor="0xBCA7DE" size="16" text="1.1" textAlign="left" bold="true" width="172" height="20" x="31"/>
+		<e:Image source="img_word_more_set_jpg" y="18" x="209"/>	
+		
+		<e:Scroller left="20" right="20" height="262" y="187">
+			
+				<e:List id="fristList"  itemRendererSkinName="PCSetItemSkin" y="0" width="100%" horizontalCenter="0">
+					<e:layout>
+						<e:VerticalLayout gap="2"/>
+					</e:layout>
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object label="背景音乐" index ="1" source="1"/>
+							<e:Object label="游戏震动" index ="2" source="1"/>
+							<e:Object label="游戏音效" index ="3" source="1"/>
+							<e:Object label="全屏显示" index ="4" source="1"/>
+							<e:Object label="运行版本" index ="5" source="1"/>
+						</e:Array>
+					</e:ArrayCollection>
+				</e:List>
+			
+		</e:Scroller>
+		
+		
+		<e:Image source="s9_bg_erji_fengexiang_png" y="146" width="90%" horizontalCenter="0"/>
+		<e:Group top="65" left="20" right="20" height="82">
+			<e:Image source="img_word_more_zhanghu_png" y="0" x="10"/>
+			<e:Image source="sg_bg_shezhi_ditu_png" scale9Grid="16,16,5,4" x="0" y="28" width="293" height="40"/>
+			<e:Label id="textName" text="标签" x="8" y="36" width="265" textAlign="left" size="22"/>
+			
+			<e:Button id="canceBtn" verticalCenter="3.5" width="133" height="59" x="332">
+				<e:skinName>
+					<e:Skin states="up,down,disabled" minHeight="50" minWidth="100">
+						<e:Image width="100%" height="100%" alpha.disabled="0.5" source="btn_play_blue_png" source.down="btn_play_blue_png"/>
+						<e:Image source="img_word_more_zhuxiao_png" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Image source="img_word_more_youxi_png" x="30" y="154"/>
+		<e:Image source="img_word_more_qita_png" x="30" y="446"/>
+		<e:Image id="btnColse" source="btn_shop_close_png" x="447" y="4" scaleX="1" scaleY="1"/>
+		
+		
+		
+	</e:Group>
+	
+	</e:Skin>

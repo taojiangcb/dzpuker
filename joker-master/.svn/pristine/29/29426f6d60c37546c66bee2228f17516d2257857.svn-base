@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PCSetUIMoudleSkin" width="510" height="500" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect width="100%" height="100%" id="bgimage" alpha="0.05"/>
+	<e:Group horizontalCenter="0" verticalCenter="0" height="510" width="500">
+		<e:Image x="0" y="0" width="100%" height="100%" source="s9_bg_erjijiemiangditu_png" scale9Grid="113,69,16,7"/>
+		<e:Image source="img_word_more_set_jpg" y="17" x="209"/>	
+		
+		<e:Group top="65" left="20" right="20" height="82">
+			<e:Image source="img_word_more_zhanghu_png" y="0" x="10"/>
+			<e:Image source="sg_bg_shezhi_ditu_png" scale9Grid="16,16,5,4" x="0" y="28" width="293" height="40"/>
+			<e:Label id="textName" text="标签" x="11" y="38" width="265" textAlign="left" size="22"/>
+			
+			<e:Button id="canceBtn" verticalCenter="3.5" right="0" width="133" height="59">
+				<e:skinName>
+					<e:Skin states="up,down,disabled" minHeight="50" minWidth="100">
+						<e:Image width="100%" height="100%" alpha.disabled="0.5" source="btn_play_blue_png" source.down="btn_play_blue_png"/>
+						<e:Image source="img_word_more_zhuxiao_png" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Image source="s9_bg_erji_fengexiang_png" y="141" width="90%" horizontalCenter="0.5"/>
+		<e:Scroller width="470" x="20" height="250" y="150">
+			
+				<e:List id="fristList"  itemRendererSkinName="PCSetItemSkin" y="0" width="100%" x="0">
+					<e:layout>
+						<e:VerticalLayout gap="3"/>
+					</e:layout>
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object label="背景音乐" index ="1"/>
+							<e:Object label="游戏音效" index ="3"/>
+							<e:Object label="游戏震动" index ="2"/>
+							<e:Object label="全屏显示" index ="4"/>
+							<e:Object label="运行版本" index ="5"/>
+						</e:Array>
+					</e:ArrayCollection>
+					
+				</e:List>
+			
+		</e:Scroller>
+		
+		<e:Button id="okBtn" x="167" y="410">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" minHeight="50" minWidth="100">
+					<e:Image width="100%" height="100%" alpha.disabled="0.5" source="btn_play_purple_png" source.down="btn_play_purple_png"/>
+					<e:Image source="img_word_info_queding_png" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label id="verTxt" textColor="0xBCA7DE" text="1.1" textAlign="left" bold="true" size="16" width="172" height="20" y="21" x="31"/>
+		<e:Image id="btnColse" source="btn_shop_close_png" x="440" y="3"/>
+	</e:Group>
+	</e:Skin>

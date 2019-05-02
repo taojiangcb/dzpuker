@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="JokerGameModuleSkin" width="1136" height="768" xmlns:e="http://ns.egret.com/eui" xmlns:joker="joker.*" xmlns:w="http://ns.egret.com/wing">
+    <e:Image source="img_bg_poker_jpg" width="100%" height="100%"/>
+	<e:Group id="pokerContentGroup" horizontalCenter="0" top="155" width="570" height="260">
+		<e:Group id="scrollContentGroup" x="0" y="0">
+			<e:Group id="content5" width="570" height="180" x="0" y="0">
+				<e:Image source="s9_bg_caozuoqu_png" scale9Grid="13,13,11,32" x="0" y="0" anchorOffsetX="0" width="100%" height="100%" alpha="1"/>
+				<joker:JokerPKC4H id="jp4h" columns="2" cardHSpace="2" cardScale="0.56" horizontalCenter="0" y="8" patternsCount="4"/>
+			</e:Group>
+			<e:Group id="content10" width="570" height="260" x="0" y="0">
+				<e:Image source="s9_bg_caozuoqu_png" scale9Grid="13,13,11,32" x="0" y="0" anchorOffsetX="0" width="100%" height="100%" alpha="1"/>
+				<joker:JokerPKC4H id="jp9h" columns="3" cardHSpace="-50" cardScale="0.56" hspace="50" horizontalCenter="0" y="8" patternsCount="9"/>
+			</e:Group>
+			<e:Group id="content25" width="570" height="200" x="0" y="0">
+				<e:Image source="s9_bg_caozuoqu_png" scale9Grid="13,13,11,32" x="0" y="0" anchorOffsetX="0" width="100%" height="100%" alpha="1"/>
+				<joker:JokerPKC4H id="jp24h" columns="6" cardHSpace="-50" cardScale="0.33" hspace="7" vspace="7" horizontalCenter="0" y="8" patternsCount="24"/>
+			</e:Group>
+			<e:Group id="content50" width="570" height="260" x="0" y="0">
+				<e:Image source="s9_bg_caozuoqu_png" scale9Grid="13,13,11,32" x="0" y="0" anchorOffsetX="0" width="100%" height="100%" alpha="1"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+    <joker:JokerOperationPanel id="operationPanel" skinName="JokerOperationTableSkin" horizontalCenter="0" bottom="0"/>
+    <e:Group id="handPokerContent" width="500" height="140" horizontalCenter="0" bottom="170">
+	    <e:Image id="pokerBg" source="s9_bg_caozuoqu_png" scale9Grid="13,13,11,32" x="0" y="0" anchorOffsetX="0" width="100%" height="100%" alpha="1"/>
+        <joker:JokerPkPatternsComp height="124" x="10" y="8" id="pokerComp" width="480"/>
+    </e:Group>
+	<e:Image source="s9_bg_jiangchi_png" horizontalCenter="0" y="0"/>
+	<e:Group y="10" x="942">
+		<e:Image source="btn_guize_png" x="0" y="0"/>
+		<e:Image source="btn_shezhi_png" x="103" y="0"/>
+	</e:Group>
+	<e:Image id="imgXuanze" source="img_word_xuanze_png" horizontalCenter="0" top="108"/>
+</e:Skin>

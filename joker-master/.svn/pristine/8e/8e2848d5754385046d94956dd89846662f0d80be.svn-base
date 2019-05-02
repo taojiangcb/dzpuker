@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+	<e:Skin class="TestChrooseMenuSkin" width="470" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:uicomps="uicomps.*">
+	<uicomps:ChrooseMenu width="470" height="58" y="110" id="menuBar"/>
+</e:Skin>

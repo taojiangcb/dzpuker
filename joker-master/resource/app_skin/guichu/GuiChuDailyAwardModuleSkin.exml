@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuiChuDailyAwardModuleSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image scale9Grid="134,78,2,4" source="guichu_award_bg_png"/>
+	<e:Image source="s9_bg_fangxinditu_png" scale9Grid="15,16,14,18" anchorOffsetX="0" width="440" anchorOffsetY="0" height="155" scaleX="1" scaleY="1" horizontalCenter="-1" top="62" visible="false"/>
+	<e:Image source="guichu_word_xnfl_png" horizontalCenter="0" top="10" visible="false"/>
+	<e:Image source="guichu_word_mcdl_png" horizontalCenter="0" top="80" visible="false"/>
+	<e:Group id="button" scaleX="1" scaleY="1" horizontalCenter="0" width="170" height="58" bottom="16">
+		<e:Image scale9Grid="66,26,2,2" horizontalCenter="0" verticalCenter="0" source="btn_play_yellow_png"/>
+		<e:Image horizontalCenter="0" verticalCenter="0" source="guichu_word_lq_png"/>
+	</e:Group>
+	<e:Group id="nbGroup" horizontalCenter="0" verticalCenter="20" height="79" width="340">
+		<e:Group id="nb1" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" x="0" y="0">
+			<e:Image source="guichu_icon_chouma_1_png" horizontalCenter="0" verticalCenter="0"/>
+			<e:BitmapLabel font="guichu_front_5_fnt" text="年" horizontalCenter="-1" verticalCenter="-3"/>
+		</e:Group>
+		<e:Group id="nb2" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" x="123" y="0">
+			<e:Image source="guichu_icon_chouma_1_png" x="0" y="0"/>
+			<e:BitmapLabel font="guichu_front_5_fnt" text="年" horizontalCenter="-1" verticalCenter="-3"/>
+		</e:Group>
+		<e:Group id="nb3" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" x="246" y="0">
+			<e:Image source="guichu_icon_chouma_1_png" horizontalCenter="0" verticalCenter="0"/>
+			<e:BitmapLabel font="guichu_front_5_fnt" text="年" horizontalCenter="-1" verticalCenter="-3"/>
+		</e:Group>
+		<e:layout>
+			<e:BasicLayout/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

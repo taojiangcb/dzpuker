@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KeyboardUIMoudleCompSkin" width="582" height="450" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:uicomps="uicomps.*">
+<!--e:Image source="icon_room_csdt_png" scale9Grid="65,25,445,1" height="100%"/-->
+<e:Image source="s9_bg_paijuxuanze_room_png" scale9Grid="16,51,1,312" width="582" height="450" locked="true"/>
+<e:Image source="img_scale_paiju_bg_room_png" x="0" y="5" scaleX="1" scaleY="1" width="583" height="329" touchEnabled="false"/>
+<e:Image id="btnclose" source="btn_shop_close_png" x="521" y="5" locked="true"/>
+	<uicomps:KeyboardComp id="keyboard" x="65" y="104" skinName="KeyboardSkin"/>
+	<e:Image id="titleimg" source="img_word_happy_srcm_png" y="6" x="167" locked="true"/>
+</e:Skin>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ExpressionListSkin" width="80" height="72" xmlns:e="http://ns.egret.com/eui" xmlns:playcards="playcards.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bgIcon" scale9Grid="7,29,2,17" source="img_bg_yuanxingditu_info_png" horizontalCenter="0" verticalCenter="0" scaleX="1.1" scaleY="1.1"/>
+	<!--
+	<e:Image source="s9_bg_info_bqxh_png" x="-4" y="68"/>
+	<e:Image scaleX="0.6" scaleY="0.6" source="icon_caoma_png" x="3" y="78"/>
+	<e:Label id="txtCharm" text="1" x="24" y="79" size="16" width="45" height="17" textAlign="center"/>
+	-->
+</e:Skin>

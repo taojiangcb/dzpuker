@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KeyboardSkin" xmlns:e="http://ns.egret.com/eui" xmlns:uicomps="uicomps.*" xmlns:w="http://ns.egret.com/wing">
+    <e:Image id="textLblBg" height="52" width="355" source="s9_bg_shurukuangditu_png" scale9Grid="16,17,10,5" x="8" y="1"/>
+    
+    <e:Image id="infoLabel" source="img_word_srsrfmm_png" y="13" horizontalCenter="-32"/>
+    
+
+    <e:Group y="77" >
+        <uicomps:SubKeyBoardComp id="_comp_subKeyBoard" skinName="SubKeyBoardSkin" />
+        <!--
+        <e:Button x="0" y="0" id="inputButton1">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="145" height="47" source="btn_play_srmm_png"/>
+                    <e:BitmapLabel horizontalCenter="0" verticalCenter="0" text="1" font="fnt05_fnt"/>
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button y="64" x="0"  id="inputButton4" width="145">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+                    <e:BitmapLabel horizontalCenter="0" verticalCenter="0" text="4" font="fnt05_fnt"/>
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button y="64" x="155" id="inputButton5" width="145">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+                    <e:BitmapLabel horizontalCenter="0" verticalCenter="0" text="5" font="fnt05_fnt"/>
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button y="64" x="308" id="inputButton6" width="145">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+                    <e:BitmapLabel horizontalCenter="0" verticalCenter="0" text="6" font="fnt05_fnt"/>
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button y="127" x="0" id="inputButton7" width="145">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+                    <e:BitmapLabel horizontalCenter="0" verticalCenter="0" text="7" font="fnt05_fnt"/>
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button y="127" x="308" id="inputButton9" width="145">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+                    <e:BitmapLabel horizontalCenter="0" verticalCenter="0" text="9" font="fnt05_fnt"/>
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button y="191" x="0" id="delButton" width="145">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+                    <e:Image horizontalCenter="0" verticalCenter="0" source="btn_play_close_png"/>
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button y="191" x="155"  id="inputButton0" width="145">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+                    <e:BitmapLabel horizontalCenter="0" verticalCenter="0" text="0" font="fnt05_fnt"/>
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button y="191" x="308" id="enterButton" width="145">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+                    <e:Image horizontalCenter="0" verticalCenter="0" source="img_word_quedin_png"/>
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button y="0" x="155"  id="inputButton2" width="145">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+                    <e:BitmapLabel horizontalCenter="0" verticalCenter="0" text="2" font="fnt05_fnt"/>
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button x="308" y="0"  id="inputButton3" width="145">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+                    <e:BitmapLabel horizontalCenter="0" verticalCenter="0" text="3" font="fnt05_fnt"/>
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button y="127" x="155" id="inputButton8" width="145">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" height="100%" source="btn_play_srmm_png"/>
+                    <e:BitmapLabel horizontalCenter="0" verticalCenter="0" text="8" font="fnt05_fnt"/>
+                </e:Skin>
+            </e:skinName>
+        </e:Button>-->
+    </e:Group>
+    <e:Image id="gotoImage" x="349" source="btn_room_qw_png" />
+    <e:TextInput id="numberInput" x="26" y="8" width="322" height="36" restrict="0-9"/>
+</e:Skin>

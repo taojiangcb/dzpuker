@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MissionSkin" width="747" height="470" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image x="0" y="0" width="100%" height="100%" source="s9_bg_yijijiemiangditu_png" scale9Grid="113,57,65,8"/>
+	<e:Image id="btnSign" source="btn_sign_qiandao1_png" y="8" x="20"/>
+	<e:Image id="btnClose"  source="btn_shop_close_png" y="2" x="685"/>
+	<e:Image source="img_word_sign_renwu_png" top="12" horizontalCenter="0"/>
+	<e:Group height="63" horizontalCenter="0" y="58">
+		<e:ToggleButton id="tabMission" width="320" height="58" x="10">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_tab_right_1_png" source.down="btn_tab_right_2_png" scale9Grid="77,28,3,14"/>
+					<e:Image source="img_word_sign_jinrirenwu1_png" source.down="img_word_sign_jinrirenwu_png" y.up="0" y.down="-4" horizontalCenter="-3" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:ToggleButton>
+		<e:ToggleButton id="tabAchieve" width="320" height="58" horizontalCenter="280.5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_tab_left_1_png" source.down="btn_tab_left_2_png" scale9Grid="77,28,4,14"/>
+					<e:Image source="img_word_sign_rongyuchenjiu1_png" source.down="img_word_sign_rongyuchenjiu_png" y.up="0" y.down="-4" horizontalCenter="-3" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:ToggleButton>
+		<e:layout>
+			<e:HorizontalLayout gap="0" horizontalAlign="center"/>
+		</e:layout>
+	</e:Group>
+	<e:Image source="icon_paly_fengexian_png" x="0" y="51" width="100%"/>
+	
+	<e:Scroller left="10" right="10" top="120" height="334"  scrollPolicyV="off" id="listScroll">
+		<e:List width="100%" height="100%" id="missionList">
+			<e:layout>
+				<e:HorizontalLayout gap="5"/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+</e:Skin>

@@ -1,0 +1,59 @@
+{
+	"native": {
+		"path_ignore": [],
+		"android_path": "../guichu-android",
+		"ios_path": "../guichu-ios"
+	},
+	"publish": {
+		"web": 0,
+		"native": 1,
+		"path": "bin-release"
+	},
+	"resources": [
+		"resource_publish"
+	],
+	"egret_version": "4.0.1",
+	"modules": [
+		{
+			"name": "egret"
+		},
+		{
+			"name": "game"
+		},
+		{
+			"name": "tween"
+		},
+		{
+			"name": "res"
+		},
+		{
+			"name": "socket"
+		},
+		{
+			"name": "eui"
+		},
+		{
+			"name": "dragonBones"
+		},
+		{
+			"name": "protobuf",
+			"path": "../egret_modules/protobuf"
+		},
+		{
+			"name": "puremvc",
+			"path": "../egret_modules/puremvc"
+		},
+		{
+			"name": "particle",
+			"path": "../egret_modules/particle"
+		},
+		{
+			"name": "CryptoJS_egret",
+			"path": "../egret_modules/CryptoJS_egret2"
+		},
+		{
+			"name": "gbk",
+			"path": "../egret_modules/gbk"
+		}
+	]
+}

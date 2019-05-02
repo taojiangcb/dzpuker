@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CharmWheelLabelSkin" width="248" height="60" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="label" text="恭喜1234567890获得500万彩豆*2" size="20" left="20" right="20" verticalCenter="0" maxHeight="40"/>
+	<e:Image source="icon_paly_fengexian_png" width="100%" horizontalCenter="0" bottom="0"/>
+</e:Skin>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BillMainUIMoudleSkin" width="650" height="450" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="650" height="450" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="s9_bg_yijijiemiangditu_png" scale9Grid="121,62,25,6" left="0" top="0" bottom="0" right="0"/>
+		<e:Image source="s9_bg_erji_fengexiang_png" width="96%" horizontalCenter="0" top="60"/>
+		<e:Image source="s9_bg_erji_fengexiang_png" width="96%" horizontalCenter="0" bottom="80"/>
+		<e:Label id="tipLabel" text="暂无账单信息" size="22" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image horizontalCenter="0" scaleX="0.96" scaleY="0.96" source="img_word_room_pjzd_png" x="269" top="12"/>
+		<e:Scroller left="20" right="20" bottom="84" top="65">
+			<e:Group>
+				<e:List id="list" width="100%" top="0" horizontalCenter="0">
+					<e:layout>
+						<e:VerticalLayout gap="3"/>
+					</e:layout>
+				</e:List>
+			</e:Group>
+		</e:Scroller>
+		<e:Group x="-1">
+			<e:List id="list0" width="100%" top="0" horizontalCenter="0">
+			<e:VerticalLayout gap="3"/>
+			</e:List>
+		</e:Group>
+		<e:Image id="closeButton" source="btn_shop_close_png" x="587" y="2"/>
+	</e:Group>
+</e:Skin>

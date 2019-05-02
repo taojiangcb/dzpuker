@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuichuBigAwardsSkin" width="800" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="numberTween">
+			<tween:TweenItem target="{awardText}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="1200"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object rotation="{-5}" scaleX="{2}" scaleY="{2}" alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500" ease="bounceOut">
+					<tween:props>
+						<e:Object rotation="{6.02}" alpha="{1}" scaleX="{1}" scaleY="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150" ease="sineOut">
+					<tween:props>
+						<e:Object alpha="{1}" scaleX="{1}" rotation="{10.58}" scaleY="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object scaleX="{1}" rotation="{13.02}" scaleY="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="900" ease="bounceOut">
+					<tween:props>
+						<e:Object scaleX="{1}" scaleY="{1}" rotation="{-5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="500"/>
+				<tween:Set/>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{img}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" scaleX="{0}" scaleY="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500" ease="backOut">
+					<tween:props>
+						<e:Object alpha="{1}" scaleX="{1}" scaleY="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="500"/>
+				<tween:Set/>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:BitmapLabel id="awardText" text="5000" font="number_big_fnt" alpha="0" horizontalCenter="0" verticalCenter="0" anchorOffsetX="236" anchorOffsetY="58" letterSpacing="-20"/>
+	<e:Image id="img" source="guichu_icon_hs_b_3_png" anchorOffsetX="51" alpha="0" anchorOffsetY="52" x="414" y="146"/>
+    
+</e:Skin>

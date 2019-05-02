@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RecordCompreListCompSkin" width="670" height="350"  xmlns:e="http://ns.egret.com/eui" xmlns:record="record.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Component id="infoLable1" skinName="MyInfoLableSingleSkin" width="310" x="10" y="18"/>
+	<e:Component id="infoLable2" skinName="MyInfoLableSingleSkin" width="310" x="10" y="58"/>
+	<e:Component id="infoLable3" skinName="MyInfoLableSingleSkin" width="310" x="10" y="98"/>
+	<e:Component id="infoLable4" skinName="MyInfoLableSingleSkin" width="310" x="10" y="138"/>
+	<e:Component id="infoLable5" skinName="MyInfoLableSingleSkin" width="310" x="10" y="178"/>
+	<e:Component id="infoLable6" skinName="MyInfoLableSingleSkin" width="310" x="10" y="218"/>
+	
+	<e:Group x="110" y="264">
+		<e:Image id="card1" source="card-1-0_png" scaleX="0.5" scaleY="0.5" y="6" x="0" width="68" height="92"/>
+		<e:Image id="card2" source="card-1-0_png" scaleX="0.5" scaleY="0.5" y="6" width="68" height="92" x="40"/>
+		<e:Image id="card3" source="card-1-0_png" scaleX="0.5" scaleY="0.5" y="6" width="68" height="92" x="80"/>
+		<e:Image id="card4" source="card-1-0_png" scaleX="0.5" scaleY="0.5" y="6" width="68" height="92" x="120"/>
+		<e:Image id="card5" source="card-1-0_png" scaleX="0.5" scaleY="0.5" y="6" width="68" height="92" x="160"/>
+	</e:Group>
+	<record:RecordRadarComp id="recordComp" skinName="RecordRadarCompSkin"  x="330" y="-2"/>
+	<e:Image source="img_word_zuidachenpai_png" y="284" x="25"/>
+</e:Skin>

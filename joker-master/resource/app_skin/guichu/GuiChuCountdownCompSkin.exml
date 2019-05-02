@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuiChuCountdownCompSkin" width="196" height="54" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="tween">
+			<tween:TweenItem target="{bg}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{5}" height="{5}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="100">
+					<tween:props>
+						<e:Object width="{196}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object width="{196}" height="{54}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{label}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}" scaleX="{0}" scaleY="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="100">
+					<tween:props>
+						<e:Object alpha="{1}" scaleY="{0}" scaleX="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object alpha="{1}" scaleY="{1}" scaleX="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Image id="bg" source="guichu_bg_djs_png" horizontalCenter="0" verticalCenter="0" scaleX="1" scaleY="1" width="5" height="5"/>
+	<e:BitmapLabel id="label" text="" font="guichu_front_2_fnt" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

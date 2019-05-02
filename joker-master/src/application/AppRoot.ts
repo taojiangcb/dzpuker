@@ -1,0 +1,133 @@
+class AppRoot extends eui.UILayer {
+    
+    // 场景层 如 战场、主城、副本战场之类的
+    public sceneLayer: eui.UILayer = new eui.UILayer();
+    // 主UI层 如 底部功能栏
+    public mainLayer: eui.UILayer = new eui.UILayer();
+    // 弹窗层 如 设置、背包、装备之类的
+    public panelLayer: eui.UILayer = new eui.UILayer();
+    // 特效层 如 闪烁、飘字之类的
+    public effectLayer: eui.UILayer = new eui.UILayer();   
+    // 通讯遮罩层 和服务器通讯UI
+    public maskLayer: eui.UILayer = new eui.UILayer();
+    // 加载遮罩层 场景切换的时候加载资源UI
+    public loadLayer: eui.UILayer = new eui.UILayer();
+    
+    private static _instance: AppRoot; 
+    //游戏容器管理器单例
+    public static get gameLayer(): AppRoot {
+        if(!this._instance) this._instance = new AppRoot();
+        return this._instance;
+    }
+
+    public constructor() {
+        super();
+        this.init();
+        AppGlobal.appReg = new AppReg();
+        this.startDragoneBonesClock();
+    }
+    
+    /*
+     * 全屏铺满设置函数.
+     * 然后每次一执行的时候会都触发一次 stage.resize 事件需要单独处理的模块监听这个事件后进行全屏化操作就可以了
+     * 我就写到这里了，如果还不懂就联系我本人吧。
+     * @author taojiang 
+     * @version 1.1
+     * @platform web,native
+     */
+    public setFullScreen(): void {
+        
+        //==========屏幕超出以下范围将会产生等比缩放
+        var pageMaxWidth: number = AppGlobal.pageMaxWidth;//1136;                
+        var pageMaxHeight: number = AppGlobal.pageMaxHeight;// 768;
+        var pageMinWidth: number = AppGlobal.pageMinWidth;//960;
+        var pageMinHeight: number = AppGlobal.pageMinHeight;//640;
+        //========================================
+        
+        var maxWHPercent:number = pageMaxWidth/pageMinHeight;
+        var pageWidth: number = pageMinWidth;
+        var pageHeight: number = pageMinHeight;
+
+        if(egret.Capabilities.runtimeType == egret.RuntimeType.WEB) {
+            pageWidth = window.innerWidth;
+            pageHeight = window.innerHeight;
+            //移动设备的页面值
+            if(typeof pageWidth != "number") {                                //chrome firefox safari ....
+                if(document.compatMode == "CSS1Compat") {
+                    pageWidth = document.documentElement.clientWidth;
+                    pageHeight = document.documentElement.clientHeight;
+                } else {                                                      //ie
+                    pageWidth = document.body.clientWidth;
+                    pageHeight = document.body.clientHeight;
+                }
+            }
+        } else if(egret.Capabilities.runtimeType == egret.RuntimeType.NATIVE) {
+            pageWidth = egret_native.EGTView.getFrameWidth();
+            pageHeight = egret_native.EGTView.getFrameHeight();
+        }
+
+        var w: number = Math.max(pageWidth,pageHeight);
+        var h: number = Math.min(pageHeight,pageWidth);
+        
+        if(w / h > maxWHPercent) {
+            w = h * maxWHPercent;
+        }
+        
+        if(h < pageMinHeight) {
+            w = Math.round(w / h * pageMinHeight);
+            h = pageMinHeight;
+        } else if(h > pageMaxHeight) {
+            w = Math.round(w / h * pageMaxHeight);
+            h = pageMaxHeight;
+        }
+        if(w > pageMaxWidth) {
+            h = Math.round(h / w * pageMaxWidth);
+            w = pageMaxWidth;
+        }
+
+        AppGlobal.stageFullWidth = w;
+        AppGlobal.stageFullHeight = h;
+
+        if(egret.MainContext.instance.stage.stageWidth != w || egret.MainContext.instance.stage.stageWidth != h) {
+            egret.MainContext.instance.stage.setContentSize(w,h);
+        }
+    }
+
+    //初始化场景类
+    public init(): void {
+        this.touchThrough = true;
+        this.sceneLayer.touchThrough = true;
+        this.mainLayer.touchThrough = true;
+        this.panelLayer.touchThrough = true;
+        this.effectLayer.touchThrough = true;
+        this.maskLayer.touchThrough = true;
+        this.loadLayer.touchThrough = true;
+
+        this.addChild(this.sceneLayer);
+        this.addChild(this.mainLayer);
+        this.addChild(this.panelLayer);
+        this.addChild(this.effectLayer);
+        this.addChild(this.maskLayer);
+        this.addChild(this.loadLayer);
+    }
+
+    /**
+     * 启动龙骨的驱动时钟
+     */
+    startDragoneBonesClock() {
+        var passTime:number = 0;
+        egret.Ticker.getInstance().register(this.onTick,this)
+    }
+
+    /**
+     * 停止龙骨世界时钟
+     */
+    stopDragoneBonesClock() {
+        egret.stopTick(this.onTick,this);
+    }
+
+    private onTick(dt:number):boolean {
+        dragonBones.WorldClock.clock.advanceTime(dt / 1000);
+        return true;
+    }
+}

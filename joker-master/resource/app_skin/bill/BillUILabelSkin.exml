@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BillUILabelSkin" width="570" height="65" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group verticalCenter="0" left="15">
+		<e:Image source="icon_sng_type_bg_png" width="61" horizontalCenter="0" verticalCenter="0"/>
+		<e:BitmapLabel id="rankLabel" text="1" font="fnt08_fnt" verticalCenter="0" horizontalCenter="0"/>
+	</e:Group>
+	<e:Label id="nameLabel" text="火云助手" verticalCenter="0" size="22" horizontalCenter="-111"/>
+	<e:Label id="totalLabel" text="2150030" verticalCenter="0" size="22" horizontalCenter="48"/>
+	<e:Label id="gainLabel" text="56000" size="22" verticalCenter="0" horizontalCenter="196"/>
+	<e:Image source="s9_bg_erji_fengexiang_png" width="98%" bottom="0" horizontalCenter="0"/>
+</e:Skin>

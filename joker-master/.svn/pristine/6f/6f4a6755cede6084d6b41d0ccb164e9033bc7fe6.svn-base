@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuiChuTableCompSkin" width="1136" height="286" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="guichu_yxjt_cmdt_png" horizontalCenter="4.5" bottom="2"/>
+	<e:Image id="tableLightAni" source="guichu_yxjt_cmdt_ani_png" bottom="-8" horizontalCenter="6"/>
+	<e:Image source="guichu_yxjt_wk_png" width="1136" height="212" bottom="0"/>
+	<e:ToggleButton id="button1" label="" x="864.64" bottom="4">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="guichu_botton_cfxz_normal_png" source.down="guichu_botton_cfxz_check_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:ToggleButton>
+	<e:Group anchorOffsetX="0" x="326.6" width="499" height="77" bottom="-30">
+		<e:Group id="chouma1" y="0" width="95" height="77">
+			<e:Image source="guichu_icon_chouma_1_png" y="0" scaleX="1" scaleY="1"/>
+			<e:BitmapLabel id="choumaValue1" horizontalCenter="-2" verticalCenter="-2" font="guichu_front_5_fnt" text="" letterSpacing="-12"/>
+		</e:Group>
+		<e:Group id="chouma2" x="101" y="0" width="95" height="77">
+			<e:Image source="guichu_icon_chouma_2_png" y="0" scaleX="1" scaleY="1"/>
+			<e:BitmapLabel horizontalCenter="-2" verticalCenter="-2" font="guichu_front_5_fnt" text="" letterSpacing="-12" id="choumaValue2"/>
+		</e:Group>
+		<e:Group id="chouma3" x="202" y="0" width="95" height="77">
+			<e:Image source="guichu_icon_chouma_3_png" y="0" scaleX="1" scaleY="1"/>
+			<e:BitmapLabel horizontalCenter="-2" verticalCenter="-2" font="guichu_front_5_fnt" text="" letterSpacing="-12" id="choumaValue3"/>
+		</e:Group>
+		<e:Group id="chouma4" x="303" y="0" anchorOffsetY="0" width="95" height="77">
+			<e:Image source="guichu_icon_chouma_4_png" y="0" scaleX="1" scaleY="1"/>
+			<e:BitmapLabel horizontalCenter="-2" verticalCenter="-2" font="guichu_front_5_fnt" text="" letterSpacing="-12" id="choumaValue4"/>
+		</e:Group>
+		<e:Group id="chouma5" x="404" y="0" width="95" height="77">
+			<e:Image source="guichu_icon_chouma_5_png" y="0" scaleX="1" scaleY="1"/>
+			<e:BitmapLabel horizontalCenter="-2" verticalCenter="-2" font="guichu_front_5_fnt" text="" letterSpacing="-12" id="choumaValue5"/>
+		</e:Group>
+		<e:layout>
+			<e:BasicLayout/>
+		</e:layout>
+	</e:Group>
+	<e:BitmapLabel id="caifuBL" text="0" letterSpacing="-5" font="guichu_front_3_fnt" right="862" bottom="50" maxWidth="140"/>
+	<e:BitmapLabel id="yinliBL" text="0" letterSpacing="-5" font="guichu_front_3_fnt" right="883" bottom="13" maxWidth="140" x="166" y="156"/>
+	<e:Group id="zitiGroup" left="0" bottom="0"/>
+	<e:Group id="itemGroup" x="80" height="192" bottom="0">
+		<e:Group id="itemList">
+			<e:layout>
+				<e:HorizontalLayout gap="-3"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Image id="itemGroupShadow" source="guichu_bg_tzq_mb_png" width="970" bottom="82" horizontalCenter="0"/>
+	<e:Group id="choumaGroup" x="0" y="0" width="0" height="0" locked="true" visible="false"/>
+	<e:Group id="countGroup" top="0" horizontalCenter="0" height="54" width="196" visible="false">
+		<e:Group horizontalCenter="0" bottom="0" width="196" height="54">
+			<e:Image id="countScreen" source="guichu_bg_djs_png" scaleX="1" scaleY="1" width="196" height="54" horizontalCenter="0" verticalCenter="0"/>
+			<e:BitmapLabel id="countLabel" font="guichu_front_2_fnt" text="15" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" textAlign="center" width="100%" height="100%" verticalAlign="middle" letterSpacing="-10"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

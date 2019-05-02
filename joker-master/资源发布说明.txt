@@ -1,0 +1,22 @@
+
+
+资源目录说明:
+
+	resource 这里存放所有的皮肤文件
+		default.thm.json 皮肤引用配置文件
+	resource_art 这里存放所有的美术资源原图碎图
+		default.res.json 资源引用配置文件
+		publish_config.json 发布纹理集的配置文件
+	resource_publish 这里有 Resdepot 生成出来的纹理集打包
+		default.res.json 发布的纹理集资源引用配置文件
+
+资源的发布:
+	1.当前资源理好后用 Resdepot 工具发布资源到 resource_publish 
+	2.修改egretProperties.json文件的 "resources":[] 节点
+			1:Debug开发模式 "resources":["resource_art","resource"],
+			2:Release模式  "resources":["resource_publish","resource"],
+	3.修改Math.ts
+		/Release用这个目录
+        //RES.loadConfig("resource_public/default.res.json", "resource_public/");
+        //Debug开发用这个目录
+        RES.loadConfig("resource_art/default.res.json","resource_art/");
